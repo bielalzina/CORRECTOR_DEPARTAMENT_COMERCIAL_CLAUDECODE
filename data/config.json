@@ -1,0 +1,14 @@
+{
+  "professors": {
+    "ADG21": {
+      "nom": "Margalida Font",
+      "correu": "mfont@cifpjoantaix.cat",
+      "password_hash": ""
+    },
+    "ADG32": {
+      "nom": "Gabriel Alzina",
+      "correu": "bielalzina@cifpjoantaix.cat",
+      "password_hash": "2f0eda07aee37d9b8e8e5ca634be8a7c82daaaf60705463d6df1401d73662d85"
+    }
+  }
+}
