@@ -1,5 +1,5 @@
 import streamlit as st
-from modules.alumnes_data import get_alumnes_per_grup
+from modules.alumnes_data import verificar_alumne
 
 
 def show():
@@ -9,28 +9,23 @@ def show():
             st.session_state.role = None
             st.rerun()
 
-        st.title("👩‍🎓 Identificació d'alumne")
+        st.title("👩‍🎓 Accés d'alumne")
         st.divider()
 
-        grup = st.radio("Grup", ["ADG21", "ADG32"], horizontal=True)
-        alumnes = get_alumnes_per_grup(grup)
-
-        if not alumnes:
-            st.warning("No hi ha alumnes configurats per a aquest grup.")
-            return
-
-        opcions = {f"{a['nom']}  ({a['expedient']})": a for a in alumnes}
-        seleccionat = st.selectbox("El teu nom", list(opcions.keys()))
-        alumne = opcions[seleccionat]
-
-        st.info(f"Correu registrat: **{alumne['correu']}**")
-        correu = st.text_input("Confirma el teu correu electrònic")
+        correu = st.text_input("Correu electrònic", placeholder="expedient.nom@cifpjoantaix.cat")
+        password = st.text_input("Contrasenya", type="password")
 
         if st.button("Accedir", type="primary", use_container_width=True):
-            if correu.strip().lower() == alumne["correu"].lower():
-                st.session_state.user = alumne
-                st.session_state.grup = grup
-                st.session_state.page = "portal"
-                st.rerun()
+            if not correu.strip() or not password:
+                st.error("Introdueix el correu electrònic i la contrasenya.")
             else:
-                st.error("El correu no coincideix. Comprova que l'has escrit correctament.")
+                alumne = verificar_alumne(correu.strip(), password)
+                if alumne is None:
+                    st.error("Correu o contrasenya incorrectes.")
+                elif not alumne.get("actiu", True):
+                    st.error("Aquest compte no està actiu. Contacta amb el teu professor.")
+                else:
+                    st.session_state.user = alumne
+                    st.session_state.grup = alumne["grup"]
+                    st.session_state.page = "portal"
+                    st.rerun()

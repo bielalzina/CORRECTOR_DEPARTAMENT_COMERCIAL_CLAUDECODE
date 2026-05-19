@@ -1,5 +1,6 @@
 """Accés i gestió de la llista d'alumnes (data/alumnes.json)."""
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Optional
@@ -34,3 +35,14 @@ def get_alumne_per_expedient(expedient: str) -> Optional[dict]:
 def get_alumne_per_correu(correu: str) -> Optional[dict]:
     correu = correu.strip().lower()
     return next((a for a in load_alumnes() if a["correu"].lower() == correu), None)
+
+
+def verificar_alumne(correu: str, password: str) -> Optional[dict]:
+    """Retorna les dades de l'alumne si el correu i la contrasenya són correctes."""
+    alumne = get_alumne_per_correu(correu)
+    if alumne is None:
+        return None
+    hash_introduit = hashlib.sha256(password.encode()).hexdigest()
+    if alumne.get("password_hash") == hash_introduit:
+        return alumne
+    return None

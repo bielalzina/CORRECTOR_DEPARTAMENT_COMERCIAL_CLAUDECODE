@@ -2,6 +2,7 @@ import streamlit as st
 from modules.tasques_data import load_tasca, is_fora_termini
 from modules.validacio import validar_estructura, NOMS_LLISTATS
 from modules.fitxers import guardar_llistat, get_llistats_alumne
+from modules.utils import fmt_data
 
 CODIS = ["01", "02", "03", "04", "05", "06", "07", "08"]
 NOM_CURT = {
@@ -50,11 +51,11 @@ def show():
     if fora_termini:
         st.warning(
             f"⚠️ **Estàs fora de termini.** El termini era el "
-            f"**{config.get('data_tancament', '—')}**. "
+            f"**{fmt_data(config.get('data_tancament', '—'))}**. "
             "Els llistats s'acceptaran, però el professor decidirà si els corregeix."
         )
     else:
-        st.success(f"✅ Termini obert fins al **{config.get('data_tancament', '—')}**")
+        st.success(f"✅ Termini obert fins al **{fmt_data(config.get('data_tancament', '—'))}**")
 
     llistats_actuals = get_llistats_alumne(num_tasca, grup, alumne["expedient"])
 
@@ -147,7 +148,7 @@ def _mostrar_estat(llistats: dict):
                 info = llistats[codi]
                 fora = info.get("fora_termini", False)
                 icon = "⚠️" if fora else "✅"
-                data = info.get("data_pujada", "")[:10]
+                data = fmt_data(info.get("data_pujada", ""))
                 st.markdown(f"{icon} **{codi}** {NOM_CURT[tipus]}")
                 st.caption(f"{data}" + (" *(fora termini)*" if fora else ""))
             else:

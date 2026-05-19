@@ -47,3 +47,20 @@ def configurar_password(grup: str, password_nova: str) -> None:
         config.setdefault("professors", {})[grup] = {}
     config["professors"][grup]["password_hash"] = _hash(password_nova)
     _save_config(config)
+
+
+def get_data_inici_fact_recapitulativa(grup: str) -> Optional[str]:
+    """Retorna la data (ISO) a partir de la qual s'aplica la facturació recapitulativa, o None."""
+    config = _load_config()
+    return config.get("professors", {}).get(grup, {}).get("data_inici_fact_recapitulativa")
+
+
+def set_data_inici_fact_recapitulativa(grup: str, data_iso: Optional[str]) -> None:
+    """Estableix o esborra la data d'inici de facturació recapitulativa per a un grup."""
+    config = _load_config()
+    config.setdefault("professors", {}).setdefault(grup, {})
+    if data_iso:
+        config["professors"][grup]["data_inici_fact_recapitulativa"] = data_iso
+    else:
+        config["professors"][grup].pop("data_inici_fact_recapitulativa", None)
+    _save_config(config)

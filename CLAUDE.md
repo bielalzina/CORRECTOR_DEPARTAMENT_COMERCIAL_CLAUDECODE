@@ -4,6 +4,57 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ---
 
+## Comandes de desenvolupament
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py                     # http://localhost:8501
+# Accés des d'altres equips: http://<IP_maquina>:8501
+```
+
+No hi ha tests automatitzats ni linter configurat. Les comprovacions manuals es fan directament a l'app.
+
+---
+
+## Arquitectura tècnica
+
+**Stack:** Python + Streamlit. Tota la persistència és en fitxers JSON i xlsx locals, sense base de dades.
+
+### Routing (app.py)
+
+`app.py` és el router únic. Llegeix `st.session_state` (claus: `role`, `user`, `grup`, `page`, `tasca_sel`) i importa dinàmicament la vista corresponent. Cada vista exposa una única funció `show()`. No hi ha navegació de Streamlit per pàgines — tot és condicional sobre `session_state`.
+
+### Mòduls (`modules/`)
+
+| Mòdul | Responsabilitat |
+|---|---|
+| `auth.py` | Hash SHA-256, login/first-setup del professor. Llegeix/escriu `data/config.json` |
+| `alumnes_data.py` | CRUD sobre `data/alumnes.json` |
+| `tasques_data.py` | Crear/llistar tasques. Persistència a `data/tasques/<num>/<grup>/config.json` |
+| `fitxers.py` | Guardar xlsx amb nomenclatura `<tasca>-<expedient>-<tipus>.xlsx` + actualitzar `metadata.json` |
+| `validacio.py` | Detecció automàtica del tipus de llistat per capçaleres + 5 validacions d'estructura |
+
+### Dades de referència (`data/`)
+
+- `data/alumnes.json` — llista d'alumnes (camp `prova: true` per als alumnes de prova; `actiu: false` per a baixa)
+- `data/config.json` — professors amb `password_hash` SHA-256 (cadena buida = primer accés)
+- `data/tasques/<num_tasca>/<grup>/config.json` — configuració de la tasca (dates, mode_facturacio, activa)
+- `data/tasques/<num_tasca>/<grup>/entregues/<expedient>/metadata.json` — registre de llistats pujats
+- `data/tasques/<num_tasca>/<grup>/entregues/<expedient>/<fitxer>.xlsx` — fitxers originals dels alumnes
+
+### Detecció de tipus de llistat (`validacio.py`)
+
+`CAPCALERES_REQUERIDES` és el diccionari central que mapeja codi → capçaleres. La detecció funciona per coincidència exacta de totes les capçaleres; si no coincideix, `_millor_coincidencia_parcial` retorna el tipus més probable i les columnes que falten.
+
+### Convencions importants
+
+- Els imports de factures de compra (03) surten negatius d'ODOO → cal convertir a positius a la correcció.
+- Nomenclatura de fitxers: `02.02-5796-01_COMANDES_COMPRES.xlsx` (tasca-expedient-tipus).
+- Tots els fitxers originals dels alumnes es guarden sense modificar; l'app afegeix columnes al seu propi procés, mai al xlsx guardat.
+- La interfície i els informes han d'estar íntegrament en català.
+
+---
+
 # App de Correcció "Empresa a l'Aula"
 
 ## Descripció del projecte
@@ -252,10 +303,14 @@ Casuístiques: duplicats, operacions oblidades, número incorrecte (si es pot in
 - No es permeten albarans parcials ni estocs negatius.
 - Termini: divendres de cada setmana.
 
-### Mode de facturació (el professor l'indica a l'app cada setmana)
+### Mode de facturació
 
-- **Individual**: 1 comanda → 1 albarà → 1 factura.
-- **Recapitulativa**: 1 comanda → 1 albarà, factures agrupades per client (1 factura pot incloure 2 o 3 comandes).
+El mode de facturació és una **configuració global per grup** (no per tasca). El professor defineix una **data d'inici** a partir de la qual s'aplica la facturació recapitulativa:
+
+- **Abans de la data d'inici** (o si no s'ha configurat cap data): facturació **individual** — 1 comanda → 1 albarà → 1 factura.
+- **A partir de la data d'inici** (inclusive): facturació **recapitulativa** — 1 comanda → 1 albarà; les factures agrupen diverses comandes del mateix client (1 factura pot incloure 2 o 3 comandes).
+
+Aquesta data es guarda a `data/config.json` com a `data_inici_fact_recapitulativa` dins l'entrada del professor/grup. Les tasques **no** emmagatzemen el mode de facturació.
 
 ### Dades de referència: DADES_VENDES_REALS
 

@@ -1,6 +1,7 @@
 import streamlit as st
 from modules.tasques_data import get_tasques_obertes, is_fora_termini
 from modules.fitxers import get_llistats_alumne
+from modules.utils import fmt_data
 
 CODIS = ["01", "02", "03", "04", "05", "06", "07", "08"]
 NOM_CURT = {
@@ -39,7 +40,7 @@ def show():
             with c1:
                 st.markdown(f"### Tasca {num}")
                 icona = "🔴" if fora else "🟢"
-                st.caption(f"{icona} Termini: {t.get('data_tancament', '—')}")
+                st.caption(f"{icona} Termini: {fmt_data(t.get('data_tancament', '—'))}")
             with c2:
                 st.metric("Llistats entregats", f"{n} / 8")
             with c3:
