@@ -511,16 +511,14 @@ views/
 
 ---
 
-### 🔲 Fase 2 — Pendent
+### ✅ Fase 2 — Completada
 
 **Gestió del professor: pujada de dades de referència.**
 
-- Pantalla `views/professor/referencia.py`: el professor descarrega una plantilla xlsx amb tots els alumnes del grup, l'omple i la puja.
-- Plantilla té dos fulls: **COMPRES** i **VENDES** (veure estructura de camps al CLAUDE.md).
-- Mòdul `modules/referencia_data.py`: parseig i emmagatzematge de les dades de referència per tasca i alumne.
-- Camp `R_DATA_ENTREGA_TASCA` l'omple l'app automàticament (data de pujada del llistat 03).
-- Camp `R_EMPRESA_C` / `R_EMPRESA_V` l'omple l'app des d'`alumnes.json`.
-- Pantalla `views/professor/seguiment.py`: taula detallada d'entregues (substituirà la del tauler).
+- `views/professor/referencia.py`: el professor descarrega la plantilla xlsx, l'omple i la puja. La plantilla té dos fulls: **COMPRES** (2 files/alumne: ROCALLA SA + ALUBIX SL) i **VENDES** (3 files/alumne). Cel·les pre-emplenades en blau; cel·les a emplenar en groc.
+- `modules/referencia_data.py`: generació de plantilla, parseig, validació i emmagatzematge a `data/tasques/<num>/<grup>/referencia.json`.
+- `R_DATA_ENTREGA_TASCA` es reserva al JSON per ser emplenat automàticament quan l'alumne puja el llistat 03 (Fase 3).
+- El tauler mostra dues pestanyes per tasca: **Entregues** (graella resum) i **Seguiment detallat** (desplegable per alumne).
 
 ---
 
