@@ -3,6 +3,7 @@ import pandas as pd
 from modules.tasques_data import get_tasques_obertes, get_totes_tasques
 from modules.alumnes_data import get_alumnes_per_grup
 from modules.fitxers import get_resum_entregues
+from modules.utils import fmt_data
 
 
 def show():
@@ -34,7 +35,7 @@ def show():
         with st.container(border=True):
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Tasca", num)
-            c2.metric("Termini", t.get("data_tancament", "—"))
+            c2.metric("Termini", fmt_data(t.get("data_tancament", "—")))
             c3.metric("Entregues completes", f"{n_complets} / {len(alumnes)}")
             c4.metric("Fora de termini", n_fora)
 

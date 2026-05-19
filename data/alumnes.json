@@ -6,6 +6,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 5796 NSACARES SL",
     "cif": "B00214783",
+    "password_hash": "1482b9c568e448b313fed8d935480bb3d366609c0296754b14d3eb11c8ad27b4",
     "actiu": true,
     "prova": false
   },
@@ -16,6 +17,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6265 SMORENO SL",
     "cif": "B00324764",
+    "password_hash": "8672fc20ef22e2263c16ce57da57b1f0099549ca5d62d09bbae7e253760991b4",
     "actiu": true,
     "prova": false
   },
@@ -26,6 +28,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6320 MNAVARRO SL",
     "cif": "B00325043",
+    "password_hash": "dd1182992fea2793eed86b9cb4f0a68f5ea021386bb6958dde7cb0fdcd5b263a",
     "actiu": true,
     "prova": false
   },
@@ -36,6 +39,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6352 SAANANOU SL",
     "cif": "B00324889",
+    "password_hash": "d522b9ea2dfd95cff6825e2eb49450c95a88c4ae89791523eb763860d00b3707",
     "actiu": true,
     "prova": false
   },
@@ -46,6 +50,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6356 WAANANOU SL",
     "cif": "B00324715",
+    "password_hash": "217f72c3b847527fe4eb4185cff24c0cbbedd97cbfd6480d574f3dc8d624d5a1",
     "actiu": true,
     "prova": false
   },
@@ -56,6 +61,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6366 JMORAGUES SL",
     "cif": "B00324855",
+    "password_hash": "0dc2c91b4fa1a270d6f64708e112422289a28a9c320680c300be8361026a6178",
     "actiu": true,
     "prova": false
   },
@@ -66,6 +72,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6368 LPIZA SL",
     "cif": "B00324798",
+    "password_hash": "cc686fe9cfc43b470b7aae839cfb9f38212d408b46cea2b07c3d06b747531ec0",
     "actiu": true,
     "prova": false
   },
@@ -76,6 +83,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6369 VMASTRANGELO SL",
     "cif": "B00324723",
+    "password_hash": "eb33096b97e9f9f59ef789ea39542febb16d5172b3845a4b088a67e48a57840a",
     "actiu": true,
     "prova": false
   },
@@ -86,6 +94,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6427 NANANOU SL",
     "cif": "B00324749",
+    "password_hash": "8cac5ee48053c05d20214b15feefc797bc4ca20b08ad89352631a2264d5db35d",
     "actiu": true,
     "prova": false
   },
@@ -96,6 +105,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6428 ABOUBAL SL",
     "cif": "B00324772",
+    "password_hash": "b0090c11821c639ebf894f302958291e7243dfdc996fc82052c7a2e96e2717f8",
     "actiu": true,
     "prova": false
   },
@@ -106,6 +116,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6431 GZOUGGAGHI SL",
     "cif": "B00325027",
+    "password_hash": "340ce3ada07161807d01960d18231b329cf287c968c22a64937a6d3e88b149f8",
     "actiu": true,
     "prova": false
   },
@@ -116,6 +127,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6467 WCHANTAH SL",
     "cif": "B00324707",
+    "password_hash": "9d9f73d601a53b6ee9097eca0f457ae28647facfa8193e7856d0bdd786563b9b",
     "actiu": true,
     "prova": false
   },
@@ -126,6 +138,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6478 CBAUZA SL",
     "cif": "B00325050",
+    "password_hash": "11a72752d80504455caac973522b128145dbcb25332c557eb2eb060c270ae6f2",
     "actiu": true,
     "prova": false
   },
@@ -136,6 +149,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6702 NFORNES SL",
     "cif": "B00214916",
+    "password_hash": "acb067e8d9aada9d36dfc29ad33d3b0119f2445cd53265aa43799e704afe43c3",
     "actiu": true,
     "prova": false
   },
@@ -146,6 +160,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6706 NSUIYHI SL",
     "cif": "B00214775",
+    "password_hash": "da70ec175146ae30963e9c892364159d52b54fef00658165918f9ab4932cbe89",
     "actiu": true,
     "prova": false
   },
@@ -156,6 +171,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6707 MOUAZINE SL",
     "cif": "B00324780",
+    "password_hash": "c06a13c327c62d53f10f0888e3368c8d6170d1bd3092db33860f3f07dde2561c",
     "actiu": true,
     "prova": false
   },
@@ -166,6 +182,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6713 BCARBONELL SL",
     "cif": "B00324830",
+    "password_hash": "f14626feade96d46c2d9d766de71e28c37e89abe90dbce14d45da8c024b5ac70",
     "actiu": true,
     "prova": false
   },
@@ -176,6 +193,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6734 LABOLAFIO SL",
     "cif": "B00324756",
+    "password_hash": "990ce7604310a06a844177cef737f7b00409be493ad3a4422bc53c86aa7bdb86",
     "actiu": true,
     "prova": false
   },
@@ -186,6 +204,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6746 ELLADO SL",
     "cif": "B00214791",
+    "password_hash": "0a3353a1c60fde4c5514886e7a3b5287388fdc9d09502dc72c56ee54e7ac1795",
     "actiu": true,
     "prova": false
   },
@@ -196,6 +215,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6777 JGARCIA SL",
     "cif": "B00214700",
+    "password_hash": "0efaa3eee79cc74a46cee2c99c3731597d154bcc5591b43a0741d79b681ea5bc",
     "actiu": true,
     "prova": false
   },
@@ -206,6 +226,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6792 PCAPO SL",
     "cif": "B00214882",
+    "password_hash": "77faee521d85134f5b66f668aa88bcabbea844bb0760cb21acfa10f4be83a000",
     "actiu": true,
     "prova": false
   },
@@ -216,6 +237,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 6844 TTRAMULLAS SL",
     "cif": "B00325035",
+    "password_hash": "dc28bdb6c754b07f56b425779b8751d69640067912fa05dfa3e96db0870bf993",
     "actiu": true,
     "prova": false
   },
@@ -226,6 +248,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 9998 PROVA SL",
     "cif": "B00000032",
+    "password_hash": "74fe248eac4419c8e58725d954fa38f5b1b8a7ef3ba68f00598c6bbd67100e2a",
     "actiu": true,
     "prova": true
   },
@@ -236,6 +259,7 @@
     "grup": "ADG32",
     "rao_social": "ADG32 9999 PROVA SL",
     "cif": "B00000033",
+    "password_hash": "ac800c0f1a5f869444c4a60afd69b4fb9941972bcffc276aa588e243e02de187",
     "actiu": true,
     "prova": true
   }
