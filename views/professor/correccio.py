@@ -11,12 +11,32 @@ from modules.correccio import (
 from modules.referencia_data import referencia_completa
 
 
-GRAVETAT_COLOR = {
+GRAVETAT_ICONA = {
     "molt_greu": "🔴",
-    "greu": "🟠",
-    "lleu": "🟡",
+    "greu":      "🟠",
+    "lleu":      "🟡",
 }
 
+# Llistats per bloc
+LLISTATS_COMPRES  = {"01_COMANDES_COMPRES", "02_RECEPCIONS", "03_FACTURES_COMPRA", "COMPRES"}
+LLISTATS_VENDES   = {"04_COMANDES_VENDES", "05_ENTREGUES", "06_FACTURES_VENDA", "VENDES"}
+LLISTATS_MAGATZEM = {"07_STOCK", "08_HISTORIAL_ENTRADES_SORTIDES"}
+
+NOM_LLISTAT = {
+    "01_COMANDES_COMPRES":           "01 Comandes compres",
+    "02_RECEPCIONS":                  "02 Recepcions",
+    "03_FACTURES_COMPRA":             "03 Factures compra",
+    "04_COMANDES_VENDES":             "04 Comandes vendes",
+    "05_ENTREGUES":                   "05 Entregues",
+    "06_FACTURES_VENDA":              "06 Factures venda",
+    "07_STOCK":                       "07 Stock",
+    "08_HISTORIAL_ENTRADES_SORTIDES": "08 Historial",
+}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Vista principal
+# ─────────────────────────────────────────────────────────────────────────────
 
 def show():
     grup = st.session_state.grup
@@ -38,41 +58,30 @@ def show():
     tasca_info = next((t for t in totes_tasques if t["num_tasca"] == tasca_sel), {})
     tasca_oberta = tasca_info.get("activa", False)
 
-    # Comprovació de referència
-    te_ref = referencia_completa(tasca_sel, grup, alumnes)
-    if not te_ref:
+    # Avisos
+    if not referencia_completa(tasca_sel, grup, alumnes):
         st.warning(
             "⚠️ Les dades de referència no estan carregades per a tots els alumnes. "
-            "La correcció pot ser incompleta.",
-            icon="⚠️",
+            "La correcció pot ser incompleta."
         )
-
     if tasca_oberta:
         st.warning(
-            "⚠️ La tasca encara és oberta. Pots executar la correcció, "
-            "però els alumnes encara poden pujar o substituir llistats.",
-            icon="⚠️",
+            "⚠️ La tasca encara és oberta. Els alumnes encara poden pujar o substituir llistats."
         )
 
     # Botó d'execució
-    col_btn, col_info = st.columns([2, 5])
-    with col_btn:
-        executar = st.button(
-            "▶️ Executar correcció",
-            type="primary",
-            use_container_width=True,
-            key="btn_executar_correccio",
-        )
-
-    if executar:
+    if st.button("▶️ Executar correcció", type="primary", key="btn_executar"):
         with st.spinner("Executant la correcció..."):
             resultats = executar_correccio(tasca_sel, grup)
-        st.success("Correcció executada correctament.")
         st.session_state[f"resultats_{tasca_sel}_{grup}"] = resultats
+        st.success("Correcció executada correctament.")
         st.rerun()
 
-    # Carregar resultats existents
-    resultats = st.session_state.get(f"resultats_{tasca_sel}_{grup}") or load_resultats(tasca_sel, grup)
+    # Carregar resultats
+    resultats = (
+        st.session_state.get(f"resultats_{tasca_sel}_{grup}")
+        or load_resultats(tasca_sel, grup)
+    )
 
     if not resultats:
         st.info("Encara no s'ha executat cap correcció per a aquesta tasca.")
@@ -80,138 +89,206 @@ def show():
 
     st.caption(f"Darrera correcció: {resultats.get('data_correccio', '—')}")
 
-    # Resum de notes
-    _mostrar_resum(resultats, alumnes)
+    if te_ambigus_pendents(resultats):
+        st.warning("⚠️ Hi ha casos ambigus pendents de resolució. Resoleu-los per obtenir les notes finals.")
 
     st.divider()
 
-    # Detall per alumne amb casos ambigus
-    _mostrar_detall(resultats, tasca_sel, grup)
+    # ── Tres seccions ──────────────────────────────────────────────────────────
+    tab_c, tab_v, tab_m = st.tabs([
+        "🛒 Correcció de compres",
+        "💼 Correcció de vendes",
+        "📦 Correcció del magatzem",
+    ])
+
+    with tab_c:
+        _seccio_bloc(resultats, alumnes, tasca_sel, grup, "compres")
+
+    with tab_v:
+        _seccio_bloc(resultats, alumnes, tasca_sel, grup, "vendes")
+
+    with tab_m:
+        _seccio_bloc(resultats, alumnes, tasca_sel, grup, "magatzem")
 
 
-def _mostrar_resum(resultats: dict, alumnes: list[dict]) -> None:
-    """Taula resum de notes de tots els alumnes."""
-    st.subheader("Resum de notes")
+# ─────────────────────────────────────────────────────────────────────────────
+# Secció d'un bloc (compres / vendes / magatzem)
+# ─────────────────────────────────────────────────────────────────────────────
 
-    files = []
+def _seccio_bloc(
+    resultats: dict,
+    alumnes: list[dict],
+    num_tasca: str,
+    grup: str,
+    bloc: str,  # "compres" | "vendes" | "magatzem"
+) -> None:
+    llistats_bloc = {
+        "compres":  LLISTATS_COMPRES,
+        "vendes":   LLISTATS_VENDES,
+        "magatzem": LLISTATS_MAGATZEM,
+    }[bloc]
+
     alumnes_res = resultats.get("alumnes", {})
+
+    # ── Taula resum del bloc ──────────────────────────────────────────────────
+    st.subheader("Resum")
+    files_resum = []
+    for alumne in alumnes:
+        exp = str(alumne["expedient"])
+        res = alumnes_res.get(exp)
+        if not res:
+            files_resum.append({
+                "Alumne": alumne["nom"],
+                "Penalització": "—",
+                "Errors": "—",
+                "Casos ambigus": "—",
+            })
+            continue
+
+        errors_bloc  = _errors_bloc(res, llistats_bloc)
+        ambigus_bloc = _ambigus_bloc(res, llistats_bloc)
+        pen = _penalitzacio_bloc(errors_bloc, ambigus_bloc)
+        n_amb_pend = sum(1 for a in ambigus_bloc if a.get("resolucio") is None)
+
+        files_resum.append({
+            "Alumne":         res.get("nom", alumne["nom"]),
+            "Penalització":   pen,
+            "Errors":         len(errors_bloc),
+            "Casos ambigus":  n_amb_pend if n_amb_pend else "—",
+        })
+
+    st.dataframe(pd.DataFrame(files_resum), hide_index=True, use_container_width=True)
+
+    st.divider()
+
+    # ── Detall per alumne ──────────────────────────────────────────────────────
+    st.subheader("Detall per alumne")
 
     for alumne in alumnes:
         exp = str(alumne["expedient"])
         res = alumnes_res.get(exp)
         if not res:
-            files.append({
-                "Alumne": alumne["nom"],
-                "Nota": "—",
-                "Penalització": "—",
-                "Errors": "—",
-                "Ambigus pendents": "—",
-                "Llistats faltants": "—",
-            })
             continue
 
-        ambigus_pend = sum(
-            1 for a in res.get("casos_ambigus", []) if a.get("resolucio") is None
-        )
-        files.append({
-            "Alumne": res.get("nom", alumne["nom"]),
-            "Nota": res.get("nota", 0),
-            "Penalització": res.get("penalitzacio_total", 0),
-            "Errors": len(res.get("errors", [])),
-            "Ambigus pendents": ambigus_pend if ambigus_pend else "—",
-            "Llistats faltants": ", ".join(res.get("llistats_faltants", [])) or "—",
-        })
+        errors_bloc  = _errors_bloc(res, llistats_bloc)
+        ambigus_bloc = _ambigus_bloc(res, llistats_bloc)
+        n_amb_pend   = sum(1 for a in ambigus_bloc if a.get("resolucio") is None)
 
-    if files:
-        df = pd.DataFrame(files)
-        st.dataframe(df, hide_index=True, use_container_width=True)
-
-    if te_ambigus_pendents(resultats):
-        st.warning("Hi ha casos ambigus pendents de resolució. Resoleu-los per recalcular les notes finals.")
-
-
-def _mostrar_detall(resultats: dict, num_tasca: str, grup: str) -> None:
-    """Detall d'errors i casos ambigus per alumne."""
-    st.subheader("Detall per alumne")
-
-    alumnes_res = resultats.get("alumnes", {})
-
-    for exp, res in alumnes_res.items():
-        errors = res.get("errors", [])
-        ambigus = res.get("casos_ambigus", [])
-        ambigus_pend = sum(1 for a in ambigus if a.get("resolucio") is None)
-        nota = res.get("nota", 0)
-
-        # Icona d'estat
-        if ambigus_pend:
+        if n_amb_pend:
             icona = "❓"
-        elif errors:
+        elif errors_bloc:
             icona = "❌"
         else:
             icona = "✅"
 
-        titol = f"{icona} {res.get('nom', exp)}  —  Nota: **{nota}** / 10"
-        with st.expander(titol, expanded=(ambigus_pend > 0)):
-            # Llistats faltants
-            faltants = res.get("llistats_faltants", [])
+        pen = _penalitzacio_bloc(errors_bloc, ambigus_bloc)
+        titol = f"{icona} {res.get('nom', exp)}  —  Penalització: **{pen}** pts"
+
+        with st.expander(titol, expanded=(n_amb_pend > 0)):
+            # Llistats faltants del bloc
+            faltants = [
+                c for c in res.get("llistats_faltants", [])
+                if any(c in ll for ll in llistats_bloc)
+            ]
             if faltants:
                 st.caption(f"Llistats no entregats: {', '.join(faltants)}")
 
-            # Casos ambigus
-            if ambigus:
+            # Casos ambigus del bloc
+            if ambigus_bloc:
                 st.markdown("##### Casos ambigus")
-                for a in ambigus:
+                for a in ambigus_bloc:
                     _mostrar_ambigu(a, exp, num_tasca, grup)
 
-            # Errors
-            if errors:
+            # Errors del bloc
+            if errors_bloc:
                 st.markdown("##### Errors detectats")
-                _mostrar_taula_errors(errors)
-            elif not ambigus:
-                st.success("Cap error detectat.")
+                _taula_errors(errors_bloc)
+            elif not ambigus_bloc:
+                st.success("Cap error detectat en aquest bloc.")
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Helpers de filtratge
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _errors_bloc(res: dict, llistats_bloc: set) -> list[dict]:
+    return [e for e in res.get("errors", []) if e.get("llistat", "") in llistats_bloc]
+
+
+def _ambigus_bloc(res: dict, llistats_bloc: set) -> list[dict]:
+    return [a for a in res.get("casos_ambigus", []) if a.get("llistat", "") in llistats_bloc]
+
+
+def _penalitzacio_bloc(errors: list[dict], ambigus: list[dict]) -> float:
+    """Suma de penalitzacions del bloc (errors + ambigus rebutjats)."""
+    pen = sum(abs(e.get("penalitzacio", 0)) for e in errors)
+    for a in ambigus:
+        if a.get("resolucio") == "rebutjat":
+            pen += abs(a.get("penalitzacio_si_rebutjat", 0.5))
+    return round(pen, 2)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Taula d'errors
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _taula_errors(errors: list[dict]) -> None:
+    files = []
+    for e in errors:
+        files.append({
+            "Gravetat":      GRAVETAT_ICONA.get(e.get("gravetat", ""), "⚪") + " " + e.get("gravetat", ""),
+            "Llistat":       NOM_LLISTAT.get(e.get("llistat", ""), e.get("llistat", "")),
+            "Descripció":    e.get("descripcio", ""),
+            "Camp":          e.get("camp", "") or "",
+            "Valor alumne":  str(e.get("valor_alumne", "") or ""),
+            "Valor esperat": str(e.get("valor_esperat", "") or ""),
+            "Penalització":  e.get("penalitzacio", 0),
+        })
+    if files:
+        st.dataframe(pd.DataFrame(files), hide_index=True, use_container_width=True)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Casos ambigus
+# ─────────────────────────────────────────────────────────────────────────────
 
 def _mostrar_ambigu(a: dict, expedient: str, num_tasca: str, grup: str) -> None:
-    """Mostra un cas ambigu i els botons per resoldre'l."""
     resolucio = a.get("resolucio")
     aid = a["id"]
 
     if resolucio == "acceptat":
-        estat = "✅ Acceptat"
-        color = "green"
+        estat_txt, estat_color = "✅ Acceptat", "green"
     elif resolucio == "rebutjat":
-        estat = "❌ Rebutjat"
-        color = "red"
+        estat_txt, estat_color = "❌ Rebutjat", "red"
     else:
-        estat = "❓ Pendent"
-        color = "orange"
+        estat_txt, estat_color = "❓ Pendent", "orange"
 
     with st.container(border=True):
         col_desc, col_acc = st.columns([4, 2])
         with col_desc:
-            st.markdown(f"**{a.get('llistat', '')}** — {a.get('descripcio', '')}")
+            st.markdown(
+                f"**{NOM_LLISTAT.get(a.get('llistat',''), a.get('llistat',''))}** "
+                f"— {a.get('descripcio', '')}"
+            )
             st.caption(
                 f"Valor alumne: `{a.get('valor_alumne', '—')}` "
                 f"| Esperat: `{a.get('valor_esperat', '—')}` "
-                f"| Penalització si rebutjat: {a.get('penalitzacio_si_rebutjat', 0.5)}"
+                f"| Penalització si rebutjat: **{a.get('penalitzacio_si_rebutjat', 0.5)} pts**"
             )
-            st.markdown(f"*Estat: :{color}[{estat}]*")
-
+            st.markdown(f"Estat: :{estat_color}[{estat_txt}]")
         with col_acc:
+            st.write("")
             if resolucio is None:
-                st.write("")
                 if st.button("✅ Acceptar", key=f"acc_{aid}", use_container_width=True):
                     _resoldre(num_tasca, grup, expedient, aid, "acceptat")
                 if st.button("❌ Rebutjar", key=f"reb_{aid}", use_container_width=True):
                     _resoldre(num_tasca, grup, expedient, aid, "rebutjat")
             else:
-                st.write("")
                 if st.button("↩️ Desfer", key=f"desfer_{aid}", use_container_width=True):
                     _resoldre(num_tasca, grup, expedient, aid, None)
 
 
 def _resoldre(num_tasca: str, grup: str, expedient: str, ambigu_id: str, resolucio) -> None:
-    """Aplica la resolució d'un cas ambigu i refresca."""
     try:
         resultats = resoldre_ambigu(num_tasca, grup, expedient, ambigu_id, resolucio)
         st.session_state[f"resultats_{num_tasca}_{grup}"] = resultats
@@ -220,25 +297,9 @@ def _resoldre(num_tasca: str, grup: str, expedient: str, ambigu_id: str, resoluc
     st.rerun()
 
 
-def _mostrar_taula_errors(errors: list[dict]) -> None:
-    """Mostra una taula compacta dels errors."""
-    files = []
-    for e in errors:
-        icona = GRAVETAT_COLOR.get(e.get("gravetat", ""), "⚪")
-        files.append({
-            "": icona,
-            "Llistat": e.get("llistat", ""),
-            "Tipus": e.get("tipus", ""),
-            "Descripció": e.get("descripcio", ""),
-            "Penalització": e.get("penalitzacio", 0),
-            "Camp": e.get("camp", "") or "",
-            "Valor alumne": str(e.get("valor_alumne", "") or ""),
-            "Valor esperat": str(e.get("valor_esperat", "") or ""),
-        })
-    if files:
-        df = pd.DataFrame(files)
-        st.dataframe(df, hide_index=True, use_container_width=True)
-
+# ─────────────────────────────────────────────────────────────────────────────
+# Sidebar
+# ─────────────────────────────────────────────────────────────────────────────
 
 def _sidebar(grup: str):
     prof = st.session_state.user
