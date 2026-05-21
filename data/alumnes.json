@@ -240,27 +240,5 @@
     "password_hash": "dc28bdb6c754b07f56b425779b8751d69640067912fa05dfa3e96db0870bf993",
     "actiu": true,
     "prova": false
-  },
-  {
-    "expedient": "9998",
-    "nom": "ALUMNE DE PROVA 9998 ADG32",
-    "correu": "9998.prova32@cifpjoantaix.cat",
-    "grup": "ADG32",
-    "rao_social": "ADG32 9998 PROVA SL",
-    "cif": "B00000032",
-    "password_hash": "74fe248eac4419c8e58725d954fa38f5b1b8a7ef3ba68f00598c6bbd67100e2a",
-    "actiu": true,
-    "prova": true
-  },
-  {
-    "expedient": "9999",
-    "nom": "ALUMNE DE PROVA ADG32",
-    "correu": "9999.prova32@cifpjoantaix.cat",
-    "grup": "ADG32",
-    "rao_social": "ADG32 9999 PROVA SL",
-    "cif": "B00000033",
-    "password_hash": "ac800c0f1a5f869444c4a60afd69b4fb9941972bcffc276aa588e243e02de187",
-    "actiu": true,
-    "prova": true
   }
 ]

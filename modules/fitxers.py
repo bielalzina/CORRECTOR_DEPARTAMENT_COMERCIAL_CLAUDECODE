@@ -4,6 +4,8 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+from modules.referencia_data import load_referencia, save_referencia
+
 TASQUES_DIR = Path(__file__).parent.parent / "data" / "tasques"
 
 ORDRE_CODIS = ["01", "02", "03", "04", "05", "06", "07", "08"]
@@ -49,16 +51,44 @@ def guardar_llistat(
     directori.mkdir(parents=True, exist_ok=True)
     (directori / nom_fitxer).write_bytes(contingut)
 
+    ara = datetime.now().isoformat(timespec="seconds")
+
     metadata = load_metadata(num_tasca, grup, expedient)
     codi = tipus_llistat.split("_")[0]
     metadata["llistats"][codi] = {
         "nom_fitxer": nom_fitxer,
         "tipus": tipus_llistat,
-        "data_pujada": datetime.now().isoformat(timespec="seconds"),
+        "data_pujada": ara,
         "fora_termini": fora_termini,
     }
     _save_metadata(num_tasca, grup, expedient, metadata)
+
+    # Si és el llistat 03 (Factures compra), auto-emplenar R_DATA_ENTREGA_TASCA
+    if codi == "03":
+        _actualitzar_data_entrega_tasca(num_tasca, grup, expedient, ara[:10])
+
     return nom_fitxer
+
+
+def _actualitzar_data_entrega_tasca(
+    num_tasca: str, grup: str, expedient: str, data_iso: str
+) -> None:
+    """Omple R_DATA_ENTREGA_TASCA a referencia.json quan l'alumne puja el llistat 03."""
+    try:
+        referencia = load_referencia(num_tasca, grup)
+        alumne_ref = referencia.get(expedient)
+        if alumne_ref is None:
+            return
+        compres = alumne_ref.get("compres", [])
+        modificat = False
+        for operacio in compres:
+            if not operacio.get("R_DATA_ENTREGA_TASCA"):
+                operacio["R_DATA_ENTREGA_TASCA"] = data_iso
+                modificat = True
+        if modificat:
+            save_referencia(num_tasca, grup, referencia)
+    except Exception:
+        pass  # No bloquejar la pujada si falla
 
 
 def get_llistats_alumne(num_tasca: str, grup: str, expedient: str) -> dict:

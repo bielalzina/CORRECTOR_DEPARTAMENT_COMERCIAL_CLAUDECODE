@@ -154,6 +154,9 @@ def _sidebar(grup: str):
         if st.button("📋 Dades de referència", use_container_width=True):
             st.session_state.page = "referencia"
             st.rerun()
+        if st.button("🔍 Correcció", use_container_width=True):
+            st.session_state.page = "correccio"
+            st.rerun()
         if st.button("⚙️ Gestió de tasques", use_container_width=True):
             st.session_state.page = "tasques"
             st.rerun()

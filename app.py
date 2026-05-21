@@ -49,6 +49,9 @@ elif role == "professor":
     elif page == "referencia":
         from views.professor.referencia import show
         show()
+    elif page == "correccio":
+        from views.professor.correccio import show
+        show()
     else:
         from views.professor.tauler import show
         show()
