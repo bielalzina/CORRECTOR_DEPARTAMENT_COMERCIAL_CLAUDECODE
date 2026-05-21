@@ -7,7 +7,7 @@ from typing import Optional
 
 import pandas as pd
 from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill, Alignment
+from openpyxl.styles import Font, PatternFill  # Alignment eliminat (ja no s'usa)
 from openpyxl.utils import get_column_letter
 
 TASQUES_DIR = Path(__file__).parent.parent / "data" / "tasques"
@@ -24,10 +24,6 @@ COLS_VENDES = [
 
 PROVEÏDORS = ["ROCALLA SA", "ALUBIX SL"]
 CLIENTS = ["BIGCORP SL", "COMERCIAL CALCO SA"]
-
-# Columnes pre-emplenades (readonly per al professor)
-PREFILLED_COMPRES = {"Expedient", "R_EMPRESA_C", "R_PROVEEDOR_C"}
-PREFILLED_VENDES  = {"Expedient", "R_EMPRESA_V"}
 
 
 def _referencia_path(num_tasca: str, grup: str) -> Path:
@@ -55,112 +51,30 @@ def get_referencia_alumne(num_tasca: str, grup: str, expedient: str) -> Optional
 
 
 def generar_plantilla(num_tasca: str, grup: str, alumnes: list[dict]) -> bytes:
-    """Genera el fitxer xlsx plantilla amb les dades pre-emplenades."""
+    """Genera el fitxer xlsx plantilla buit (capçaleres a la fila 1, sense dades pre-emplenades)."""
     wb = Workbook()
 
-    _crear_full_compres(wb, num_tasca, alumnes)
-    _crear_full_vendes(wb, alumnes)
+    for nom_full, cols in [("COMPRES", COLS_COMPRES), ("VENDES", COLS_VENDES)]:
+        ws = wb.create_sheet(nom_full)
+        fill_cap = PatternFill("solid", fgColor="1F4E79")
+        font_cap = Font(bold=True, color="FFFFFF")
+        for j, col in enumerate(cols, 1):
+            c = ws.cell(1, j, col)
+            c.fill = fill_cap
+            c.font = font_cap
+        for j, amplada in enumerate(
+            [10, 30, 16, 18, 18, 18, 18, 12] if nom_full == "COMPRES"
+            else [10, 30, 18, 18, 20, 12, 22],
+            1,
+        ):
+            ws.column_dimensions[get_column_letter(j)].width = amplada
 
-    # Eliminar full per defecte
     if "Sheet" in wb.sheetnames:
         del wb["Sheet"]
 
     buf = io.BytesIO()
     wb.save(buf)
     return buf.getvalue()
-
-
-def _estil_capcalera(ws, fila: int, n_cols: int) -> None:
-    fill = PatternFill("solid", fgColor="1F4E79")
-    font = Font(bold=True, color="FFFFFF")
-    for col in range(1, n_cols + 1):
-        c = ws.cell(fila, col)
-        c.fill = fill
-        c.font = font
-        c.alignment = Alignment(horizontal="center")
-
-
-def _estil_prefilled(ws, fila: int, cols_idx: list[int]) -> None:
-    fill = PatternFill("solid", fgColor="D9E1F2")
-    for col in cols_idx:
-        c = ws.cell(fila, col)
-        c.fill = fill
-
-
-def _estil_editable(ws, fila: int, cols_idx: list[int]) -> None:
-    fill = PatternFill("solid", fgColor="FFFF99")
-    for col in cols_idx:
-        c = ws.cell(fila, col)
-        c.fill = fill
-
-
-def _crear_full_compres(wb: Workbook, num_tasca: str, alumnes: list[dict]) -> None:
-    ws = wb.create_sheet("COMPRES")
-
-    # Títol
-    ws.cell(1, 1, f"DADES DE REFERÈNCIA — COMPRES — Tasca {num_tasca}")
-    ws.cell(1, 1).font = Font(bold=True, size=12)
-    ws.merge_cells(f"A1:{get_column_letter(len(COLS_COMPRES))}1")
-
-    # Llegenda
-    ws.cell(2, 1, "Fons blau = pre-emplenat per l'app   |   Fons groc = ha d'emplenar el professor")
-    ws.merge_cells(f"A2:{get_column_letter(len(COLS_COMPRES))}2")
-
-    # Capçaleres
-    for j, col in enumerate(COLS_COMPRES, 1):
-        ws.cell(3, j, col)
-    _estil_capcalera(ws, 3, len(COLS_COMPRES))
-
-    prefilled_idx = [i + 1 for i, c in enumerate(COLS_COMPRES) if c in PREFILLED_COMPRES]
-    editable_idx  = [i + 1 for i, c in enumerate(COLS_COMPRES) if c not in PREFILLED_COMPRES]
-
-    fila = 4
-    for alumne in alumnes:
-        exp = str(alumne["expedient"])
-        empresa = alumne["rao_social"]
-        for proveidor in PROVEÏDORS:
-            ws.cell(fila, 1, exp)
-            ws.cell(fila, 2, empresa)
-            ws.cell(fila, 3, proveidor)
-            _estil_prefilled(ws, fila, prefilled_idx)
-            _estil_editable(ws, fila, editable_idx)
-            fila += 1
-
-    # Amplades
-    for col, amplada in zip(COLS_COMPRES, [10, 30, 16, 18, 18, 18, 18, 12]):
-        ws.column_dimensions[get_column_letter(COLS_COMPRES.index(col) + 1)].width = amplada
-
-
-def _crear_full_vendes(wb: Workbook, alumnes: list[dict]) -> None:
-    ws = wb.create_sheet("VENDES")
-
-    ws.cell(1, 1, "DADES DE REFERÈNCIA — VENDES")
-    ws.cell(1, 1).font = Font(bold=True, size=12)
-    ws.merge_cells(f"A1:{get_column_letter(len(COLS_VENDES))}1")
-
-    ws.cell(2, 1, "Fons blau = pre-emplenat per l'app   |   Fons groc = ha d'emplenar el professor")
-    ws.merge_cells(f"A2:{get_column_letter(len(COLS_VENDES))}2")
-
-    for j, col in enumerate(COLS_VENDES, 1):
-        ws.cell(3, j, col)
-    _estil_capcalera(ws, 3, len(COLS_VENDES))
-
-    prefilled_idx = [i + 1 for i, c in enumerate(COLS_VENDES) if c in PREFILLED_VENDES]
-    editable_idx  = [i + 1 for i, c in enumerate(COLS_VENDES) if c not in PREFILLED_VENDES]
-
-    fila = 4
-    for alumne in alumnes:
-        exp = str(alumne["expedient"])
-        empresa = alumne["rao_social"]
-        for _ in range(3):  # 3 comandes de venda setmanals
-            ws.cell(fila, 1, exp)
-            ws.cell(fila, 2, empresa)
-            _estil_prefilled(ws, fila, prefilled_idx)
-            _estil_editable(ws, fila, editable_idx)
-            fila += 1
-
-    for col, amplada in zip(COLS_VENDES, [10, 30, 18, 18, 20, 12, 22]):
-        ws.column_dimensions[get_column_letter(COLS_VENDES.index(col) + 1)].width = amplada
 
 
 def processar_plantilla(contingut: bytes, num_tasca: str, grup: str) -> tuple[dict, list[str]]:
@@ -181,8 +95,8 @@ def processar_plantilla(contingut: bytes, num_tasca: str, grup: str) -> tuple[di
     if errors:
         return {}, errors
 
-    df_c = pd.read_excel(io.BytesIO(contingut), sheet_name="COMPRES", header=2, dtype=str)
-    df_v = pd.read_excel(io.BytesIO(contingut), sheet_name="VENDES",  header=2, dtype=str)
+    df_c = pd.read_excel(io.BytesIO(contingut), sheet_name="COMPRES", header=0, dtype=str)
+    df_v = pd.read_excel(io.BytesIO(contingut), sheet_name="VENDES",  header=0, dtype=str)
 
     df_c.columns = [str(c).strip() for c in df_c.columns]
     df_v.columns = [str(c).strip() for c in df_v.columns]
@@ -201,7 +115,7 @@ def processar_plantilla(contingut: bytes, num_tasca: str, grup: str) -> tuple[di
             continue
         if row.get("R_PROVEEDOR_C", "").strip() not in PROVEÏDORS:
             errors.append(
-                f"COMPRES fila {_ + 4}: proveïdor '{row.get('R_PROVEEDOR_C')}' no vàlid. "
+                f"COMPRES fila {_ + 2}: proveïdor '{row.get('R_PROVEEDOR_C')}' no vàlid. "
                 f"Ha de ser: {', '.join(PROVEÏDORS)}"
             )
             continue
@@ -227,7 +141,7 @@ def processar_plantilla(contingut: bytes, num_tasca: str, grup: str) -> tuple[di
             continue
         if row.get("R_CLIENTE_V", "").strip() not in CLIENTS:
             errors.append(
-                f"VENDES fila {_ + 4}: client '{row.get('R_CLIENTE_V')}' no vàlid. "
+                f"VENDES fila {_ + 2}: client '{row.get('R_CLIENTE_V')}' no vàlid. "
                 f"Ha de ser: {', '.join(CLIENTS)}"
             )
             continue
