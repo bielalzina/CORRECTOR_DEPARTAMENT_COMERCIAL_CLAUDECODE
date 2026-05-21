@@ -1,0 +1,5461 @@
+{
+  "6746": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535290",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1074.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535301",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1422.96
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537079",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 4639.14
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537076",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3765.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540062",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 4711.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540063",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3494.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542289",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4227.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542286",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3627.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544970",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4480.63
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544968",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3588.86
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547907",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3119.38
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6746 ELLADO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547908",
+        "R_NUMERO_CA": "22",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 4341.48
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377480",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3796.98,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377481",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4336.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377482",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3680.82,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377483",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4738.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381422",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4216.25,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382124",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4481.24,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382662",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3611.86,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385659",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3869.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386309",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3230.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387149",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4682.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389652",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3461.21,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390493",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4729.89,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391431",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3913.15,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394502",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3330.53,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395396",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3737.09,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6746 ELLADO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396526",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4123.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "5796": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535275",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1130.14
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535296",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1314.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537501",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 4319.7
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537495",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3714.7
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540082",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3780.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540087",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4126.1
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542282",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3523.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542284",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4467.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544978",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4038.98
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544979",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4481.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547874",
+        "R_NUMERO_CA": "22",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3518.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547875",
+        "R_NUMERO_CA": "22",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 3574.34
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377533",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3666.3,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377534",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3343.23,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377535",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4040.19,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377536",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4668.18,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381446",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3767.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382148",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3499.32,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382685",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4591.95,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385714",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3198.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386332",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4236.21,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387167",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4552.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389666",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4308.81,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390519",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4762.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391447",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3786.09,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394522",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3669.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395415",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3571.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 5796 NSACARES SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396544",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3397.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6352": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535312",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1056.33
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535285",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1266.87
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537115",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3661.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537112",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4020.23
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540134",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 3539.25
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540133",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4325.15
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542389",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3643.31
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542386",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 4266.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545032",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3403.73
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545031",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 4049.27
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548397",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3781.25
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6352 SAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548396",
+        "R_NUMERO_CA": "24",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3916.77
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377639",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3484.81,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377640",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4272.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377641",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3749.79,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377642",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3500.23,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381504",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3511.12,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382189",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3802.43,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382732",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4483.05,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385769",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4571.08,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386399",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4070.14,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387203",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3223.45,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389701",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3247.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390579",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4012.06,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391492",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3919.5,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394564",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3459.4,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395469",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3796.98,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6352 SAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396590",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4290.66,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6368": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535324",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1672.22
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535321",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1447.16
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537135",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 3559.82
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537130",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3092.76
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540078",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4264.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540077",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 3598.54
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542304",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3813.92
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542312",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00011",
+        "R_IMPORTE_C": 4714.16
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "545514",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3315.4
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "545515",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00016",
+        "R_IMPORTE_C": 4486.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547920",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 3540.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6368 LPIZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547923",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 4176.92
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377629",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4679.07,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377630",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3582.81,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377631",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3198.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377632",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3198.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381502",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3713.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382183",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3811.5,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382731",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4268.88,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385767",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3354.12,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386393",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4679.07,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387201",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4758.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389700",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3633.63,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390577",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4424.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391485",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3644.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394561",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4061.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395462",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3695.34,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6368 LPIZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396578",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3818.76,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6369": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535299",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1593.57
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535276",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1239.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537052",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 4268.88
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537049",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 1583.89
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537048",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 1840.41
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540058",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4544.76
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540055",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3286.36
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542280",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3501.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542281",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4034.14
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544977",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 4266.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544972",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3682.64
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547925",
+        "R_NUMERO_CA": "21",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4089.8
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6369 VMASTRANGELO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547924",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3590.07
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377609",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4248.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377610",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4153.63,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377611",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3531.08,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377612",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3855.07,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381492",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4583.79,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382170",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3873.22,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382717",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3289.69,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385763",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4173.6,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386381",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3426.73,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387191",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3703.51,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389693",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3294.23,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390563",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4090.11,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391481",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4539.32,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394553",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3463.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395447",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4633.71,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6369 VMASTRANGELO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396574",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3423.1,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6427": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535303",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 786.5
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535280",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1352.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537785",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 2870.12
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537782",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 4619.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540132",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 2618.44
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540130",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4474.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542345",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3274.26
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542342",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 5186.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544989",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 2816.88
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544987",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4636.72
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548605",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00011",
+        "R_IMPORTE_C": 3332.34
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6427 NANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548604",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 4542.34
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377587",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3208.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377588",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3691.71,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377589",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4032.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377590",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3510.21,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381480",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3292.41,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382164",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3357.75,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382711",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3989.37,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385749",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3303.3,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386363",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4704.48,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387186",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4682.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389680",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3379.53,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390545",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3793.35,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391470",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4007.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394546",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3909.51,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395435",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4704.48,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6427 NANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396564",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3198.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6478": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535307",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1057.54
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535288",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1218.47
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537786",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 3552.56
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537784",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 4187.81
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540120",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3753.42
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540119",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4545.97
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542321",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4195.07
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542325",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3349.28
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544976",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3528.36
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544973",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4435.86
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548735",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3759.47
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6478 CBAUZA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548736",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 3281.52
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377688",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3414.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377689",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3893.18,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377691",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4201.73,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377692",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3515.66,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381533",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4463.09,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382201",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3942.18,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382743",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4043.82,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385776",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4584.69,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386406",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3348.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387221",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3383.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389713",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3987.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390586",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4078.31,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391500",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3880.47,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394578",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3669.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395491",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3537.44,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6478 CBAUZA SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396602",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3290.6,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6734": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535289",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1638.34
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535311",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1089.0
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537776",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 4704.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537778",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3315.4
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540135",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4481.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540136",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3000.8
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542340",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 5164.28
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542341",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3521.1
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545007",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4694.8
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545011",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 3273.05
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548618",
+        "R_NUMERO_CA": "24",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 5103.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6734 LABOLAFIO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548619",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 3067.35
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377565",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4091.01,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377566",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3408.57,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377567",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3973.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377568",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4648.22,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381471",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4027.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382158",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3404.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382705",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3791.54,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385740",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4288.85,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386353",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4733.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387177",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4005.71,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389681",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4254.36,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390536",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3225.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391464",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4472.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394542",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4232.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395430",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3515.66,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6734 LABOLAFIO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396560",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4508.46,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6844": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535279",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1488.3
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535297",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1205.16
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537110",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 3550.14
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537107",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 6824.4
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540071",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3315.4
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540068",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 2432.1
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542295",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3396.47
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542294",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00011",
+        "R_IMPORTE_C": 4731.1
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545009",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 4634.3
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545013",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3512.63
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547930",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4900.5
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6844 TTRAMULLAS SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547932",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 4014.78
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377663",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4040.2,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377666",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4294.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377667",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4423.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377668",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3649.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381526",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4326.96,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382199",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3924.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382740",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3564.66,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385774",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4259.81,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386404",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3871.4,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387219",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4060.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389707",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4395.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390584",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4421.35,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391498",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3403.13,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394573",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4232.59,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395485",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4541.13,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6844 TTRAMULLAS SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396596",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4599.21,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6706": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535302",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1582.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535283",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 849.42
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537121",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 4464.9
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537118",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3869.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540084",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4123.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540081",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3862.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542296",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00011",
+        "R_IMPORTE_C": 3477.54
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542292",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4486.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545010",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 4268.88
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545014",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4094.64
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547893",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3659.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6706 NSUIYHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547890",
+        "R_NUMERO_CA": "21",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 4297.92
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377525",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3648.15,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377526",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3898.62,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377527",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4323.33,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377528",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4279.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381444",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4290.66,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382144",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4225.32,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382678",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3463.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385701",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3419.46,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386329",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4595.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387161",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3931.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389662",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4257.99,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390516",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4083.75,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391443",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4203.54,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394517",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3397.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395411",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3931.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6706 NSUIYHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396541",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4606.47,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6366": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535278",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1067.22
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535306",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1353.99
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537109",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 3748.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537116",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4239.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540059",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3303.3
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540061",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3873.21
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542307",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00011",
+        "R_IMPORTE_C": 4242.26
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542310",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 5150.97
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544984",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3564.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544986",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 4773.45
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547936",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 3310.56
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6366 JMORAGUES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547938",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00025",
+        "R_IMPORTE_C": 3767.94
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377605",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3631.82,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377606",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3982.11,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377607",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3760.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377608",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4239.84,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381491",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3869.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382168",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3334.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382716",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3561.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385761",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4789.79,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386375",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4657.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387190",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4642.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389692",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4744.41,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390560",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4076.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391477",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3615.48,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394550",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3463.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395445",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3713.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6366 JMORAGUES SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396573",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3441.24,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6713": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535309",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1007.33
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535284",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00002",
+        "R_IMPORTE_C": 1458.05
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537817",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 4086.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537819",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 2654.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-30",
+        "R_NUMERO_CP": "540729",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 5093.5
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-30",
+        "R_NUMERO_CP": "540730",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3086.11
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542370",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 5405.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542376",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3374.69
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-07-11",
+        "R_NUMERO_CP": "543417",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 66.55
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "545521",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 5009.4
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "545522",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00016",
+        "R_IMPORTE_C": 3203.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548616",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 4575.01
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6713 BCARBONELL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548617",
+        "R_NUMERO_CA": "23",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 2944.54
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377595",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3698.07,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377596",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3231.62,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377597",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3267.01,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377598",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3717.12,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381483",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4122.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382166",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3591.89,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382714",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4554.75,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385755",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3877.75,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386370",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4615.54,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387188",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4681.8,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389691",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3483.9,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390554",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4779.81,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391472",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3958.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394548",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3198.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395437",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4038.38,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6713 BCARBONELL SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396569",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4042.0,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6777": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535305",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1577.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535277",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1476.2
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537198",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3869.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537194",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4036.56
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540085",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4385.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540075",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3976.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542314",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4031.72
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542309",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3492.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544971",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3901.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544969",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4097.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547913",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 4259.2
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6777 JGARCIA SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547910",
+        "R_NUMERO_CA": "24",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 4266.46
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377497",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4581.06,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377498",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4276.14,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377499",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3738.9,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377500",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3844.17,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381438",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3502.95,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382136",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4493.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382665",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4544.76,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385672",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3216.18,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386316",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3335.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387153",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4733.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389655",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3826.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390500",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3473.91,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391434",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4697.22,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394508",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4054.71,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395401",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4388.67,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6777 JGARCIA SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396529",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4345.11,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6265": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535282",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1274.13
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535304",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1231.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537489",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 4205.96
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537485",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3816.34
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540091",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3963.96
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540079",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3764.31
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542324",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4641.56
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542308",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4164.82
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544983",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3886.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544980",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3760.68
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547942",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3644.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6265 SMORENO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547940",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 4780.71
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377599",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3758.87,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377600",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3956.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377601",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3659.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377602",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4417.71,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381489",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3568.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382167",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4067.42,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382715",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3956.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385757",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4172.69,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386371",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4352.37,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387189",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4684.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389694",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3257.93,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390555",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4432.23,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391473",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3780.65,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394549",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4096.46,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395442",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4267.07,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6265 SMORENO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396572",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4274.33,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6467": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535293",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1436.86
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535314",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1608.09
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537791",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 3718.43
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "537793",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3981.51
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540145",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 4128.91
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540147",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3860.51
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542353",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3632.11
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542356",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4164.82
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-14",
+        "R_NUMERO_CP": "546162",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3949.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-14",
+        "R_NUMERO_CP": "546163",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 4140.62
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548783",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4031.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6467 WCHANTAH SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "548784",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 4464.3
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377633",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4587.42,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377634",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3456.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377635",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4301.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377636",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3844.18,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381501",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4726.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382187",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3806.06,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382734",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3516.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385768",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3514.76,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386395",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4313.35,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387202",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3920.4,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389699",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4110.98,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390578",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4216.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391490",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3867.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394562",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3347.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395467",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4758.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6467 WCHANTAH SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396589",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4697.22,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6707": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535286",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1323.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535292",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1408.44
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537117",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 4293.08
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537120",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4421.34
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540095",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 4135.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540100",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4145.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542298",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4094.64
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542288",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3947.02
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "546111",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 3930.08
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "546110",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 3821.18
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547927",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00021",
+        "R_IMPORTE_C": 3821.18
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6707 MOUAZINE SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547926",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00022",
+        "R_IMPORTE_C": 3888.94
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377577",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4098.27,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377578",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4022.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377580",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4443.12,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377582",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4606.47,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381474",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4352.37,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382163",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3412.2,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382709",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4657.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385746",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4145.46,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386358",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3357.75,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387185",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4559.28,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389683",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3978.48,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390542",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3713.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391469",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3934.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394544",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4087.38,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395434",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3477.54,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6707 MOUAZINE SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396562",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4000.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6792": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535320",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 568.1
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-24",
+        "R_NUMERO_CP": "538917",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1684.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-24",
+        "R_NUMERO_CP": "538564",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1442.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-24",
+        "R_NUMERO_CP": "538923",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 537.85
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-24",
+        "R_NUMERO_CP": "538557",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4165.43
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541833",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 143.39
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541832",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 248.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541843",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 619.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541842",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 1976.54
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541845",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00021",
+        "R_IMPORTE_C": 748.99
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-03-11",
+        "R_NUMERO_CP": "541844",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00021",
+        "R_IMPORTE_C": 2187.08
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-04-11",
+        "R_NUMERO_CP": "541851",
+        "R_NUMERO_CA": "21",
+        "R_NUMERO_CF": "2025/00023",
+        "R_IMPORTE_C": 1684.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-04-11",
+        "R_NUMERO_CP": "541850",
+        "R_NUMERO_CA": "23",
+        "R_NUMERO_CF": "2025/00026",
+        "R_IMPORTE_C": 1.21
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-04-11",
+        "R_NUMERO_CP": "541852",
+        "R_NUMERO_CA": "27",
+        "R_NUMERO_CF": "2025/00030",
+        "R_IMPORTE_C": 537.85
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542352",
+        "R_NUMERO_CA": "27",
+        "R_NUMERO_CF": "2025/00027",
+        "R_IMPORTE_C": 1615.35
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542355",
+        "R_NUMERO_CA": "32",
+        "R_NUMERO_CF": "2025/00032",
+        "R_IMPORTE_C": 529.38
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542297",
+        "R_NUMERO_CA": "23",
+        "R_NUMERO_CF": "2025/00032",
+        "R_IMPORTE_C": 2125.37
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542384",
+        "R_NUMERO_CA": "31",
+        "R_NUMERO_CF": "2025/00035",
+        "R_IMPORTE_C": 1795.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542300",
+        "R_NUMERO_CA": "30",
+        "R_NUMERO_CF": "2025/00037",
+        "R_IMPORTE_C": 687.89
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542387",
+        "R_NUMERO_CA": "34",
+        "R_NUMERO_CF": "2025/00042",
+        "R_IMPORTE_C": 619.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "546114",
+        "R_NUMERO_CA": "35",
+        "R_NUMERO_CF": "2025/00037",
+        "R_IMPORTE_C": 5778.96
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "546115",
+        "R_NUMERO_CA": "38",
+        "R_NUMERO_CF": "2025/00046",
+        "R_IMPORTE_C": 1923.3
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "549163",
+        "R_NUMERO_CA": "36",
+        "R_NUMERO_CF": "2025/00040",
+        "R_IMPORTE_C": 6122.0
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6792 PCAPO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "549166",
+        "R_NUMERO_CA": "41",
+        "R_NUMERO_CF": "2025/00050",
+        "R_IMPORTE_C": 2068.5
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377613",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3392.24,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377614",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3333.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377615",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4758.94,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377616",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3652.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381497",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4405.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382172",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3894.08,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382718",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3921.31,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385764",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4219.88,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386382",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3217.1,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387196",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3621.84,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389696",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3734.38,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390565",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4582.88,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391482",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3236.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394558",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4542.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395450",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4336.95,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6792 PCAPO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396575",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3406.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6356": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535313",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1444.74
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535295",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1507.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537767",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4977.94
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537160",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4808.54
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540161",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3322.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540159",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3874.42
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542875",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 2473.24
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542874",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4360.84
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545041",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4689.96
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-13",
+        "R_NUMERO_CP": "545755",
+        "R_NUMERO_CA": "17",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 3369.85
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-14",
+        "R_NUMERO_CP": "546232",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 326.7
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547964",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 4418.92
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548606",
+        "R_NUMERO_CA": "23",
+        "R_NUMERO_CF": "2025/00022",
+        "R_IMPORTE_C": 3488.43
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "548603",
+        "R_NUMERO_CA": "15",
+        "R_NUMERO_CF": "2025/00022",
+        "R_IMPORTE_C": 239.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6356 WAANANOU SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-21",
+        "R_NUMERO_CP": "549377",
+        "R_NUMERO_CA": "28",
+        "R_NUMERO_CF": "2025/00027",
+        "R_IMPORTE_C": 14.52
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377557",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4428.6,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377558",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3798.8,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377559",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3905.88,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377560",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4702.67,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381470",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3586.44,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382157",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3791.54,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382703",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3417.65,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385734",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3744.35,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386348",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4011.15,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387175",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4768.01,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389679",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4310.63,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390531",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3884.1,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391459",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4472.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394540",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3384.98,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395427",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4601.03,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6356 WAANANOU SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396558",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3864.14,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6431": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535281",
+        "R_NUMERO_CA": "1",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1287.44
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535298",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 1345.52
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537124",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00006",
+        "R_IMPORTE_C": 3165.36
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537125",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4019.62
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540066",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3472.7
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540076",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3726.8
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542287",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 3661.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542291",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 4048.66
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545024",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3552.56
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545028",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 4135.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547870",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00018",
+        "R_IMPORTE_C": 4034.14
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6431 GZOUGGAGHI SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547872",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00021",
+        "R_IMPORTE_C": 4075.28
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377657",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3949.44,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377658",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3648.15,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377659",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3214.37,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377660",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3914.96,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381524",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3305.12,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382198",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4232.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382739",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3261.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385773",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4140.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386403",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3764.31,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387218",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3660.86,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389704",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3245.22,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390583",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3604.59,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391497",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4682.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394572",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4363.26,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395483",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4045.64,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6431 GZOUGGAGHI SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396595",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3755.24,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6702": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535310",
+        "R_NUMERO_CA": "2",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 878.46
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-17",
+        "R_NUMERO_CP": "535287",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 1280.18
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537418",
+        "R_NUMERO_CA": "7",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3204.08
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537161",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 4735.94
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540090",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3300.88
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540080",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4460.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542316",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4256.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542328",
+        "R_NUMERO_CA": "13",
+        "R_NUMERO_CF": "2025/00014",
+        "R_IMPORTE_C": 3015.32
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545005",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3317.82
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545004",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00016",
+        "R_IMPORTE_C": 4455.22
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547941",
+        "R_NUMERO_CA": "18",
+        "R_NUMERO_CF": "2025/00019",
+        "R_IMPORTE_C": 3373.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6702 NFORNES SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547939",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00020",
+        "R_IMPORTE_C": 4789.18
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377553",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3237.96,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377554",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3521.1,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377555",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4036.56,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377556",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4352.37,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381469",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3350.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382154",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3630.0,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382692",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4660.92,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385731",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3499.32,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386346",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3401.31,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387172",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4007.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389676",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4167.24,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390526",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3292.41,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391455",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4199.91,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394531",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4719.0,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395426",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3383.16,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6702 NFORNES SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396553",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4141.83,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6320": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-20",
+        "R_NUMERO_CP": "536437",
+        "R_NUMERO_CA": "4",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 1173.7
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-20",
+        "R_NUMERO_CP": "536438",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 1193.06
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537486",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 3506.58
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-22",
+        "R_NUMERO_CP": "537484",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3494.48
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540057",
+        "R_NUMERO_CA": "12",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 4498.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540056",
+        "R_NUMERO_CA": "9",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 4418.92
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542293",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00007",
+        "R_IMPORTE_C": 3954.28
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542290",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 3988.16
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544981",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00009",
+        "R_IMPORTE_C": 3809.08
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "544975",
+        "R_NUMERO_CA": "19",
+        "R_NUMERO_CF": "2025/00016",
+        "R_IMPORTE_C": 3988.16
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "549048",
+        "R_NUMERO_CA": "20",
+        "R_NUMERO_CF": "2025/00012",
+        "R_IMPORTE_C": 4014.78
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6320 MNAVARRO SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-20",
+        "R_NUMERO_CP": "549047",
+        "R_NUMERO_CA": "21",
+        "R_NUMERO_CF": "2025/00017",
+        "R_IMPORTE_C": 4539.92
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377677",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3550.14,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377678",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3481.17,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377680",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3212.55,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377681",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3807.87,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381527",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4069.23,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382200",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4519.35,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382742",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4787.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385775",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3346.86,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386405",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4127.31,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387220",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4439.49,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389710",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3931.29,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390585",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3651.78,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391499",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4112.79,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394577",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4370.52,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395490",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3844.17,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6320 MNAVARRO SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396597",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4617.36,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  },
+  "6428": {
+    "compres": [
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "538002",
+        "R_NUMERO_CA": "5",
+        "R_NUMERO_CF": "2025/00001",
+        "R_IMPORTE_C": 5619.24
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-23",
+        "R_NUMERO_CP": "538001",
+        "R_NUMERO_CA": "3",
+        "R_NUMERO_CF": "2025/00003",
+        "R_IMPORTE_C": 5057.8
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540109",
+        "R_NUMERO_CA": "6",
+        "R_NUMERO_CF": "2025/00004",
+        "R_IMPORTE_C": 4179.34
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-10-29",
+        "R_NUMERO_CP": "540108",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00008",
+        "R_IMPORTE_C": 3649.36
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542322",
+        "R_NUMERO_CA": "8",
+        "R_NUMERO_CF": "2025/00005",
+        "R_IMPORTE_C": 3934.92
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-05-11",
+        "R_NUMERO_CP": "542319",
+        "R_NUMERO_CA": "10",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 4143.04
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545027",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00010",
+        "R_IMPORTE_C": 3932.5
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-12-11",
+        "R_NUMERO_CP": "545025",
+        "R_NUMERO_CA": "11",
+        "R_NUMERO_CF": "2025/00015",
+        "R_IMPORTE_C": 3683.24
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ROCALLA SA",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547914",
+        "R_NUMERO_CA": "14",
+        "R_NUMERO_CF": "2025/00013",
+        "R_IMPORTE_C": 4302.76
+      },
+      {
+        "R_EMPRESA_C": "ADG32 6428 ABOUBAL SL",
+        "R_PROVEEDOR_C": "ALUBIX SL",
+        "R_FECHA_EMISION_C": "2025-11-19",
+        "R_NUMERO_CP": "547912",
+        "R_NUMERO_CA": "16",
+        "R_NUMERO_CF": "2025/00016",
+        "R_IMPORTE_C": 4404.4
+      }
+    ],
+    "vendes": [
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377569",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3528.36,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377570",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3786.09,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377571",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4123.68,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-17",
+        "R_NUMERO_VP": "1377572",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4577.43,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-24"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-27",
+        "R_NUMERO_VP": "1381475",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3869.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-28",
+        "R_NUMERO_VP": "1382159",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3230.7,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-29",
+        "R_NUMERO_VP": "1382707",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4642.77,
+        "R_FECHA_MAX_FACTURACION_V": "2025-10-31"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-03-11",
+        "R_NUMERO_VP": "1385743",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4178.13,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-04-11",
+        "R_NUMERO_VP": "1386354",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 3386.79,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-05-11",
+        "R_NUMERO_VP": "1387183",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4552.02,
+        "R_FECHA_MAX_FACTURACION_V": "2025-07-11"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-10-11",
+        "R_NUMERO_VP": "1389682",
+        "R_CLIENTE_V": "COMERCIAL CALCO SA",
+        "R_IMPORTE_V": 4428.6,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-11-11",
+        "R_NUMERO_VP": "1390539",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3335.97,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-12-11",
+        "R_NUMERO_VP": "1391466",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3659.04,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-14"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-11-17",
+        "R_NUMERO_VP": "1394543",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4755.3,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-11-18",
+        "R_NUMERO_VP": "1395432",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 4435.86,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      },
+      {
+        "R_EMPRESA_V": "ADG32 6428 ABOUBAL SL",
+        "R_FECHA_EMISION_VP": "2025-11-19",
+        "R_NUMERO_VP": "1396561",
+        "R_CLIENTE_V": "BIGCORP SL",
+        "R_IMPORTE_V": 3869.58,
+        "R_FECHA_MAX_FACTURACION_V": "2025-11-21"
+      }
+    ]
+  }
+}
