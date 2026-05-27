@@ -522,7 +522,7 @@ views/
 
 ---
 
-### 🔲 Fase 3 — Pendent
+### ✅ Fase 3 — Completada
 
 **Motor de correcció automàtica.**
 
@@ -531,6 +531,12 @@ views/
 - `modules/correccio_magatzem.py` — llistats 07, 08
 - `views/professor/correccio.py` — llançar correcció + gestió de casos ambigus (la correcció s'atura i espera decisió del professor)
 - Resultat: `data/tasques/<num>/<grup>/correccions/resultats.json`
+- `modules/neteja.py` — mòdul de suport (present al repo)
+
+**Decisions de disseny preses a la Fase 3:**
+- La vista de correcció mostra els resultats dividits en tres seccions: Compres (01–03), Vendes (04–06), Magatzem (07–08).
+- Les dates es mostren sempre en format `dd/mm/aaaa` (funció `fmt_data` a `modules/utils.py`).
+- `fmt_data` usa regex per convertir dates ISO incrustades en strings (ex: `<= 2025-11-14` → `<= 14/11/2025`).
 
 ---
 
@@ -574,6 +580,30 @@ views/
 
 ## Errors coneguts i regles apreses
 
-*(Actualitzar cada vegada que Claude cometi un error recurrent)*
+### `dayfirst=True` en pandas modern (≥2.0) — BUG CRÍTIC
 
-- [ ] Afegir aquí errors detectats durant el desenvolupament
+`pd.to_datetime("2025-11-05", dayfirst=True)` retorna **May 11** (inverteix DD i MM en strings ISO `YYYY-MM-DD`). pandas modern interpreta `dayfirst=True` com `YYYY-DD-MM` per a aquest format.
+
+**Regla**: MAI usar `dayfirst=True`. Sempre usar formats explícits:
+- Dates del professor (text Excel): `format="%d/%m/%Y"`
+- Dates ISO de JSON o Excel via `dtype=str`: `format="%Y-%m-%d"` (prendre `s[:10]`)
+
+Afecta: `modules/utils.py::parse_data`, `modules/referencia_data.py::_normalitzar_data`, `modules/correccio_magatzem.py`.
+
+---
+
+### `dtype=str` a `pd.read_excel` i dates
+
+Quan es llegeix un Excel amb `dtype=str`, les cel·les de data natives (no text) es converteixen a strings ISO: `"2025-11-05 00:00:00"`. Les cel·les de text amb dates del professor arriben com `"05/11/2025"`. Cal gestionar els dos formats.
+
+---
+
+### Columnes mixtes `str`/`int` a `st.dataframe`
+
+Si una columna té valors `"—"` (str) i enters (int), Arrow falla en la serialització. Solució: `str(valor) if valor else "—"` per mantenir el tipus uniforme.
+
+---
+
+### Avís `use_container_width` (Streamlit)
+
+`use_container_width=True/False` és deprecated (es retirarà el 31/12/2025). Cal substituir per `width='stretch'` / `width='content'`. Pendent de corregir a totes les vistes.

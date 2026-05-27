@@ -15,6 +15,7 @@ from modules.utils import PENALITZACIONS_DEFAULT
 from modules.correccio_compres import corregir_compres
 from modules.correccio_vendes import corregir_vendes
 from modules.correccio_magatzem import corregir_magatzem
+from modules.neteja import netejar_llistats
 
 TASQUES_DIR = Path(__file__).parent.parent / "data" / "tasques"
 
@@ -103,6 +104,9 @@ def executar_correccio(
         df07 = _carregar_llistat(num_tasca, grup, exp, "07")
         df08 = _carregar_llistat(num_tasca, grup, exp, "08")
 
+        # Neteja pre-correcció (devolucions, factures no-proveïdors, recepcions buides)
+        df02, df03, df05, accions_neteja = netejar_llistats(df02, df03, df05)
+
         # Executar correccions per blocs
         errors: list[dict] = []
         ambigus: list[dict] = []
@@ -155,6 +159,7 @@ def executar_correccio(
             "casos_ambigus": ambigus,
             "llistats_faltants": llistats_faltants,
             "ref_disponible": bool(ref_alumne),
+            "neteja_aplicada": accions_neteja,
         }
 
     resultats = {

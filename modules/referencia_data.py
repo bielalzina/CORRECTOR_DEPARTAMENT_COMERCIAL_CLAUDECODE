@@ -193,17 +193,27 @@ def _validar_registre_venda(r: dict, exp: str) -> list[str]:
 
 
 def _normalitzar_data(valor) -> str:
-    """Converteix diversos formats de data a ISO yyyy-mm-dd."""
-    if not valor or str(valor).strip() in ("nan", "None", ""):
+    """Converteix diversos formats de data a ISO yyyy-mm-dd.
+    Usa formats explícits per evitar l'ambigüitat de dayfirst en pandas modern."""
+    import pandas as pd
+    if valor is None:
         return ""
+    if hasattr(valor, "strftime"):
+        return valor.strftime("%Y-%m-%d")
     s = str(valor).strip()
-    # Pandas pot llegir-ho com a datetime
+    if s in ("nan", "None", "NaT", ""):
+        return ""
+    # Format dd/mm/yyyy (text — el professor sempre usa aquest format)
     try:
-        import pandas as pd
-        ts = pd.to_datetime(s, dayfirst=True)
-        return ts.strftime("%Y-%m-%d")
+        return pd.to_datetime(s, format="%d/%m/%Y").strftime("%Y-%m-%d")
     except Exception:
-        return s
+        pass
+    # Format ISO yyyy-mm-dd (cel·les de data natives d'Excel llegides amb dtype=str)
+    try:
+        return pd.to_datetime(s[:10], format="%Y-%m-%d").strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    return s
 
 
 def _normalitzar_import(valor) -> Optional[float]:

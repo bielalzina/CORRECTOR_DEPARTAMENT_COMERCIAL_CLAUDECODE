@@ -1,29 +1,41 @@
 """Utilitats generals compartides entre mòduls i vistes."""
 
+import re
 from datetime import date
 from typing import Optional
 
+_DATE_ISO_RE = re.compile(r'(\d{4})-(\d{2})-(\d{2})(?:[ T]\d{2}:\d{2}:\d{2}(?:\.\d+)?)?')
+
 
 def fmt_data(s: str) -> str:
-    """Converteix una data ISO (yyyy-mm-dd o yyyy-mm-ddTHH:MM:SS) a dd/mm/yyyy."""
-    if not s or len(s) < 10:
-        return s or "—"
-    try:
-        y, m, d = s[:10].split("-")
-        return f"{d}/{m}/{y}"
-    except (ValueError, AttributeError):
-        return s
+    """Converteix dates ISO (yyyy-mm-dd[Thh:mm:ss]) a dd/mm/yyyy.
+    Funciona fins i tot dins de strings com '<= 2025-11-14' o '>= 2025-05-11 00:00:00'."""
+    if not s:
+        return "—"
+    return _DATE_ISO_RE.sub(lambda m: f"{m.group(3)}/{m.group(2)}/{m.group(1)}", s)
 
 
 # ── Utilitats per al motor de correcció ──────────────────────────────────────
 
 def parse_data(val) -> Optional[date]:
-    """Converteix qualsevol format de data a datetime.date. Retorna None si falla."""
-    if val is None or str(val).strip() in ("nan", "None", "NaT", ""):
-        return None
+    """Converteix qualsevol format de data a datetime.date. Retorna None si falla.
+    Usa formats explícits per evitar l'ambigüitat de dayfirst en pandas modern."""
     import pandas as pd
+    if val is None:
+        return None
+    if hasattr(val, "date"):
+        return val.date() if hasattr(val, "hour") else val
+    s = str(val).strip()
+    if s in ("nan", "None", "NaT", ""):
+        return None
+    # Format ISO yyyy-mm-dd (referència JSON i dates Excel via dtype=str)
     try:
-        return pd.to_datetime(str(val).strip(), dayfirst=True).date()
+        return pd.to_datetime(s[:10], format="%Y-%m-%d").date()
+    except Exception:
+        pass
+    # Format dd/mm/yyyy (text cells)
+    try:
+        return pd.to_datetime(s, format="%d/%m/%Y").date()
     except Exception:
         return None
 

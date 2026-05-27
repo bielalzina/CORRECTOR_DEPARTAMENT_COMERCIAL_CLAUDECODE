@@ -115,7 +115,7 @@ def _corregir_historial(df: pd.DataFrame, p: dict) -> list[dict]:
     import pandas as _pd
     df_fet = df_fet.copy()
     df_fet["_data_parsed"] = df_fet["Fecha"].apply(
-        lambda v: _pd.to_datetime(str(v), dayfirst=True, errors="coerce")
+        lambda v: _pd.to_datetime(str(v)[:10], format="%Y-%m-%d", errors="coerce")
     )
     df_fet = df_fet.sort_values(["Producto", "_data_parsed"]).reset_index(drop=True)
 

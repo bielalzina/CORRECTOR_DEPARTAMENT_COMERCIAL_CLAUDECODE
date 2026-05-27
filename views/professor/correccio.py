@@ -9,6 +9,7 @@ from modules.correccio import (
     executar_correccio, load_resultats, resoldre_ambigu, te_ambigus_pendents,
 )
 from modules.referencia_data import referencia_completa
+from modules.utils import fmt_data
 
 
 GRAVETAT_ICONA = {
@@ -154,7 +155,7 @@ def _seccio_bloc(
             "Alumne":         res.get("nom", alumne["nom"]),
             "Penalització":   pen,
             "Errors":         len(errors_bloc),
-            "Casos ambigus":  n_amb_pend if n_amb_pend else "—",
+            "Casos ambigus":  str(n_amb_pend) if n_amb_pend else "—",
         })
 
     st.dataframe(pd.DataFrame(files_resum), hide_index=True, use_container_width=True)
@@ -240,8 +241,8 @@ def _taula_errors(errors: list[dict]) -> None:
             "Llistat":       NOM_LLISTAT.get(e.get("llistat", ""), e.get("llistat", "")),
             "Descripció":    e.get("descripcio", ""),
             "Camp":          e.get("camp", "") or "",
-            "Valor alumne":  str(e.get("valor_alumne", "") or ""),
-            "Valor esperat": str(e.get("valor_esperat", "") or ""),
+            "Valor alumne":  fmt_data(str(e.get("valor_alumne", "") or "")),
+            "Valor esperat": fmt_data(str(e.get("valor_esperat", "") or "")),
             "Penalització":  e.get("penalitzacio", 0),
         })
     if files:
@@ -271,8 +272,8 @@ def _mostrar_ambigu(a: dict, expedient: str, num_tasca: str, grup: str) -> None:
                 f"— {a.get('descripcio', '')}"
             )
             st.caption(
-                f"Valor alumne: `{a.get('valor_alumne', '—')}` "
-                f"| Esperat: `{a.get('valor_esperat', '—')}` "
+                f"Valor alumne: `{fmt_data(str(a.get('valor_alumne', '') or '—'))}` "
+                f"| Esperat: `{fmt_data(str(a.get('valor_esperat', '') or '—'))}` "
                 f"| Penalització si rebutjat: **{a.get('penalitzacio_si_rebutjat', 0.5)} pts**"
             )
             st.markdown(f"Estat: :{estat_color}[{estat_txt}]")
