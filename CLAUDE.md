@@ -640,3 +640,15 @@ Implementació: funció `detectar_duplicats` a `modules/utils.py`, reutilitzada 
 **Regla:** `_match_03` usa com a Intent 1 `factura.Origen == ref_pedido_01` (referència interna ODOO de la comanda, ex: "C-C/00012"), que és unívoca. Com a fallback usa `Referencia + Proveïdor` (els dos camps junts). Mai usar `Referencia` (= `R_NUMERO_CF`) sol com a clau.
 
 La mateixa lògica ja s'aplicava correctament a vendes: `_match_06_individual` usa `Origen = ref_pedido_04` com a Intent 1.
+
+---
+
+### `_match_06_recap` i verificació d'`Origen` en facturació recapitulativa — BUG CORREGIT
+
+**Problema 1:** `_match_06_recap` usava `numeros_vp` (valors `R_NUMERO_VP`, ex: "1432781") per cercar a l'`Origen` de la factura, però l'`Origen` conté `Referencia del pedido` (ex: "C-V/00040") — mai coincidien. A més, si no hi havia coincidència, un `return` incondicional retornava igualment la primera factura del client dins la setmana, sense cap validació real.
+
+**Problema 2:** `_corregir_recap` verificava l'`Origen` de forma superficial (només que no estigués buit), sense comprovar que hi figuressin totes les comandes del grup.
+
+**Regla:** `_match_06_recap` rep `refs_pedido_04` (llista de `Referencia del pedido` reals obtingudes de df04 durant la correcció). El matching exigeix que `Origen` contingui almenys una d'aquestes referències. La verificació posterior comprova que hi siguin **totes**: si alguna manca, es genera un error lleu indicant quines falten.
+
+Afecta: `modules/correccio_vendes.py` — funcions `_match_06_recap` i `_corregir_recap`.

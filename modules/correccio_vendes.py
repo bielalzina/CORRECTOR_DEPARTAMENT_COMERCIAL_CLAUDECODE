@@ -275,9 +275,10 @@ def _corregir_recap(
     for (client, data_max), refs_grup in grups.items():
         desc_op = f"{client} — setmana fins {data_max}"
         import_total_esp = sum(r["R_IMPORTE_V"] for r in refs_grup if r["R_IMPORTE_V"])
-        numeros_vp = [r["R_NUMERO_VP"] for r in refs_grup]
 
         # Verificar llistat 04: cada operació individual
+        # Recollim les Referencia del pedido reals trobades a df04 per usar-les a _match_06_recap
+        refs_pedido_04: list[str] = []
         for ref in refs_grup:
             fila04, num_inferable = _match_04(df04, ref)
             sub_desc = f"{client} — {ref.get('R_FECHA_EMISION_VP', '')}"
@@ -290,6 +291,9 @@ def _corregir_recap(
                 ))
             else:
                 doc04 = str(fila04.get("Referencia del pedido") or "")
+                rp = fila04.get("Referencia del pedido")
+                if rp:
+                    refs_pedido_04.append(str(rp))
                 if num_inferable:
                     ambigus.append(fer_ambigu(
                         "04_COMANDES_VENDES", "numero_inferable",
@@ -341,7 +345,7 @@ def _corregir_recap(
                     ))
 
         # Llistat 06: una factura per grup (client + setmana) amb import total
-        fila06 = _match_06_recap(df06, client, data_max, numeros_vp)
+        fila06 = _match_06_recap(df06, client, data_max, refs_pedido_04)
         if fila06 is None:
             errors.append(fer_error(
                 "06_FACTURES_VENDA", "operacio_falta", "molt_greu", p["operacio_falta"],
@@ -359,19 +363,18 @@ def _corregir_recap(
                     fila06.get("Total con signo en moneda"), import_total_esp, desc_op,
                     document=doc06,
                 ))
-            # Verificar que l'Origen conté totes les referències
-            origen = str(fila06.get("Origen", ""))
-            refs_04_alumne = [
-                str(df04.loc[df04.iterrows().__next__()[0]].get("Referencia del pedido", ""))
-            ] if not df04.empty else []
-            # Simplificació: només verificar que hi ha algun origen
-            if not origen.strip() or norm_str(origen) in ("nan", "none", ""):
-                errors.append(fer_error(
-                    "06_FACTURES_VENDA", "numero_incorrecte", "lleu", p["numero_incorrecte"],
-                    f"Camp Origen buit a la factura recapitulativa ({client})",
-                    "Origen", origen, ", ".join(numeros_vp), desc_op,
-                    document=doc06,
-                ))
+            # Verificar que l'Origen conté totes les Referencia del pedido del grup
+            if refs_pedido_04:
+                origen = str(fila06.get("Origen", ""))
+                manquen = [rp for rp in refs_pedido_04
+                           if norm_str(rp) not in norm_str(origen)]
+                if manquen:
+                    errors.append(fer_error(
+                        "06_FACTURES_VENDA", "numero_incorrecte", "lleu", p["numero_incorrecte"],
+                        f"Origen de la factura recapitulativa no inclou totes les comandes ({client})",
+                        "Origen", origen, ", ".join(refs_pedido_04), desc_op,
+                        document=doc06,
+                    ))
             _verificar_factura_venda(fila06, refs_grup[0], p, errors, desc_op,
                                      recap=True, import_total=import_total_esp,
                                      document=doc06)
@@ -578,19 +581,25 @@ def _match_06_recap(
     df: pd.DataFrame,
     client: str,
     data_max: str,
-    numeros_vp: list[str],
+    refs_pedido_04: list[str],
 ) -> Optional[dict]:
-    """Cerca la fila de llistat 06 per una factura recapitulativa (client + setmana)."""
+    """Cerca la fila de llistat 06 per una factura recapitulativa (client + setmana).
+
+    Matching: client + data factura <= data_max + Origen conté almenys una
+    de les Referencia del pedido del grup.
+    """
     d_max = parse_data(data_max)
     for _, row in df.iterrows():
         if norm_str(row.get("Nombre de la empresa a mostrar en la factura")) != norm_str(client):
             continue
         d_fact = parse_data(row.get("Fecha de factura"))
-        if d_fact and d_max and d_fact <= d_max:
-            # Verificar que l'Origen conté almenys una de les referències
-            origen = str(row.get("Origen", ""))
-            if any(norm_str(vp) in norm_str(origen) for vp in numeros_vp):
+        if not (d_fact and d_max and d_fact <= d_max):
+            continue
+        if refs_pedido_04:
+            origen = norm_str(str(row.get("Origen", "")))
+            if any(norm_str(rp) in origen for rp in refs_pedido_04):
                 return row.to_dict()
-            # O si és el primer intent i el client coincideix, retornem igualment
+        else:
+            # Sense referències a verificar (04 no pujat), fem matching per client+data
             return row.to_dict()
     return None
