@@ -8,7 +8,7 @@ import pandas as pd
 
 from modules.utils import (
     dates_iguals, imports_iguals, norm_str, parse_data, to_float,
-    fer_error, fer_ambigu, PENALITZACIONS_DEFAULT,
+    fer_error, fer_ambigu, detectar_duplicats, PENALITZACIONS_DEFAULT,
 )
 
 
@@ -38,6 +38,17 @@ def corregir_vendes(
         v for v in vendes_ref
         if data_inici_recap and v["R_FECHA_EMISION_VP"] >= data_inici_recap
     ]
+
+    # Detectar files duplicades als llistats de l'alumne per clau primària real
+    if df04 is not None:
+        errors.extend(detectar_duplicats(df04, "04_COMANDES_VENDES",
+                                         ["Referencia del pedido"], p))
+    if df05 is not None:
+        errors.extend(detectar_duplicats(df05, "05_ENTREGUES",
+                                         ["Referencia"], p))
+    if df06 is not None:
+        errors.extend(detectar_duplicats(df06, "06_FACTURES_VENDA",
+                                         ["Número"], p))
 
     # ── Llistats absents ──────────────────────────────────────────────────────
     if df04 is None:

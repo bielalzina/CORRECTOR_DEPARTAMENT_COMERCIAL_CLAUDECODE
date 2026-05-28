@@ -124,6 +124,31 @@ def fer_ambigu(
     }
 
 
+def detectar_duplicats(
+    df: "pd.DataFrame",
+    nom_llistat: str,
+    camps_clau: list[str],
+    p: dict,
+) -> list[dict]:
+    """Detecta files amb la clau primària repetida al llistat de l'alumne.
+    Ignora files on la clau sigui buida per evitar falsos positius."""
+    errors = []
+    vistos: set = set()
+    for _, row in df.iterrows():
+        clau = tuple(norm_str(row.get(c, "")) for c in camps_clau)
+        if any(v in ("", "nan", "none") for v in clau):
+            continue
+        if clau in vistos:
+            vals = {c: row.get(c, "") for c in camps_clau}
+            errors.append(fer_error(
+                nom_llistat, "operacio_falta", "molt_greu", p["operacio_falta"],
+                f"Fila duplicada detectada: {vals}",
+            ))
+        else:
+            vistos.add(clau)
+    return errors
+
+
 PENALITZACIONS_DEFAULT: dict = {
     "operacio_falta":           1.0,
     "proveidor_client_incorrecte": 1.0,

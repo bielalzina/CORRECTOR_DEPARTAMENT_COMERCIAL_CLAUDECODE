@@ -612,6 +612,27 @@ Si una columna té valors `"—"` (str) i enters (int), Arrow falla en la serial
 
 ---
 
+### Detecció de duplicats: claus primàries reals — BUG CORREGIT
+
+Usar `(Proveedor, Data comanda)` com a clau de detecció de duplicats produïa **falsos positius** quan un alumne fa múltiples compres el mateix dia al mateix proveïdor (cas real i vàlid: un alumne que compra per a cada comanda de venda pot tenir 3 compres a ROCALLA SA i 3 a ALUBIX SL el mateix dia).
+
+A més, ROCALLA SA i ALUBIX SL tenen seqüències d'albarans independents, de manera que el `Numero albarà` no és globalment únic (ambdós proveïdors poden tenir el número 13, 23, etc.).
+
+**Regla**: la detecció de duplicats ha d'usar les **claus primàries reals** de cada llistat:
+
+| Llistat | Clau primària |
+|---|---|
+| 01_COMANDES_COMPRES | `Referencia de proveedor` (= R_NUMERO_CP) |
+| 02_RECEPCIONS | `(Contacto, Numero albarà)` — compost perquè cada proveïdor té seqüència pròpia |
+| 03_FACTURES_COMPRA | `Número` (FC/2025/XXXXX, únic global a ODOO) |
+| 04_COMANDES_VENDES | `Referencia del pedido` (S00XXX, únic global a ODOO) |
+| 05_ENTREGUES | `Referencia` (WH/OUT/XXXXX, únic global a ODOO) |
+| 06_FACTURES_VENDA | `Número` (FV-1/2025/XXXXX, únic global a ODOO) |
+
+Implementació: funció `detectar_duplicats` a `modules/utils.py`, reutilitzada per `correccio_compres.py` i `correccio_vendes.py`.
+
+---
+
 ### `_match_03` ha d'usar `Origen`, no `R_NUMERO_CF` — BUG CORREGIT
 
 **Problema:** ALUBIX SL i ROCALLA SA poden tenir la mateixa `Referencia` de factura (ex: "2025/00017") perquè cada proveïdor té numeració independent. Si `_match_03` cercava per `Referencia` = `R_NUMERO_CF` sense filtrar per proveïdor, assignava la mateixa fila a dos proveïdors, generant errors falsos ("proveïdor incorrecte", "import incorrecte").

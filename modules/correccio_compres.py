@@ -7,7 +7,7 @@ import pandas as pd
 
 from modules.utils import (
     dates_iguals, imports_iguals, norm_str, parse_data, to_float,
-    fer_error, fer_ambigu, PENALITZACIONS_DEFAULT,
+    fer_error, fer_ambigu, detectar_duplicats, PENALITZACIONS_DEFAULT,
 )
 
 
@@ -27,17 +27,16 @@ def corregir_compres(
     errors: list[dict] = []
     ambigus: list[dict] = []
 
-    # Detectar files duplicades als llistats de l'alumne
+    # Detectar files duplicades als llistats de l'alumne per clau primària real
     if df01 is not None:
-        errors.extend(_detectar_duplicats(df01, "01_COMANDES_COMPRES",
-                                          ["Proveedor", "Data comanda"], p))
+        errors.extend(detectar_duplicats(df01, "01_COMANDES_COMPRES",
+                                         ["Referencia de proveedor"], p))
     if df02 is not None:
-        errors.extend(_detectar_duplicats(df02, "02_RECEPCIONS",
-                                          ["Contacto", "Data albarà"], p))
+        errors.extend(detectar_duplicats(df02, "02_RECEPCIONS",
+                                         ["Contacto", "Numero albarà"], p))
     if df03 is not None:
-        errors.extend(_detectar_duplicats(df03, "03_FACTURES_COMPRA",
-                                          ["Nombre de la empresa a mostrar en la factura",
-                                           "Fecha de factura"], p))
+        errors.extend(detectar_duplicats(df03, "03_FACTURES_COMPRA",
+                                         ["Número"], p))
 
     for ref in compres_ref:
         desc_op = f"{ref['R_PROVEEDOR_C']} — {ref.get('R_FECHA_EMISION_C', '')}"
@@ -485,22 +484,3 @@ def _match_03(
     return None
 
 
-def _detectar_duplicats(
-    df: pd.DataFrame,
-    nom_llistat: str,
-    camps_clau: list[str],
-    p: dict,
-) -> list[dict]:
-    """Detecta files duplicades per una combinació de camps clau."""
-    errors = []
-    existents = []
-    for _, row in df.iterrows():
-        clau = tuple(norm_str(row.get(c)) for c in camps_clau if c in row)
-        if clau in existents:
-            errors.append(fer_error(
-                nom_llistat, "operacio_falta", "molt_greu", p["operacio_falta"],
-                f"Fila duplicada detectada: {dict(zip(camps_clau, clau))}",
-            ))
-        else:
-            existents.append(clau)
-    return errors
