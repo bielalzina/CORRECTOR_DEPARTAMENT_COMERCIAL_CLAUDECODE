@@ -19,7 +19,7 @@ def show():
         st.markdown(f"**{alumne['nom']}**")
         st.caption(f"{alumne['rao_social']}")
         st.divider()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             _logout()
 
     st.title("📋 Portal d'entregues")
@@ -47,7 +47,7 @@ def show():
                 st.write("")
                 st.write("")
                 if st.button("Gestionar entrega", key=f"btn_{num}",
-                             use_container_width=True, type="primary"):
+                             width='stretch', type="primary"):
                     st.session_state.tasca_sel = num
                     st.session_state.page = "lliurament"
                     st.rerun()

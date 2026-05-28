@@ -22,7 +22,7 @@ def show():
 
 def _mostrar_login(grup: str):
     password = st.text_input("Contrasenya", type="password")
-    if st.button("Entrar", type="primary", use_container_width=True):
+    if st.button("Entrar", type="primary", width='stretch'):
         prof = verificar_professor(grup, password)
         if prof:
             st.session_state.user = prof
@@ -40,7 +40,7 @@ def _mostrar_configuracio_inicial(grup: str):
     )
     p1 = st.text_input("Nova contrasenya", type="password", key="p1")
     p2 = st.text_input("Confirma la contrasenya", type="password", key="p2")
-    if st.button("Establir contrasenya i entrar", type="primary", use_container_width=True):
+    if st.button("Establir contrasenya i entrar", type="primary", width='stretch'):
         if not p1:
             st.error("La contrasenya no pot estar buida.")
         elif p1 != p2:

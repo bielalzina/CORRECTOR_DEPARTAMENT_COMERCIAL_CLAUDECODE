@@ -55,6 +55,7 @@ def corregir_compres(
                     operacio=desc_op,
                 ))
         else:
+            doc01 = str(fila01.get("Referencia del pedido") or "")
             if num_inferable:
                 ambigus.append(fer_ambigu(
                     "01_COMANDES_COMPRES", "numero_inferable",
@@ -73,6 +74,7 @@ def corregir_compres(
                         f"Número de comanda incorrecte ({ref['R_PROVEEDOR_C']})",
                         "Referencia de proveedor",
                         fila01.get("Referencia de proveedor"), ref["R_NUMERO_CP"], desc_op,
+                        document=doc01,
                     ))
 
             # Data comanda
@@ -82,6 +84,7 @@ def corregir_compres(
                     f"Data de comanda incorrecta ({ref['R_PROVEEDOR_C']})",
                     "Data comanda",
                     fila01.get("Data comanda"), ref["R_FECHA_EMISION_C"], desc_op,
+                    document=doc01,
                 ))
 
             # Proveïdor
@@ -92,6 +95,7 @@ def corregir_compres(
                     "Proveïdor incorrecte a la comanda",
                     "Proveedor",
                     fila01.get("Proveedor"), ref["R_PROVEEDOR_C"], desc_op,
+                    document=doc01,
                 ))
 
             # Import
@@ -101,6 +105,7 @@ def corregir_compres(
                     f"Import incorrecte ({ref['R_PROVEEDOR_C']})",
                     "Total",
                     fila01.get("Total"), ref["R_IMPORTE_C"], desc_op,
+                    document=doc01,
                 ))
 
             # Estat
@@ -110,6 +115,7 @@ def corregir_compres(
                     f"Estat incorrecte ({ref['R_PROVEEDOR_C']}). Ha de ser 'Pedido de compra'",
                     "Estado",
                     fila01.get("Estado"), "Pedido de compra", desc_op,
+                    document=doc01,
                 ))
 
             # Estat de facturació (si tenim R_DATA_ENTREGA_TASCA)
@@ -126,6 +132,7 @@ def corregir_compres(
                         f"Estat de facturació incorrecte ({ref['R_PROVEEDOR_C']})",
                         "Estado de facturación",
                         fila01.get("Estado de facturación"), estat_fact_esp, desc_op,
+                        document=doc01,
                     ))
 
             # Fecha límite >= Data comanda
@@ -139,6 +146,7 @@ def corregir_compres(
                     fila01.get("Fecha límite del pedido"),
                     f">= {fila01.get('Data comanda', '')}",
                     desc_op,
+                    document=doc01,
                 ))
 
         # ── Llistat 02 ────────────────────────────────────────────────────────
@@ -154,12 +162,14 @@ def corregir_compres(
                     operacio=desc_op,
                 ))
         else:
+            doc02 = str(fila02.get("Referencia") or "")
             if norm_str(fila02.get("Numero albarà")) != norm_str(ref["R_NUMERO_CA"]):
                 errors.append(fer_error(
                     "02_RECEPCIONS", "numero_incorrecte", "lleu", p["numero_incorrecte"],
                     f"Número d'albarà incorrecte ({ref['R_PROVEEDOR_C']})",
                     "Numero albarà",
                     fila02.get("Numero albarà"), ref["R_NUMERO_CA"], desc_op,
+                    document=doc02,
                 ))
 
             if not dates_iguals(fila02.get("Data albarà"), ref["R_FECHA_EMISION_C"]):
@@ -168,6 +178,7 @@ def corregir_compres(
                     f"Data d'albarà incorrecta ({ref['R_PROVEEDOR_C']})",
                     "Data albarà",
                     fila02.get("Data albarà"), ref["R_FECHA_EMISION_C"], desc_op,
+                    document=doc02,
                 ))
 
             if norm_str(fila02.get("Contacto")) != norm_str(ref["R_PROVEEDOR_C"]):
@@ -177,6 +188,7 @@ def corregir_compres(
                     "Contacte incorrecte a la recepció",
                     "Contacto",
                     fila02.get("Contacto"), ref["R_PROVEEDOR_C"], desc_op,
+                    document=doc02,
                 ))
 
             if not imports_iguals(fila02.get("Pedidos de compra/Total"), ref["R_IMPORTE_C"]):
@@ -185,6 +197,7 @@ def corregir_compres(
                     f"Import incorrecte a la recepció ({ref['R_PROVEEDOR_C']})",
                     "Pedidos de compra/Total",
                     fila02.get("Pedidos de compra/Total"), ref["R_IMPORTE_C"], desc_op,
+                    document=doc02,
                 ))
 
             estat02 = norm_str(fila02.get("Estado", ""))
@@ -193,12 +206,14 @@ def corregir_compres(
                     "02_RECEPCIONS", "estat_incorrecte", "lleu", p["estat_incorrecte"],
                     f"Recepció no realitzada (Listo) — {ref['R_PROVEEDOR_C']}",
                     "Estado", fila02.get("Estado"), "Hecho", desc_op,
+                    document=doc02,
                 ))
             elif estat02 not in ("hecho", "cancelado"):
                 errors.append(fer_error(
                     "02_RECEPCIONS", "estat_incorrecte", "lleu", p["estat_incorrecte"],
                     f"Estat de recepció incorrecte ({ref['R_PROVEEDOR_C']})",
                     "Estado", fila02.get("Estado"), "Hecho", desc_op,
+                    document=doc02,
                 ))
 
             # Traçabilitat 01→02
@@ -210,6 +225,7 @@ def corregir_compres(
                         f"Document d'origen no correspon a la comanda ({ref['R_PROVEEDOR_C']})",
                         "Documento de origen",
                         fila02.get("Documento de origen"), ref_pedido_01, desc_op,
+                        document=doc02,
                     ))
 
             # Fecha de traslado >= Data albarà
@@ -223,10 +239,11 @@ def corregir_compres(
                     fila02.get("Fecha de traslado"),
                     f">= {fila02.get('Data albarà', '')}",
                     desc_op,
+                    document=doc02,
                 ))
 
         # ── Llistat 03 ────────────────────────────────────────────────────────
-        fila03 = _match_03(df03, ref)
+        fila03 = _match_03(df03, ref, ref_pedido_01)
 
         if fila03 is None:
             if df03 is not None:
@@ -237,6 +254,7 @@ def corregir_compres(
                     operacio=desc_op,
                 ))
         else:
+            doc03 = str(fila03.get("Número") or "")
             # Error greu: factura registrada el dia de la comanda (no disponible)
             data_entrega = ref.get("R_DATA_ENTREGA_TASCA")
             if data_entrega and data_entrega <= ref["R_FECHA_EMISION_C"]:
@@ -248,6 +266,7 @@ def corregir_compres(
                     fila03.get("Fecha de factura"),
                     f"> {ref['R_FECHA_EMISION_C']}",
                     desc_op,
+                    document=doc03,
                 ))
 
             if norm_str(fila03.get("Nombre de la empresa a mostrar en la factura")) \
@@ -259,6 +278,7 @@ def corregir_compres(
                     "Nombre de la empresa a mostrar en la factura",
                     fila03.get("Nombre de la empresa a mostrar en la factura"),
                     ref["R_PROVEEDOR_C"], desc_op,
+                    document=doc03,
                 ))
 
             if norm_str(fila03.get("Referencia")) != norm_str(ref["R_NUMERO_CF"]):
@@ -267,6 +287,7 @@ def corregir_compres(
                     f"Referència de factura incorrecta ({ref['R_PROVEEDOR_C']})",
                     "Referencia",
                     fila03.get("Referencia"), ref["R_NUMERO_CF"], desc_op,
+                    document=doc03,
                 ))
 
             if not dates_iguals(fila03.get("Fecha de factura"), ref["R_FECHA_EMISION_C"]):
@@ -275,6 +296,7 @@ def corregir_compres(
                     f"Data de factura incorrecta ({ref['R_PROVEEDOR_C']})",
                     "Fecha de factura",
                     fila03.get("Fecha de factura"), ref["R_FECHA_EMISION_C"], desc_op,
+                    document=doc03,
                 ))
 
             # Venciment = data factura + 7 dies
@@ -287,6 +309,7 @@ def corregir_compres(
                         f"Data de venciment incorrecta ({ref['R_PROVEEDOR_C']})",
                         "Fecha de vencimiento",
                         fila03.get("Fecha de vencimiento"), d_venc_esp.isoformat(), desc_op,
+                        document=doc03,
                     ))
 
             # Import (ODOO dóna negatiu → convertir a positiu)
@@ -298,6 +321,7 @@ def corregir_compres(
                         f"Import incorrecte a la factura de {ref['R_PROVEEDOR_C']}",
                         "Total con signo en moneda",
                         import_f03, ref["R_IMPORTE_C"], desc_op,
+                        document=doc03,
                     ))
 
             estat03 = norm_str(fila03.get("Estado en pago", ""))
@@ -307,6 +331,7 @@ def corregir_compres(
                     f"Estat de pagament incorrecte ({ref['R_PROVEEDOR_C']})",
                     "Estado en pago",
                     fila03.get("Estado en pago"), "Publicado / Pagada", desc_op,
+                    document=doc03,
                 ))
 
     # Llistats completament absents
@@ -408,17 +433,33 @@ def _match_02(
     return None
 
 
-def _match_03(df: Optional[pd.DataFrame], ref: dict) -> Optional[dict]:
-    """Cerca la fila de llistat 03 que correspon a l'operació ref."""
+def _match_03(
+    df: Optional[pd.DataFrame],
+    ref: dict,
+    ref_pedido_01: Optional[str],
+) -> Optional[dict]:
+    """Cerca la fila de llistat 03 que correspon a l'operació ref.
+
+    Traçabilitat: factura.Origen == ref_pedido_01 (referència interna ODOO de la comanda).
+    Dos proveïdors poden tenir la mateixa R_NUMERO_CF, per això no es pot usar com a clau única.
+    """
     if df is None or df.empty:
         return None
 
-    # Intent 1: per Referencia = R_NUMERO_CF
+    # Intent 1: per Origen = referència de la comanda de llistat 01 (traçabilitat directa)
+    if ref_pedido_01:
+        for _, row in df.iterrows():
+            if norm_str(row.get("Origen")) == norm_str(ref_pedido_01):
+                return row.to_dict()
+
+    # Intent 2: per Referencia = R_NUMERO_CF + proveïdor (evita falsos positius entre proveïdors)
     for _, row in df.iterrows():
-        if norm_str(row.get("Referencia")) == norm_str(ref["R_NUMERO_CF"]):
+        if (norm_str(row.get("Referencia")) == norm_str(ref["R_NUMERO_CF"])
+                and norm_str(row.get("Nombre de la empresa a mostrar en la factura"))
+                == norm_str(ref["R_PROVEEDOR_C"])):
             return row.to_dict()
 
-    # Intent 2: per proveïdor + data
+    # Intent 3: per proveïdor + data
     candidates = [
         row for _, row in df.iterrows()
         if (norm_str(row.get("Nombre de la empresa a mostrar en la factura"))
@@ -428,7 +469,7 @@ def _match_03(df: Optional[pd.DataFrame], ref: dict) -> Optional[dict]:
     if candidates:
         return candidates[0].to_dict()
 
-    # Intent 3: proveïdor + import
+    # Intent 4: proveïdor + import
     candidates = [
         row for _, row in df.iterrows()
         if (norm_str(row.get("Nombre de la empresa a mostrar en la factura"))

@@ -38,10 +38,10 @@ def show():
         st.markdown(f"**{alumne['nom']}**")
         st.caption(f"{alumne['rao_social']}")
         st.divider()
-        if st.button("← Tornar al portal", use_container_width=True):
+        if st.button("← Tornar al portal", width='stretch'):
             st.session_state.page = "portal"
             st.rerun()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             for k in ["role", "user", "grup", "page", "tasca_sel"]:
                 st.session_state[k] = None
             st.rerun()
@@ -118,7 +118,7 @@ def show():
             if n_subs:
                 label += f"  ({n_subs} substitució(ons))"
             st.write("")
-            if st.button(label, type="primary", use_container_width=True):
+            if st.button(label, type="primary", width='stretch'):
                 for _, contingut, r in valids:
                     guardar_llistat(
                         contingut, num_tasca, grup,

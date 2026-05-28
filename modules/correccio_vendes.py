@@ -75,6 +75,7 @@ def corregir_vendes(
                 operacio=desc_op,
             ))
         else:
+            doc04 = str(fila04.get("Referencia del pedido") or "")
             if num_inferable:
                 ambigus.append(fer_ambigu(
                     "04_COMANDES_VENDES", "numero_inferable",
@@ -90,6 +91,7 @@ def corregir_vendes(
                         f"Número de comanda incorrecte ({ref['R_CLIENTE_V']})",
                         "Numero comanda",
                         fila04.get("Numero comanda"), ref["R_NUMERO_VP"], desc_op,
+                        document=doc04,
                     ))
 
             if not dates_iguals(fila04.get("Data comanda"), ref["R_FECHA_EMISION_VP"]):
@@ -98,6 +100,7 @@ def corregir_vendes(
                     f"Data de comanda incorrecta ({ref['R_CLIENTE_V']})",
                     "Data comanda",
                     fila04.get("Data comanda"), ref["R_FECHA_EMISION_VP"], desc_op,
+                    document=doc04,
                 ))
 
             if norm_str(fila04.get("Cliente")) != norm_str(ref["R_CLIENTE_V"]):
@@ -107,6 +110,7 @@ def corregir_vendes(
                     "Client incorrecte a la comanda de venda",
                     "Cliente",
                     fila04.get("Cliente"), ref["R_CLIENTE_V"], desc_op,
+                    document=doc04,
                 ))
 
             if not imports_iguals(fila04.get("Total"), ref["R_IMPORTE_V"]):
@@ -115,6 +119,7 @@ def corregir_vendes(
                     f"Import incorrecte ({ref['R_CLIENTE_V']})",
                     "Total",
                     fila04.get("Total"), ref["R_IMPORTE_V"], desc_op,
+                    document=doc04,
                 ))
 
             if norm_str(fila04.get("Estado")) != "pedido de venta":
@@ -123,6 +128,7 @@ def corregir_vendes(
                     f"Estat incorrecte ({ref['R_CLIENTE_V']}). Ha de ser 'Pedido de venta'",
                     "Estado",
                     fila04.get("Estado"), "Pedido de venta", desc_op,
+                    document=doc04,
                 ))
 
             if norm_str(fila04.get("Estado de la factura")) != "completamente facturado":
@@ -131,6 +137,7 @@ def corregir_vendes(
                     f"Estat de factura incorrecte ({ref['R_CLIENTE_V']})",
                     "Estado de la factura",
                     fila04.get("Estado de la factura"), "Completamente facturado", desc_op,
+                    document=doc04,
                 ))
 
         # Llistat 05
@@ -145,12 +152,14 @@ def corregir_vendes(
                 operacio=desc_op,
             ))
         else:
+            doc05 = str(fila05.get("Referencia") or "")
             if norm_str(fila05.get("Contacto")) != norm_str(ref["R_CLIENTE_V"]):
                 errors.append(fer_error(
                     "05_ENTREGUES", "proveidor_client_incorrecte", "greu",
                     p["proveidor_client_incorrecte"],
                     "Client incorrecte a l'entrega",
                     "Contacto", fila05.get("Contacto"), ref["R_CLIENTE_V"], desc_op,
+                    document=doc05,
                 ))
 
             if not imports_iguals(fila05.get("Pedido de venta/Total"), ref["R_IMPORTE_V"]):
@@ -159,6 +168,7 @@ def corregir_vendes(
                     f"Import incorrecte a l'entrega ({ref['R_CLIENTE_V']})",
                     "Pedido de venta/Total",
                     fila05.get("Pedido de venta/Total"), ref["R_IMPORTE_V"], desc_op,
+                    document=doc05,
                 ))
 
             if norm_str(fila05.get("Estado")) != "hecho":
@@ -166,6 +176,7 @@ def corregir_vendes(
                     "05_ENTREGUES", "estat_incorrecte", "lleu", p["estat_incorrecte"],
                     f"Entrega no realitzada ({ref['R_CLIENTE_V']}). Ha de ser 'Hecho'",
                     "Estado", fila05.get("Estado"), "Hecho", desc_op,
+                    document=doc05,
                 ))
 
             # Traçabilitat 04→05
@@ -177,6 +188,7 @@ def corregir_vendes(
                         f"Document d'origen no correspon a la comanda ({ref['R_CLIENTE_V']})",
                         "Documento de origen",
                         fila05.get("Documento de origen"), ref_pedido_04, desc_op,
+                        document=doc05,
                     ))
 
         # Llistat 06 — facturació individual
@@ -190,10 +202,15 @@ def corregir_vendes(
                 operacio=desc_op,
             ))
         else:
-            _verificar_factura_venda(fila06, ref, p, errors, desc_op, recap=False)
+            doc06 = str(fila06.get("Número") or "")
+            _verificar_factura_venda(fila06, ref, p, errors, desc_op, recap=False,
+                                     document=doc06)
 
         # Seqüència dates 04→05→06
         if fila04 and fila05 and fila06:
+            doc04_seq = str(fila04.get("Referencia del pedido") or "")
+            doc05_seq = str(fila05.get("Referencia") or "")
+            doc06_seq = str(fila06.get("Número") or "")
             d_creacio = parse_data(fila04.get("Fecha de creación"))
             d_traslado = parse_data(fila05.get("Fecha de traslado"))
             d_factura = parse_data(fila06.get("Fecha de factura"))
@@ -203,6 +220,7 @@ def corregir_vendes(
                     f"Fecha de traslado anterior a Fecha de creación ({ref['R_CLIENTE_V']})",
                     "Fecha de traslado", fila05.get("Fecha de traslado"),
                     f">= {fila04.get('Fecha de creación', '')}", desc_op,
+                    document=doc05_seq,
                 ))
             if d_traslado and d_factura and d_factura < d_traslado:
                 errors.append(fer_error(
@@ -210,6 +228,7 @@ def corregir_vendes(
                     f"Fecha de factura anterior a Fecha de traslado ({ref['R_CLIENTE_V']})",
                     "Fecha de factura", fila06.get("Fecha de factura"),
                     f">= {fila05.get('Fecha de traslado', '')}", desc_op,
+                    document=doc06_seq,
                 ))
 
     # ── Facturació recapitulativa ─────────────────────────────────────────────
@@ -259,6 +278,7 @@ def _corregir_recap(
                     operacio=sub_desc,
                 ))
             else:
+                doc04 = str(fila04.get("Referencia del pedido") or "")
                 if num_inferable:
                     ambigus.append(fer_ambigu(
                         "04_COMANDES_VENDES", "numero_inferable",
@@ -271,6 +291,7 @@ def _corregir_recap(
                         "04_COMANDES_VENDES", "import_incorrecte", "greu", p["import_incorrecte"],
                         f"Import incorrecte ({client})",
                         "Total", fila04.get("Total"), ref["R_IMPORTE_V"], sub_desc,
+                        document=doc04,
                     ))
                 if not dates_iguals(fila04.get("Data comanda"), ref["R_FECHA_EMISION_VP"]):
                     errors.append(fer_error(
@@ -278,6 +299,7 @@ def _corregir_recap(
                         f"Data incorrecta ({client})",
                         "Data comanda", fila04.get("Data comanda"),
                         ref["R_FECHA_EMISION_VP"], sub_desc,
+                        document=doc04,
                     ))
 
             # Llistat 05: un albarà per comanda
@@ -290,11 +312,13 @@ def _corregir_recap(
                     operacio=sub_desc,
                 ))
             else:
+                doc05 = str(fila05.get("Referencia") or "")
                 if norm_str(fila05.get("Estado")) != "hecho":
                     errors.append(fer_error(
                         "05_ENTREGUES", "estat_incorrecte", "lleu", p["estat_incorrecte"],
                         f"Entrega no realitzada ({client})",
                         "Estado", fila05.get("Estado"), "Hecho", sub_desc,
+                        document=doc05,
                     ))
                 if not imports_iguals(fila05.get("Pedido de venta/Total"), ref["R_IMPORTE_V"]):
                     errors.append(fer_error(
@@ -302,6 +326,7 @@ def _corregir_recap(
                         f"Import incorrecte a l'entrega ({client})",
                         "Pedido de venta/Total",
                         fila05.get("Pedido de venta/Total"), ref["R_IMPORTE_V"], sub_desc,
+                        document=doc05,
                     ))
 
         # Llistat 06: una factura per grup (client + setmana) amb import total
@@ -313,6 +338,7 @@ def _corregir_recap(
                 operacio=desc_op,
             ))
         else:
+            doc06 = str(fila06.get("Número") or "")
             # Verificar import total
             if not imports_iguals(fila06.get("Total con signo en moneda"), import_total_esp):
                 errors.append(fer_error(
@@ -320,6 +346,7 @@ def _corregir_recap(
                     f"Import total incorrecte a la factura recapitulativa ({client})",
                     "Total con signo en moneda",
                     fila06.get("Total con signo en moneda"), import_total_esp, desc_op,
+                    document=doc06,
                 ))
             # Verificar que l'Origen conté totes les referències
             origen = str(fila06.get("Origen", ""))
@@ -332,9 +359,11 @@ def _corregir_recap(
                     "06_FACTURES_VENDA", "numero_incorrecte", "lleu", p["numero_incorrecte"],
                     f"Camp Origen buit a la factura recapitulativa ({client})",
                     "Origen", origen, ", ".join(numeros_vp), desc_op,
+                    document=doc06,
                 ))
             _verificar_factura_venda(fila06, refs_grup[0], p, errors, desc_op,
-                                     recap=True, import_total=import_total_esp)
+                                     recap=True, import_total=import_total_esp,
+                                     document=doc06)
 
     return errors, ambigus
 
@@ -347,6 +376,7 @@ def _verificar_factura_venda(
     desc_op: str,
     recap: bool = False,
     import_total: Optional[float] = None,
+    document: Optional[str] = None,
 ) -> None:
     """Verifica els camps d'una factura de venda."""
     client = ref["R_CLIENTE_V"]
@@ -358,6 +388,7 @@ def _verificar_factura_venda(
             f"Nom de client incorrecte a la factura de venda",
             "Nombre de la empresa a mostrar en la factura",
             fila06.get("Nombre de la empresa a mostrar en la factura"), client, desc_op,
+            document=document,
         ))
 
     if not recap:
@@ -368,6 +399,7 @@ def _verificar_factura_venda(
                 f"Import incorrecte a la factura de venda ({client})",
                 "Total con signo en moneda",
                 fila06.get("Total con signo en moneda"), importe_esp, desc_op,
+                document=document,
             ))
 
     # Fecha factura <= data màxima facturació
@@ -379,6 +411,7 @@ def _verificar_factura_venda(
             f"Fecha de factura posterior al termini ({client})",
             "Fecha de factura",
             fila06.get("Fecha de factura"), f"<= {ref['R_FECHA_MAX_FACTURACION_V']}", desc_op,
+            document=document,
         ))
 
     # Venciment = data factura + 7 dies
@@ -390,6 +423,7 @@ def _verificar_factura_venda(
                 f"Data de venciment incorrecta ({client})",
                 "Fecha de vencimiento",
                 fila06.get("Fecha de vencimiento"), d_venc_esp.isoformat(), desc_op,
+                document=document,
             ))
 
     estat = norm_str(fila06.get("Estado en pago", ""))
@@ -398,6 +432,7 @@ def _verificar_factura_venda(
             "06_FACTURES_VENDA", "estat_incorrecte", "lleu", p["estat_incorrecte"],
             f"Estat de pagament incorrecte ({client})",
             "Estado en pago", fila06.get("Estado en pago"), "Publicado / Pagada", desc_op,
+            document=document,
         ))
 
 
@@ -430,6 +465,7 @@ def _verificar_sequencia_fv(df06: pd.DataFrame, p: dict) -> list[dict]:
                 "06_FACTURES_VENDA", "numero_incorrecte", "greu", p["numero_incorrecte"],
                 f"Salt en la numeració de factures: de {prev_num} a {cur_num}",
                 "Número", cur_num, f"{prev_num[:-len(str(prev_ord))]}{prev_ord + 1:05d}",
+                document=cur_num,
             ))
 
     # Verificar que dates segueixen l'ordre de números
@@ -441,6 +477,7 @@ def _verificar_sequencia_fv(df06: pd.DataFrame, p: dict) -> list[dict]:
                 "06_FACTURES_VENDA", "data_incorrecta", "greu", p["data_incorrecta"],
                 f"Factura {cur_num} té data anterior a {prev_num} (ordre invers)",
                 "Fecha de factura", str(cur_date), f">= {prev_date}",
+                document=cur_num,
             ))
 
     return errors

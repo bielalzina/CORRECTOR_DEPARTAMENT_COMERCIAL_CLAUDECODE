@@ -85,6 +85,7 @@ def fer_error(
     valor_alumne=None,
     valor_esperat=None,
     operacio: Optional[str] = None,
+    document: Optional[str] = None,
 ) -> dict:
     """Construeix un dict d'error estàndard."""
     return {
@@ -97,6 +98,7 @@ def fer_error(
         "valor_alumne": str(valor_alumne) if valor_alumne is not None else None,
         "valor_esperat": str(valor_esperat) if valor_esperat is not None else None,
         "operacio": operacio,
+        "document": document,
     }
 
 

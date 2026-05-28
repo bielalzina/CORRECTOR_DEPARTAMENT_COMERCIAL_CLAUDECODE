@@ -63,7 +63,7 @@ def show():
         data=plantilla,
         file_name=f"referencia_{num_tasca}_{grup}.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        use_container_width=True,
+        width='stretch',
     )
 
     # ── Pujada de la plantilla emplenada ──────────────────────────────────────
@@ -95,7 +95,7 @@ def show():
                 f"**{n_vendes}** operacions de venda."
             )
 
-            if st.button("💾 Guardar dades de referència", type="primary", use_container_width=True):
+            if st.button("💾 Guardar dades de referència", type="primary", width='stretch'):
                 # Fusionar amb les dades existents (no esborrar R_DATA_ENTREGA_TASCA ja guardades)
                 ref_actual = load_referencia(num_tasca, grup)
                 for exp, nou in dades.items():
@@ -139,7 +139,7 @@ def _mostrar_resum(ref: dict, alumnes: list[dict]) -> None:
             })
 
     import pandas as pd
-    st.dataframe(pd.DataFrame(files), hide_index=True, use_container_width=True)
+    st.dataframe(pd.DataFrame(files), hide_index=True, width='stretch')
 
 
 def _sidebar(grup: str):
@@ -148,20 +148,20 @@ def _sidebar(grup: str):
         st.markdown(f"**{prof.get('nom', grup)}**")
         st.caption(f"Grup: {grup}")
         st.divider()
-        if st.button("📊 Tauler", use_container_width=True):
+        if st.button("📊 Tauler", width='stretch'):
             st.session_state.page = "tauler"
             st.rerun()
-        if st.button("📋 Dades de referència", use_container_width=True):
+        if st.button("📋 Dades de referència", width='stretch'):
             st.session_state.page = "referencia"
             st.rerun()
-        if st.button("🔍 Correcció", use_container_width=True):
+        if st.button("🔍 Correcció", width='stretch'):
             st.session_state.page = "correccio"
             st.rerun()
-        if st.button("⚙️ Gestió de tasques", use_container_width=True):
+        if st.button("⚙️ Gestió de tasques", width='stretch'):
             st.session_state.page = "tasques"
             st.rerun()
         st.divider()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             for k in ["role", "user", "grup", "page", "tasca_sel"]:
                 st.session_state[k] = None
             st.rerun()

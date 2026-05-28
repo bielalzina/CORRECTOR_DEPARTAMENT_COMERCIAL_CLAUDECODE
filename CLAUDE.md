@@ -253,6 +253,8 @@ Si no passa la validació → informar l'alumne dels errors concrets i **no acce
 
 Per cada operació: 1 comanda → 1 albarà → 1 factura.
 
+> ⚠️ **`R_NUMERO_CF` NO és una clau única.** Dos proveïdors (ALUBIX SL i ROCALLA SA) poden tenir la mateixa referència de factura (ex: "2025/00017") perquè cadascun té la seva numeració independent. Per identificar la factura correcta cal seguir la cadena: `factura.Origen` → `comanda.Referencia del pedido` (referència interna ODOO, ex: "C-C/00012") → `comanda.Referencia de proveedor` = `R_NUMERO_CP`. L'algoritme de matching a `_match_03` usa `Origen` com a Intent 1 (idèntic al que ja fa `_match_06_individual` a vendes).
+
 ### Correcció 01_COMANDES_COMPRES
 
 | Camp alumne | Referència | Comprovació |
@@ -607,3 +609,13 @@ Si una columna té valors `"—"` (str) i enters (int), Arrow falla en la serial
 ### Avís `use_container_width` (Streamlit)
 
 `use_container_width=True/False` és deprecated (es retirarà el 31/12/2025). Cal substituir per `width='stretch'` / `width='content'`. Pendent de corregir a totes les vistes.
+
+---
+
+### `_match_03` ha d'usar `Origen`, no `R_NUMERO_CF` — BUG CORREGIT
+
+**Problema:** ALUBIX SL i ROCALLA SA poden tenir la mateixa `Referencia` de factura (ex: "2025/00017") perquè cada proveïdor té numeració independent. Si `_match_03` cercava per `Referencia` = `R_NUMERO_CF` sense filtrar per proveïdor, assignava la mateixa fila a dos proveïdors, generant errors falsos ("proveïdor incorrecte", "import incorrecte").
+
+**Regla:** `_match_03` usa com a Intent 1 `factura.Origen == ref_pedido_01` (referència interna ODOO de la comanda, ex: "C-C/00012"), que és unívoca. Com a fallback usa `Referencia + Proveïdor` (els dos camps junts). Mai usar `Referencia` (= `R_NUMERO_CF`) sol com a clau.
+
+La mateixa lògica ja s'aplicava correctament a vendes: `_match_06_individual` usa `Origen = ref_pedido_04` com a Intent 1.

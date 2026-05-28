@@ -158,7 +158,7 @@ def _seccio_bloc(
             "Casos ambigus":  str(n_amb_pend) if n_amb_pend else "—",
         })
 
-    st.dataframe(pd.DataFrame(files_resum), hide_index=True, use_container_width=True)
+    st.dataframe(pd.DataFrame(files_resum), hide_index=True, width='stretch')
 
     st.divider()
 
@@ -239,6 +239,7 @@ def _taula_errors(errors: list[dict]) -> None:
         files.append({
             "Gravetat":      GRAVETAT_ICONA.get(e.get("gravetat", ""), "⚪") + " " + e.get("gravetat", ""),
             "Llistat":       NOM_LLISTAT.get(e.get("llistat", ""), e.get("llistat", "")),
+            "Document":      e.get("document", "") or "",
             "Descripció":    e.get("descripcio", ""),
             "Camp":          e.get("camp", "") or "",
             "Valor alumne":  fmt_data(str(e.get("valor_alumne", "") or "")),
@@ -246,7 +247,7 @@ def _taula_errors(errors: list[dict]) -> None:
             "Penalització":  e.get("penalitzacio", 0),
         })
     if files:
-        st.dataframe(pd.DataFrame(files), hide_index=True, use_container_width=True)
+        st.dataframe(pd.DataFrame(files), hide_index=True, width='stretch')
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -280,12 +281,12 @@ def _mostrar_ambigu(a: dict, expedient: str, num_tasca: str, grup: str) -> None:
         with col_acc:
             st.write("")
             if resolucio is None:
-                if st.button("✅ Acceptar", key=f"acc_{aid}", use_container_width=True):
+                if st.button("✅ Acceptar", key=f"acc_{aid}", width='stretch'):
                     _resoldre(num_tasca, grup, expedient, aid, "acceptat")
-                if st.button("❌ Rebutjar", key=f"reb_{aid}", use_container_width=True):
+                if st.button("❌ Rebutjar", key=f"reb_{aid}", width='stretch'):
                     _resoldre(num_tasca, grup, expedient, aid, "rebutjat")
             else:
-                if st.button("↩️ Desfer", key=f"desfer_{aid}", use_container_width=True):
+                if st.button("↩️ Desfer", key=f"desfer_{aid}", width='stretch'):
                     _resoldre(num_tasca, grup, expedient, aid, None)
 
 
@@ -308,20 +309,20 @@ def _sidebar(grup: str):
         st.markdown(f"**{prof.get('nom', grup)}**")
         st.caption(f"Grup: {grup}")
         st.divider()
-        if st.button("📊 Tauler", use_container_width=True):
+        if st.button("📊 Tauler", width='stretch'):
             st.session_state.page = "tauler"
             st.rerun()
-        if st.button("📋 Dades de referència", use_container_width=True):
+        if st.button("📋 Dades de referència", width='stretch'):
             st.session_state.page = "referencia"
             st.rerun()
-        if st.button("🔍 Correcció", use_container_width=True):
+        if st.button("🔍 Correcció", width='stretch'):
             st.session_state.page = "correccio"
             st.rerun()
-        if st.button("⚙️ Gestió de tasques", use_container_width=True):
+        if st.button("⚙️ Gestió de tasques", width='stretch'):
             st.session_state.page = "tasques"
             st.rerun()
         st.divider()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             for k in ["role", "user", "grup", "page", "tasca_sel"]:
                 st.session_state[k] = None
             st.rerun()

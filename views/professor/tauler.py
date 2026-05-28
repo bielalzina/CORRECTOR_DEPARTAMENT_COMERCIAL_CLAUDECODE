@@ -46,7 +46,7 @@ def show():
                 if te_referencia:
                     st.success("✅ Ref. carregada")
                 else:
-                    if st.button("⚠️ Carregar ref.", key=f"ref_{num}", use_container_width=True):
+                    if st.button("⚠️ Carregar ref.", key=f"ref_{num}", width='stretch'):
                         st.session_state.page = "referencia"
                         st.rerun()
 
@@ -68,7 +68,7 @@ def _tab_entregues(resum: list[dict]) -> None:
     df = df[cols_show].rename(columns={
         "nom": "Alumne", "total": "Total", "fora_termini": "Fora termini",
     })
-    st.dataframe(df, hide_index=True, use_container_width=True)
+    st.dataframe(df, hide_index=True, width='stretch')
 
 
 def _tab_seguiment(num_tasca: str, grup: str, alumnes: list[dict]) -> None:
@@ -105,20 +105,20 @@ def _sidebar(grup: str):
         st.markdown(f"**{prof.get('nom', grup)}**")
         st.caption(f"Grup: {grup}")
         st.divider()
-        if st.button("📊 Tauler", use_container_width=True):
+        if st.button("📊 Tauler", width='stretch'):
             st.session_state.page = "tauler"
             st.rerun()
-        if st.button("📋 Dades de referència", use_container_width=True):
+        if st.button("📋 Dades de referència", width='stretch'):
             st.session_state.page = "referencia"
             st.rerun()
-        if st.button("🔍 Correcció", use_container_width=True):
+        if st.button("🔍 Correcció", width='stretch'):
             st.session_state.page = "correccio"
             st.rerun()
-        if st.button("⚙️ Gestió de tasques", use_container_width=True):
+        if st.button("⚙️ Gestió de tasques", width='stretch'):
             st.session_state.page = "tasques"
             st.rerun()
         st.divider()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             for k in ["role", "user", "grup", "page", "tasca_sel"]:
                 st.session_state[k] = None
             st.rerun()

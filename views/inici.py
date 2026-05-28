@@ -12,10 +12,10 @@ def show():
 
         c1, c2 = st.columns(2)
         with c1:
-            if st.button("👩‍🎓 Sóc alumne", use_container_width=True, type="primary"):
+            if st.button("👩‍🎓 Sóc alumne", width='stretch', type="primary"):
                 st.session_state.role = "alumne"
                 st.rerun()
         with c2:
-            if st.button("👨‍🏫 Sóc professor", use_container_width=True):
+            if st.button("👨‍🏫 Sóc professor", width='stretch'):
                 st.session_state.role = "professor"
                 st.rerun()

@@ -15,7 +15,7 @@ def show():
         correu = st.text_input("Correu electrònic", placeholder="expedient.nom@cifpjoantaix.cat")
         password = st.text_input("Contrasenya", type="password")
 
-        if st.button("Accedir", type="primary", use_container_width=True):
+        if st.button("Accedir", type="primary", width='stretch'):
             if not correu.strip() or not password:
                 st.error("Introdueix el correu electrònic i la contrasenya.")
             else:

@@ -37,8 +37,8 @@ def show():
                 value=date.fromisoformat(data_actual_iso) if data_actual_iso else date.today(),
             )
             c1, c2 = st.columns(2)
-            guardar = c1.form_submit_button("💾 Guardar", type="primary", use_container_width=True)
-            esborrar = c2.form_submit_button("🗑️ Sense data (sempre individual)", use_container_width=True)
+            guardar = c1.form_submit_button("💾 Guardar", type="primary", width='stretch')
+            esborrar = c2.form_submit_button("🗑️ Sense data (sempre individual)", width='stretch')
 
         if guardar:
             set_data_inici_fact_recapitulativa(grup, data_recap.isoformat())
@@ -93,7 +93,7 @@ def show():
             data_tancament = st.date_input("Termini de lliurament", value=proper_div)
 
         activa = st.checkbox("Activar tasca immediatament", value=True)
-        enviar = st.form_submit_button("✅ Crear tasca", type="primary", use_container_width=True)
+        enviar = st.form_submit_button("✅ Crear tasca", type="primary", width='stretch')
 
     if enviar:
         if data_tancament < data_obertura:
@@ -116,20 +116,20 @@ def _sidebar(grup: str):
         st.markdown(f"**{prof.get('nom', grup)}**")
         st.caption(f"Grup: {grup}")
         st.divider()
-        if st.button("📊 Tauler", use_container_width=True):
+        if st.button("📊 Tauler", width='stretch'):
             st.session_state.page = "tauler"
             st.rerun()
-        if st.button("📋 Dades de referència", use_container_width=True):
+        if st.button("📋 Dades de referència", width='stretch'):
             st.session_state.page = "referencia"
             st.rerun()
-        if st.button("🔍 Correcció", use_container_width=True):
+        if st.button("🔍 Correcció", width='stretch'):
             st.session_state.page = "correccio"
             st.rerun()
-        if st.button("⚙️ Gestió de tasques", use_container_width=True):
+        if st.button("⚙️ Gestió de tasques", width='stretch'):
             st.session_state.page = "tasques"
             st.rerun()
         st.divider()
-        if st.button("Tancar sessió", use_container_width=True):
+        if st.button("Tancar sessió", width='stretch'):
             for k in ["role", "user", "grup", "page", "tasca_sel"]:
                 st.session_state[k] = None
             st.rerun()
