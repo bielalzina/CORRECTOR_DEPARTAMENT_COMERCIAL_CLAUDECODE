@@ -1,5 +1,6 @@
 """Vista de correcció automàtica per al professor."""
 
+import io
 import streamlit as st
 import pandas as pd
 
@@ -95,11 +96,12 @@ def show():
 
     st.divider()
 
-    # ── Tres seccions ──────────────────────────────────────────────────────────
-    tab_c, tab_v, tab_m = st.tabs([
+    # ── Quatre pestanyes ───────────────────────────────────────────────────────
+    tab_c, tab_v, tab_m, tab_g = st.tabs([
         "🛒 Correcció de compres",
         "💼 Correcció de vendes",
         "📦 Correcció del magatzem",
+        "📋 Errors globals",
     ])
 
     with tab_c:
@@ -110,6 +112,9 @@ def show():
 
     with tab_m:
         _seccio_bloc(resultats, alumnes, tasca_sel, grup, "magatzem")
+
+    with tab_g:
+        _seccio_errors_globals(resultats, alumnes)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -297,6 +302,80 @@ def _resoldre(num_tasca: str, grup: str, expedient: str, ambigu_id: str, resoluc
     except Exception as e:
         st.error(f"Error en resoldre el cas: {e}")
     st.rerun()
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Vista global d'errors (totes les empreses)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _seccio_errors_globals(resultats: dict, alumnes: list[dict]) -> None:
+    """Taula unificada amb tots els errors de totes les empreses."""
+
+    # Mapa expedient → alumne per a la columna Empresa
+    info_alumne = {str(a["expedient"]): a for a in alumnes}
+
+    alumnes_res = resultats.get("alumnes", {})
+    files = []
+
+    for exp, res in alumnes_res.items():
+        alumne = info_alumne.get(exp, {})
+        empresa = alumne.get("rao_social", exp)
+
+        for e in res.get("errors", []):
+            llistat_codi = e.get("llistat", "")
+            if llistat_codi in LLISTATS_COMPRES:
+                apartat = "COMPRES"
+            elif llistat_codi in LLISTATS_VENDES:
+                apartat = "VENDES"
+            else:
+                apartat = "MAGATZEM"
+            files.append({
+                "Empresa":       empresa,
+                "Apartat":       apartat,
+                "Gravetat":      GRAVETAT_ICONA.get(e.get("gravetat", ""), "⚪") + " " + e.get("gravetat", ""),
+                "Llistat":       NOM_LLISTAT.get(llistat_codi, llistat_codi),
+                "Document":      e.get("document", "") or "",
+                "Descripció":    e.get("descripcio", ""),
+                "Camp":          e.get("camp", "") or "",
+                "Valor alumne":  fmt_data(str(e.get("valor_alumne", "") or "")),
+                "Valor esperat": fmt_data(str(e.get("valor_esperat", "") or "")),
+                "Penalització":  e.get("penalitzacio", 0),
+            })
+
+    if not files:
+        st.success("Cap error detectat.")
+        return
+
+    df = pd.DataFrame(files)
+
+    # Resum ràpid
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Total errors", len(df))
+    c2.metric("Empreses afectades", df["Empresa"].nunique())
+    pen_total = df["Penalització"].abs().sum()
+    c3.metric("Penalització total acumulada", f"{round(pen_total, 2)} pts")
+
+    st.divider()
+
+    # Filtre per empresa
+    empreses = ["— Totes —"] + sorted(df["Empresa"].unique().tolist())
+    empresa_sel = st.selectbox("Filtrar per empresa:", empreses, key="global_empresa_sel")
+    if empresa_sel != "— Totes —":
+        df = df[df["Empresa"] == empresa_sel]
+
+    st.dataframe(df, hide_index=True, width='stretch')
+
+    # Descàrrega
+    buffer = io.BytesIO()
+    with pd.ExcelWriter(buffer, engine="openpyxl") as writer:
+        df.to_excel(writer, index=False, sheet_name="Errors")
+    st.download_button(
+        label="⬇️ Descarregar errors (.xlsx)",
+        data=buffer.getvalue(),
+        file_name=f"errors_globals_{resultats.get('num_tasca', '')}_{resultats.get('grup', '')}.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        key="dl_errors_globals",
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────────

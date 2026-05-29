@@ -97,6 +97,14 @@ def _tab_seguiment(num_tasca: str, grup: str, alumnes: list[dict]) -> None:
                     else:
                         st.markdown(f"⬜ **{codi}** {NOM_LLISTAT[codi]}")
                         st.caption("Pendent")
+            if st.button(
+                "📂 Veure / Editar llistats",
+                key=f"editar_{num_tasca}_{exp}",
+            ):
+                st.session_state.tasca_edit = num_tasca
+                st.session_state.alumne_sel = exp
+                st.session_state.page = "edicio_llistats"
+                st.rerun()
 
 
 def _sidebar(grup: str):

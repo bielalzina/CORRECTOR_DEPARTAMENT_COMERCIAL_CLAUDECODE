@@ -22,7 +22,7 @@ No hi ha tests automatitzats ni linter configurat. Les comprovacions manuals es 
 
 ### Routing (app.py)
 
-`app.py` és el router únic. Llegeix `st.session_state` (claus: `role`, `user`, `grup`, `page`, `tasca_sel`) i importa dinàmicament la vista corresponent. Cada vista exposa una única funció `show()`. No hi ha navegació de Streamlit per pàgines — tot és condicional sobre `session_state`.
+`app.py` és el router únic. Llegeix `st.session_state` (claus: `role`, `user`, `grup`, `page`, `tasca_sel`, `tasca_edit`, `alumne_sel`) i importa dinàmicament la vista corresponent. Cada vista exposa una única funció `show()`. No hi ha navegació de Streamlit per pàgines — tot és condicional sobre `session_state`.
 
 ### Mòduls (`modules/`)
 
@@ -473,7 +473,7 @@ streamlit run app.py
 Fitxers creats i funcionals:
 
 ```
-app.py                          # Router principal (session_state: role/user/grup/page/tasca_sel)
+app.py                          # Router principal (session_state: role/user/grup/page/tasca_sel/tasca_edit/alumne_sel)
 requirements.txt
 data/
   alumnes.json                  # 22 alumnes ADG32 + 1 alumne de prova (camp "prova": true)
@@ -531,14 +531,16 @@ views/
 - `modules/correccio_compres.py` — llistats 01, 02, 03
 - `modules/correccio_vendes.py` — llistats 04, 05, 06
 - `modules/correccio_magatzem.py` — llistats 07, 08
-- `views/professor/correccio.py` — llançar correcció + gestió de casos ambigus (la correcció s'atura i espera decisió del professor)
+- `views/professor/correccio.py` — llançar correcció + gestió de casos ambigus (la correcció s'atura i espera decisió del professor) + pestanya "Errors globals" amb taula unificada i descàrrega xlsx
 - Resultat: `data/tasques/<num>/<grup>/correccions/resultats.json`
 - `modules/neteja.py` — mòdul de suport (present al repo)
 
 **Decisions de disseny preses a la Fase 3:**
-- La vista de correcció mostra els resultats dividits en tres seccions: Compres (01–03), Vendes (04–06), Magatzem (07–08).
+- La vista de correcció mostra els resultats en quatre pestanyes: Compres (01–03), Vendes (04–06), Magatzem (07–08) i Errors globals.
+- La pestanya "Errors globals" mostra tots els errors de totes les empreses en una sola taula (columnes: Empresa, Apartat, Gravetat, Llistat, Document, Descripció, Camp, Valor alumne, Valor esperat, Penalització) amb filtre per empresa i descàrrega en xlsx.
 - Les dates es mostren sempre en format `dd/mm/aaaa` (funció `fmt_data` a `modules/utils.py`).
 - `fmt_data` usa regex per convertir dates ISO incrustades en strings (ex: `<= 2025-11-14` → `<= 14/11/2025`).
+- El professor pot visualitzar i editar els llistats xlsx de cada alumne des del Seguiment detallat del tauler (botó "📂 Veure / Editar llistats" → `views/professor/edicio_llistats.py`). Els canvis sobreescriuen el fitxer original de l'alumne. Claus de sessió implicades: `tasca_edit` i `alumne_sel`.
 
 ---
 
@@ -633,13 +635,13 @@ Implementació: funció `detectar_duplicats` a `modules/utils.py`, reutilitzada 
 
 ---
 
-### `_match_03` ha d'usar `Origen`, no `R_NUMERO_CF` — BUG CORREGIT
+### `_match_03` usa únicament `Origen` — BUG CORREGIT (simplificat)
 
-**Problema:** ALUBIX SL i ROCALLA SA poden tenir la mateixa `Referencia` de factura (ex: "2025/00017") perquè cada proveïdor té numeració independent. Si `_match_03` cercava per `Referencia` = `R_NUMERO_CF` sense filtrar per proveïdor, assignava la mateixa fila a dos proveïdors, generant errors falsos ("proveïdor incorrecte", "import incorrecte").
+**Problema original:** `_match_03` tenia 4 intents de matching (Origen, Referencia+Proveïdor, Proveïdor+Data, Proveïdor+Import). Els intents de fallback (2–4) generaven falsos positius: quan una factura mancava, el fallback per Proveïdor+Data assignava per error una fila d'una altra operació, reportant errors de referència i import incorrectes en lloc de l'error real ("operació que falta").
 
-**Regla:** `_match_03` usa com a Intent 1 `factura.Origen == ref_pedido_01` (referència interna ODOO de la comanda, ex: "C-C/00012"), que és unívoca. Com a fallback usa `Referencia + Proveïdor` (els dos camps junts). Mai usar `Referencia` (= `R_NUMERO_CF`) sol com a clau.
+**Regla:** `_match_03` usa **únicament** `factura.Origen == ref_pedido_01`. Si no coincideix cap fila, la factura no existeix i es reporta "operació que falta". Cap fallback addicional.
 
-La mateixa lògica ja s'aplicava correctament a vendes: `_match_06_individual` usa `Origen = ref_pedido_04` com a Intent 1.
+La mateixa lògica ja s'aplicava correctament a vendes: `_match_06_individual` usa `Origen = ref_pedido_04` com a únic criteri.
 
 ---
 

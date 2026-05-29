@@ -13,7 +13,9 @@ _defaults = {
     "user": None,       # dict amb les dades de l'usuari autenticat
     "grup": None,       # "ADG21" | "ADG32"
     "page": None,       # pàgina activa dins la zona (portal, lliurament, tauler, tasques)
-    "tasca_sel": None,  # num_tasca seleccionada per a lliurament
+    "tasca_sel": None,   # num_tasca seleccionada per a lliurament
+    "tasca_edit": None,  # num_tasca seleccionada per editar llistats (professor)
+    "alumne_sel": None,  # expedient de l'alumne seleccionat per editar
 }
 for k, v in _defaults.items():
     if k not in st.session_state:
@@ -51,6 +53,9 @@ elif role == "professor":
         show()
     elif page == "correccio":
         from views.professor.correccio import show
+        show()
+    elif page == "edicio_llistats":
+        from views.professor.edicio_llistats import show
         show()
     else:
         from views.professor.tauler import show

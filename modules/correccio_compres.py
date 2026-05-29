@@ -439,47 +439,16 @@ def _match_03(
 ) -> Optional[dict]:
     """Cerca la fila de llistat 03 que correspon a l'operació ref.
 
-    Traçabilitat: factura.Origen == ref_pedido_01 (referència interna ODOO de la comanda).
-    Dos proveïdors poden tenir la mateixa R_NUMERO_CF, per això no es pot usar com a clau única.
+    Traçabilitat única: factura.Origen == ref_pedido_01 (referència interna ODOO de la comanda).
+    Si no hi ha coincidència, la factura no existeix (operació que falta).
+    No s'usen fallbacks: qualsevol intent addicional pot generar falsos positius.
     """
-    if df is None or df.empty:
+    if df is None or df.empty or not ref_pedido_01:
         return None
 
-    # Intent 1: per Origen = referència de la comanda de llistat 01 (traçabilitat directa)
-    if ref_pedido_01:
-        for _, row in df.iterrows():
-            if norm_str(row.get("Origen")) == norm_str(ref_pedido_01):
-                return row.to_dict()
-
-    # Intent 2: per Referencia = R_NUMERO_CF + proveïdor (evita falsos positius entre proveïdors)
     for _, row in df.iterrows():
-        if (norm_str(row.get("Referencia")) == norm_str(ref["R_NUMERO_CF"])
-                and norm_str(row.get("Nombre de la empresa a mostrar en la factura"))
-                == norm_str(ref["R_PROVEEDOR_C"])):
+        if norm_str(row.get("Origen")) == norm_str(ref_pedido_01):
             return row.to_dict()
-
-    # Intent 3: per proveïdor + data
-    candidates = [
-        row for _, row in df.iterrows()
-        if (norm_str(row.get("Nombre de la empresa a mostrar en la factura"))
-                == norm_str(ref["R_PROVEEDOR_C"])
-            and dates_iguals(row.get("Fecha de factura"), ref["R_FECHA_EMISION_C"]))
-    ]
-    if candidates:
-        return candidates[0].to_dict()
-
-    # Intent 4: proveïdor + import
-    candidates = [
-        row for _, row in df.iterrows()
-        if (norm_str(row.get("Nombre de la empresa a mostrar en la factura"))
-                == norm_str(ref["R_PROVEEDOR_C"])
-            and imports_iguals(
-                abs(to_float(row.get("Total con signo en moneda")) or 0),
-                ref["R_IMPORTE_C"]
-            ))
-    ]
-    if candidates:
-        return candidates[0].to_dict()
 
     return None
 
