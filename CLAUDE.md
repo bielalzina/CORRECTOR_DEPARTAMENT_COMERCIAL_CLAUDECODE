@@ -654,3 +654,11 @@ La mateixa lògica ja s'aplicava correctament a vendes: `_match_06_individual` u
 **Regla:** `_match_06_recap` rep `refs_pedido_04` (llista de `Referencia del pedido` reals obtingudes de df04 durant la correcció). El matching exigeix que `Origen` contingui almenys una d'aquestes referències. La verificació posterior comprova que hi siguin **totes**: si alguna manca, es genera un error lleu indicant quines falten.
 
 Afecta: `modules/correccio_vendes.py` — funcions `_match_06_recap` i `_corregir_recap`.
+
+---
+
+### Tolerància d'imports: 0.03 € per arrodoniments d'ODOO
+
+ODOO acumula errors de coma flotant en calcular impostos i totals, de manera que l'import final pot diferir en uns pocs cèntims del valor de referència. Per evitar falsos positius d'import incorrecte, la funció `imports_iguals` (`modules/utils.py`) aplica una tolerància de **0.03 €** (3 cèntims).
+
+**Regla:** `abs(valor_alumne) - abs(valor_referencia)` ≤ 0.03 → import considerat correcte. Afecta totes les comparacions d'import de compres (01, 02, 03) i vendes (04, 05, 06), tant en mode individual com recapitulatiu.
