@@ -59,8 +59,8 @@ def to_float(val) -> Optional[float]:
         return None
 
 
-def imports_iguals(val_alumne, val_ref, tolerancia: float = 0.01) -> bool:
-    """Compara dos imports amb tolerància d'1 cèntim."""
+def imports_iguals(val_alumne, val_ref, tolerancia: float = 0.03) -> bool:
+    """Compara dos imports amb tolerància de 3 cèntims (arrodoniments acumulats d'ODOO)."""
     f1 = to_float(val_alumne)
     f2 = to_float(val_ref)
     if f1 is None or f2 is None:
