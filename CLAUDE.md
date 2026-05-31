@@ -394,7 +394,7 @@ Errors a detectar:
 Objectiu: detectar estocs negatius en qualsevol moment.
 
 Algorisme:
-1. Ordenar per empresa → per producte → per `Fecha` (de més antic a més recent).
+1. Ordenar per empresa → per producte → per `Fecha` (de més antic a més recent) → per tipus de moviment (entrades abans que sortides). Si en una mateixa data hi ha entrades i sortides, les entrades (`A` conté `MGZ01/Stock`) es processen primer; les sortides (`Desde` conté `MGZ01/Stock`), després.
 2. Determinar si cada operació és entrada (`A` = `MGZ01/Stock`) o sortida (`Desde` = `MGZ01/Stock`).
 3. Assignar signe: entrada = positiu, sortida = negatiu.
 4. Acumular `Cantidad` en una nova columna `Estoc`.

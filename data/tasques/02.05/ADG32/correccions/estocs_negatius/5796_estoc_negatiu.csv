@@ -1,0 +1,81 @@
+﻿Producte;Data;Referencia;Des de;A;Quantitat;Signe;Estoc acumulat
+[AP8461] Alcohol en gel desinfectant;23/10/2025;MGZ01/SURT/00005;MGZ01/Stock;Customers;37;-1;-37.0
+[AP8461] Alcohol en gel desinfectant;23/10/2025;MGZ01/SURT/00004;MGZ01/Stock;Customers;32;-1;-69.0
+[AP8461] Alcohol en gel desinfectant;23/10/2025;MGZ01/SURT/00003;MGZ01/Stock;Customers;31;-1;-100.0
+[AP8461] Alcohol en gel desinfectant;29/10/2025;MGZ01/ENTRA/00007;Vendors;MGZ01/Stock;113;1;13.0
+[AP8461] Alcohol en gel desinfectant;29/10/2025;MGZ01/SURT/00009;MGZ01/Stock;Customers;43;-1;-30.0
+[AP8461] Alcohol en gel desinfectant;29/10/2025;MGZ01/SURT/00008;MGZ01/Stock;Customers;36;-1;-66.0
+[AP8461] Alcohol en gel desinfectant;29/10/2025;MGZ01/SURT/00007;MGZ01/Stock;Customers;34;-1;-100.0
+[AP8461] Alcohol en gel desinfectant;05/11/2025;MGZ01/ENTRA/00009;Vendors;MGZ01/Stock;105;1;5.0
+[AP8461] Alcohol en gel desinfectant;05/11/2025;MGZ01/SURT/00012;MGZ01/Stock;Customers;45;-1;-40.0
+[AP8461] Alcohol en gel desinfectant;05/11/2025;MGZ01/SURT/00011;MGZ01/Stock;Customers;33;-1;-73.0
+[AP8461] Alcohol en gel desinfectant;05/11/2025;MGZ01/SURT/00010;MGZ01/Stock;Customers;27;-1;-100.0
+[AP8461] Alcohol en gel desinfectant;12/11/2025;MGZ01/ENTRA/00012;Vendors;MGZ01/Stock;115;1;15.0
+[AP8461] Alcohol en gel desinfectant;12/11/2025;MGZ01/SURT/00015;MGZ01/Stock;Customers;37;-1;-22.0
+[AP8461] Alcohol en gel desinfectant;12/11/2025;MGZ01/SURT/00014;MGZ01/Stock;Customers;41;-1;-63.0
+[AP8461] Alcohol en gel desinfectant;12/11/2025;MGZ01/SURT/00013;MGZ01/Stock;Customers;37;-1;-100.0
+[AP8461] Alcohol en gel desinfectant;19/11/2025;MGZ01/ENTRA/00014;Vendors;MGZ01/Stock;96;1;-4.0
+[AP8461] Alcohol en gel desinfectant;19/11/2025;MGZ01/SURT/00018;MGZ01/Stock;Customers;31;-1;-35.0
+[AP8461] Alcohol en gel desinfectant;19/11/2025;MGZ01/SURT/00017;MGZ01/Stock;Customers;33;-1;-68.0
+[AP8461] Alcohol en gel desinfectant;19/11/2025;MGZ01/SURT/00016;MGZ01/Stock;Customers;32;-1;-100.0
+[DF4598] Botiquí de primers auxilis compacte;23/10/2025;Cantidad de producto actualizada (Nadal Sacares Moragues);MGZ01/Stock;Inventory adjustment;0;-1;0.0
+[DF4598] Botiquí de primers auxilis compacte;23/10/2025;MGZ01/SURT/00005;MGZ01/Stock;Customers;36;-1;-36.0
+[DF4598] Botiquí de primers auxilis compacte;23/10/2025;MGZ01/SURT/00004;MGZ01/Stock;Customers;43;-1;-79.0
+[DF4598] Botiquí de primers auxilis compacte;24/10/2025;Cantidad de producto actualizada (Nadal Sacares Moragues);Inventory adjustment;MGZ01/Stock;0;1;-79.0
+[DF4598] Botiquí de primers auxilis compacte;24/10/2025;MGZ01/SURT/00006;MGZ01/Stock;Vendors;105;-1;-184.0
+[DF4598] Botiquí de primers auxilis compacte;29/10/2025;MGZ01/ENTRA/00008;Vendors;MGZ01/Stock;90;1;-94.0
+[DF4598] Botiquí de primers auxilis compacte;29/10/2025;MGZ01/SURT/00009;MGZ01/Stock;Customers;34;-1;-128.0
+[DF4598] Botiquí de primers auxilis compacte;29/10/2025;MGZ01/SURT/00008;MGZ01/Stock;Customers;27;-1;-155.0
+[DF4598] Botiquí de primers auxilis compacte;29/10/2025;MGZ01/SURT/00007;MGZ01/Stock;Customers;29;-1;-184.0
+[DF4598] Botiquí de primers auxilis compacte;29/10/2025;Cantidad de producto actualizada (Nadal Sacares Moragues) [revertido];MGZ01/Stock;Inventory adjustment;0;-1;-184.0
+[DF4598] Botiquí de primers auxilis compacte;05/11/2025;MGZ01/ENTRA/00010;Vendors;MGZ01/Stock;116;1;-68.0
+[DF4598] Botiquí de primers auxilis compacte;05/11/2025;MGZ01/SURT/00012;MGZ01/Stock;Customers;46;-1;-114.0
+[DF4598] Botiquí de primers auxilis compacte;05/11/2025;MGZ01/SURT/00011;MGZ01/Stock;Customers;42;-1;-156.0
+[DF4598] Botiquí de primers auxilis compacte;05/11/2025;MGZ01/SURT/00010;MGZ01/Stock;Customers;28;-1;-184.0
+[DF4598] Botiquí de primers auxilis compacte;12/11/2025;MGZ01/ENTRA/00011;Vendors;MGZ01/Stock;111;1;-73.0
+[DF4598] Botiquí de primers auxilis compacte;12/11/2025;MGZ01/SURT/00015;MGZ01/Stock;Customers;32;-1;-105.0
+[DF4598] Botiquí de primers auxilis compacte;12/11/2025;MGZ01/SURT/00014;MGZ01/Stock;Customers;41;-1;-146.0
+[DF4598] Botiquí de primers auxilis compacte;12/11/2025;MGZ01/SURT/00013;MGZ01/Stock;Customers;38;-1;-184.0
+[DF4598] Botiquí de primers auxilis compacte;19/11/2025;MGZ01/ENTRA/00013;Vendors;MGZ01/Stock;91;1;-93.0
+[DF4598] Botiquí de primers auxilis compacte;19/11/2025;MGZ01/SURT/00018;MGZ01/Stock;Customers;24;-1;-117.0
+[DF4598] Botiquí de primers auxilis compacte;19/11/2025;MGZ01/SURT/00017;MGZ01/Stock;Customers;30;-1;-147.0
+[DF4598] Botiquí de primers auxilis compacte;19/11/2025;MGZ01/SURT/00016;MGZ01/Stock;Customers;37;-1;-184.0
+[FA6235] Mascaretes quirúrgiques;23/10/2025;MGZ01/SURT/00005;MGZ01/Stock;Customers;40;-1;-40.0
+[FA6235] Mascaretes quirúrgiques;23/10/2025;MGZ01/SURT/00004;MGZ01/Stock;Customers;36;-1;-76.0
+[FA6235] Mascaretes quirúrgiques;29/10/2025;MGZ01/ENTRA/00007;Vendors;MGZ01/Stock;94;1;18.0
+[FA6235] Mascaretes quirúrgiques;29/10/2025;MGZ01/SURT/00009;MGZ01/Stock;Customers;34;-1;-16.0
+[FA6235] Mascaretes quirúrgiques;29/10/2025;MGZ01/SURT/00008;MGZ01/Stock;Customers;28;-1;-44.0
+[FA6235] Mascaretes quirúrgiques;29/10/2025;MGZ01/SURT/00007;MGZ01/Stock;Customers;32;-1;-76.0
+[FA6235] Mascaretes quirúrgiques;05/11/2025;MGZ01/ENTRA/00009;Vendors;MGZ01/Stock;88;1;12.0
+[FA6235] Mascaretes quirúrgiques;05/11/2025;MGZ01/SURT/00012;MGZ01/Stock;Customers;31;-1;-19.0
+[FA6235] Mascaretes quirúrgiques;05/11/2025;MGZ01/SURT/00011;MGZ01/Stock;Customers;36;-1;-55.0
+[FA6235] Mascaretes quirúrgiques;05/11/2025;MGZ01/SURT/00010;MGZ01/Stock;Customers;21;-1;-76.0
+[FA6235] Mascaretes quirúrgiques;12/11/2025;MGZ01/ENTRA/00012;Vendors;MGZ01/Stock;107;1;31.0
+[FA6235] Mascaretes quirúrgiques;12/11/2025;MGZ01/SURT/00015;MGZ01/Stock;Customers;28;-1;3.0
+[FA6235] Mascaretes quirúrgiques;12/11/2025;MGZ01/SURT/00014;MGZ01/Stock;Customers;41;-1;-38.0
+[FA6235] Mascaretes quirúrgiques;12/11/2025;MGZ01/SURT/00013;MGZ01/Stock;Customers;38;-1;-76.0
+[FA6235] Mascaretes quirúrgiques;19/11/2025;MGZ01/ENTRA/00014;Vendors;MGZ01/Stock;98;1;22.0
+[FA6235] Mascaretes quirúrgiques;19/11/2025;MGZ01/SURT/00018;MGZ01/Stock;Customers;36;-1;-14.0
+[FA6235] Mascaretes quirúrgiques;19/11/2025;MGZ01/SURT/00017;MGZ01/Stock;Customers;34;-1;-48.0
+[FA6235] Mascaretes quirúrgiques;19/11/2025;MGZ01/SURT/00016;MGZ01/Stock;Customers;28;-1;-76.0
+[LA5365] Kit de protecció individual bàsic;23/10/2025;Cantidad de producto actualizada (Nadal Sacares Moragues);MGZ01/Stock;Inventory adjustment;0;-1;0.0
+[LA5365] Kit de protecció individual bàsic;23/10/2025;MGZ01/SURT/00005;MGZ01/Stock;Customers;50;-1;-50.0
+[LA5365] Kit de protecció individual bàsic;23/10/2025;MGZ01/SURT/00004;MGZ01/Stock;Customers;25;-1;-75.0
+[LA5365] Kit de protecció individual bàsic;24/10/2025;Cantidad de producto actualizada (Nadal Sacares Moragues);Inventory adjustment;MGZ01/Stock;0;1;-75.0
+[LA5365] Kit de protecció individual bàsic;24/10/2025;MGZ01/SURT/00006;MGZ01/Stock;Vendors;105;-1;-180.0
+[LA5365] Kit de protecció individual bàsic;29/10/2025;MGZ01/ENTRA/00008;Vendors;MGZ01/Stock;115;1;-65.0
+[LA5365] Kit de protecció individual bàsic;29/10/2025;MGZ01/SURT/00009;MGZ01/Stock;Customers;49;-1;-114.0
+[LA5365] Kit de protecció individual bàsic;29/10/2025;MGZ01/SURT/00008;MGZ01/Stock;Customers;30;-1;-144.0
+[LA5365] Kit de protecció individual bàsic;29/10/2025;MGZ01/SURT/00007;MGZ01/Stock;Customers;36;-1;-180.0
+[LA5365] Kit de protecció individual bàsic;05/11/2025;MGZ01/ENTRA/00010;Vendors;MGZ01/Stock;98;1;-82.0
+[LA5365] Kit de protecció individual bàsic;05/11/2025;MGZ01/SURT/00012;MGZ01/Stock;Customers;31;-1;-113.0
+[LA5365] Kit de protecció individual bàsic;05/11/2025;MGZ01/SURT/00011;MGZ01/Stock;Customers;33;-1;-146.0
+[LA5365] Kit de protecció individual bàsic;05/11/2025;MGZ01/SURT/00010;MGZ01/Stock;Customers;34;-1;-180.0
+[LA5365] Kit de protecció individual bàsic;12/11/2025;MGZ01/ENTRA/00011;Vendors;MGZ01/Stock;106;1;-74.0
+[LA5365] Kit de protecció individual bàsic;12/11/2025;MGZ01/SURT/00015;MGZ01/Stock;Customers;33;-1;-107.0
+[LA5365] Kit de protecció individual bàsic;12/11/2025;MGZ01/SURT/00014;MGZ01/Stock;Customers;38;-1;-145.0
+[LA5365] Kit de protecció individual bàsic;12/11/2025;MGZ01/SURT/00013;MGZ01/Stock;Customers;35;-1;-180.0
+[LA5365] Kit de protecció individual bàsic;19/11/2025;MGZ01/ENTRA/00013;Vendors;MGZ01/Stock;81;1;-99.0
+[LA5365] Kit de protecció individual bàsic;19/11/2025;MGZ01/SURT/00018;MGZ01/Stock;Customers;28;-1;-127.0
+[LA5365] Kit de protecció individual bàsic;19/11/2025;MGZ01/SURT/00017;MGZ01/Stock;Customers;26;-1;-153.0
+[LA5365] Kit de protecció individual bàsic;19/11/2025;MGZ01/SURT/00016;MGZ01/Stock;Customers;27;-1;-180.0

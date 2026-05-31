@@ -101,7 +101,7 @@ def _corregir_stock(df: pd.DataFrame, p: dict) -> list[dict]:
 def _corregir_historial(df: pd.DataFrame, p: dict) -> list[dict]:
     """
     Detecta estocs negatius en qualsevol moment de l'historial.
-    Algoritme: ordena per empresa → producte → data; acumula quantitats.
+    Algoritme: ordena per producte → data → tipus (entrades abans que sortides); acumula quantitats.
     """
     errors = []
 
@@ -117,7 +117,13 @@ def _corregir_historial(df: pd.DataFrame, p: dict) -> list[dict]:
     df_fet["_data_parsed"] = df_fet["Fecha"].apply(
         lambda v: _pd.to_datetime(str(v)[:10], format="%Y-%m-%d", errors="coerce")
     )
-    df_fet = df_fet.sort_values(["Producto", "_data_parsed"]).reset_index(drop=True)
+    # Entrades (A conté MGZ) = 0, sortides (Desde conté MGZ) = 1 → entrades primer
+    df_fet["_ordre_mov"] = df_fet.apply(
+        lambda r: 0 if MGZ_STOCK in norm_str(r.get("A", "")) else 1, axis=1
+    )
+    df_fet = df_fet.sort_values(
+        ["Producto", "_data_parsed", "_ordre_mov"]
+    ).reset_index(drop=True)
 
     # Acumular per producte
     estocs: dict[str, float] = {}
