@@ -540,7 +540,9 @@ views/
 - La pestanya "Errors globals" mostra tots els errors de totes les empreses en una sola taula (columnes: Empresa, Apartat, Gravetat, Llistat, Document, Descripció, Camp, Valor alumne, Valor esperat, Penalització) amb filtre per empresa i descàrrega en xlsx.
 - Les dates es mostren sempre en format `dd/mm/aaaa` (funció `fmt_data` a `modules/utils.py`).
 - `fmt_data` usa regex per convertir dates ISO incrustades en strings (ex: `<= 2025-11-14` → `<= 14/11/2025`).
-- El professor pot visualitzar i editar els llistats xlsx de cada alumne des del Seguiment detallat del tauler (botó "📂 Veure / Editar llistats" → `views/professor/edicio_llistats.py`). Els canvis sobreescriuen el fitxer original de l'alumne. Claus de sessió implicades: `tasca_edit` i `alumne_sel`.
+- El professor pot visualitzar i editar els llistats xlsx de cada alumne des del Seguiment detallat del tauler (botó "📤 Pujar / Editar llistats" → `views/professor/edicio_llistats.py`). Els canvis sobreescriuen el fitxer original de l'alumne. Claus de sessió implicades: `tasca_edit` i `alumne_sel`.
+- `edicio_llistats.py` té dues pestanyes: **📤 Pujar llistats** (el professor puja xlsx en nom de l'alumne, sense restricció de termini) i **📂 Veure / Editar llistats** (visualització i edició de files). El botó apareix sempre, fins i tot amb 0 llistats entregats.
+- El botó "← Tornar al seguiment" a `edicio_llistats.py` retorna al tauler amb la pestanya "Seguiment detallat" activa (via flag `torna_seguiment` a `session_state`; el tauler inverteix l'ordre de les pestanyes quan el detecta, aprofitant que Streamlit activa sempre la primera).
 
 ---
 

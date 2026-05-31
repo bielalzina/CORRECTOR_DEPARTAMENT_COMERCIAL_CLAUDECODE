@@ -50,7 +50,11 @@ def show():
                         st.session_state.page = "referencia"
                         st.rerun()
 
-            tab1, tab2 = st.tabs(["Entregues", "Seguiment detallat"])
+            torna_seguiment = st.session_state.pop("torna_seguiment", False)
+            if torna_seguiment:
+                tab2, tab1 = st.tabs(["Seguiment detallat", "Entregues"])
+            else:
+                tab1, tab2 = st.tabs(["Entregues", "Seguiment detallat"])
 
             with tab1:
                 _tab_entregues(resum)
@@ -81,24 +85,24 @@ def _tab_seguiment(num_tasca: str, grup: str, alumnes: list[dict]) -> None:
         icona = "⚠️" if fora else ("✅" if n == 8 else "🔵" if n > 0 else "⬜")
 
         with st.expander(f"{icona} {alumne['nom']}  —  {n}/8 llistats"):
-            if not llistats:
+            if llistats:
+                cols = st.columns(4)
+                for i, codi in enumerate(CODIS):
+                    with cols[i % 4]:
+                        if codi in llistats:
+                            info = llistats[codi]
+                            fora_t = info.get("fora_termini", False)
+                            icon = "⚠️" if fora_t else "✅"
+                            data = fmt_data(info.get("data_pujada", ""))
+                            st.markdown(f"{icon} **{codi}** {NOM_LLISTAT[codi]}")
+                            st.caption(f"{data}" + (" *(fora termini)*" if fora_t else ""))
+                        else:
+                            st.markdown(f"⬜ **{codi}** {NOM_LLISTAT[codi]}")
+                            st.caption("Pendent")
+            else:
                 st.caption("Cap llistat entregat.")
-                continue
-            cols = st.columns(4)
-            for i, codi in enumerate(CODIS):
-                with cols[i % 4]:
-                    if codi in llistats:
-                        info = llistats[codi]
-                        fora_t = info.get("fora_termini", False)
-                        icon = "⚠️" if fora_t else "✅"
-                        data = fmt_data(info.get("data_pujada", ""))
-                        st.markdown(f"{icon} **{codi}** {NOM_LLISTAT[codi]}")
-                        st.caption(f"{data}" + (" *(fora termini)*" if fora_t else ""))
-                    else:
-                        st.markdown(f"⬜ **{codi}** {NOM_LLISTAT[codi]}")
-                        st.caption("Pendent")
             if st.button(
-                "📂 Veure / Editar llistats",
+                "📤 Pujar / Editar llistats",
                 key=f"editar_{num_tasca}_{exp}",
             ):
                 st.session_state.tasca_edit = num_tasca

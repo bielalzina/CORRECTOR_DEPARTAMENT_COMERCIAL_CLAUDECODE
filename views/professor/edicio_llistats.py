@@ -1,12 +1,13 @@
-"""Vista del professor per visualitzar i editar els llistats xlsx d'un alumne."""
+"""Vista del professor per visualitzar, editar i pujar llistats xlsx d'un alumne."""
 
 import io
 import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-from modules.fitxers import get_llistats_alumne, _entregues_dir
+from modules.fitxers import get_llistats_alumne, guardar_llistat, _entregues_dir
 from modules.alumnes_data import get_alumnes_per_grup
+from modules.validacio import validar_estructura, NOMS_LLISTATS
 from modules.utils import fmt_data
 
 NOM_LLISTAT = {
@@ -41,17 +42,90 @@ def show():
 
     llistats = get_llistats_alumne(num_tasca, grup, str(expedient))
 
-    if not llistats:
-        st.info("Aquest alumne encara no ha entregat cap llistat per aquesta tasca.")
-        return
+    tab_pujada, tab_llistats = st.tabs(["📤 Pujar llistats", "📂 Veure / Editar llistats"])
 
-    codis_entregats = sorted(llistats.keys())
-    noms_tabs = [f"{c} · {NOM_LLISTAT.get(c, c)}" for c in codis_entregats]
-    tabs = st.tabs(noms_tabs)
+    with tab_pujada:
+        _tab_pujada(num_tasca, grup, str(expedient), llistats)
 
-    for tab, codi in zip(tabs, codis_entregats):
-        with tab:
-            _mostrar_llistat(num_tasca, grup, str(expedient), codi, llistats[codi])
+    with tab_llistats:
+        if not llistats:
+            st.info("Aquest alumne encara no ha entregat cap llistat per aquesta tasca.")
+        else:
+            codis_entregats = sorted(llistats.keys())
+            noms_subtabs = [f"{c} · {NOM_LLISTAT.get(c, c)}" for c in codis_entregats]
+            subtabs = st.tabs(noms_subtabs)
+            for subtab, codi in zip(subtabs, codis_entregats):
+                with subtab:
+                    _mostrar_llistat(num_tasca, grup, str(expedient), codi, llistats[codi])
+
+
+def _tab_pujada(
+    num_tasca: str, grup: str, expedient: str, llistats_actuals: dict
+) -> None:
+    st.markdown("Puja fitxers xlsx en nom d'aquest alumne. La validació és idèntica a la de l'alumne.")
+    st.caption("El professor pot pujar llistats independentment del termini de la tasca.")
+
+    fitxers_pujats = st.file_uploader(
+        "xlsx",
+        type=["xlsx"],
+        accept_multiple_files=True,
+        label_visibility="collapsed",
+        key=f"uploader_prof_{expedient}_{num_tasca}",
+    )
+
+    if fitxers_pujats:
+        dades = [(f.name, f.read()) for f in fitxers_pujats]
+        resultats = [(nom, ct, validar_estructura(ct, nom)) for nom, ct in dades]
+
+        st.divider()
+        st.markdown("#### Resultat de la validació")
+
+        valids: list[tuple] = []
+        n_errors = 0
+
+        for nom, contingut, r in resultats:
+            codi = r.tipus.split("_")[0] if r.tipus else None
+            nom_tipus = NOMS_LLISTATS.get(r.tipus, "") if r.tipus else ""
+            ja_entregat = codi in llistats_actuals
+
+            with st.container(border=True):
+                if r.valid:
+                    etiqueta = "⚠️ Substituirà l'entrega anterior" if ja_entregat else "✅ Vàlid"
+                    st.markdown(f"**{etiqueta} — {nom}**")
+                    st.caption(f"Identificat com: **{nom_tipus}**")
+                    for avis in r.avisos:
+                        st.warning(avis)
+                    valids.append((nom, contingut, r))
+                else:
+                    n_errors += 1
+                    st.markdown(f"**❌ {nom}**")
+                    if r.tipus:
+                        st.caption(f"Sembla: {nom_tipus}")
+                    for error in r.errors:
+                        st.error(error)
+                    for avis in r.avisos:
+                        st.warning(avis)
+
+        if valids:
+            n_subs = sum(
+                1 for _, _, r in valids
+                if r.tipus and r.tipus.split("_")[0] in llistats_actuals
+            )
+            label = f"💾 Guardar {len(valids)} fitxer(s) vàlid(s)"
+            if n_subs:
+                label += f"  ({n_subs} substitució(ons))"
+            st.write("")
+            if st.button(label, type="primary", width="stretch", key=f"btn_guardar_{expedient}"):
+                for _, contingut, r in valids:
+                    guardar_llistat(
+                        contingut, num_tasca, grup,
+                        expedient, r.tipus, fora_termini=False,
+                    )
+                st.success(f"✅ {len(valids)} fitxer(s) guardats correctament.")
+                st.rerun()
+
+        if n_errors:
+            st.info(f"ℹ️ {n_errors} fitxer(s) amb errors no s'han guardat.")
 
 
 def _mostrar_llistat(
@@ -115,6 +189,10 @@ def _sidebar(grup: str):
         st.markdown(f"**{prof.get('nom', grup)}**")
         st.caption(f"Grup: {grup}")
         st.divider()
+        if st.button("← Tornar al seguiment", width="stretch"):
+            st.session_state.torna_seguiment = True
+            st.session_state.page = "tauler"
+            st.rerun()
         if st.button("📊 Tauler", width="stretch"):
             st.session_state.page = "tauler"
             st.rerun()
