@@ -1,10 +1,12 @@
 """Neteja de llistats dels alumnes abans de la correcció automàtica.
 
-Quatre operacions aplicades sobre els DataFrames carregats:
+Cinc operacions aplicades sobre els DataFrames carregats:
   1. Eliminació de devolucions de recepcions (ENTRA retornades via SURT a df05 + df02)
   2. Eliminació de devolucions d'entregues  (SURT retornades via ENTRA a df02 + df05)
   3. Eliminació de factures de compra que no son de ALUBIX SL ni ROCALLA SA (df03)
   4. Eliminació de recepcions sense import (nul o zero) de df02
+  5. Eliminació de files de vendes on el client no és BIGCORP SL ni COMERCIAL CALCO SA
+     (df04 columna Cliente, df05 columna Contacto, df06 columna Nombre empresa)
 """
 
 import re
@@ -29,11 +31,23 @@ def _extreure_ref_normalitzada(doc_origen: str) -> str:
     return ""
 
 
+CLIENTS_VENDES = {"BIGCORP SL", "COMERCIAL CALCO SA"}
+
+
 def netejar_llistats(
     df02: Optional[pd.DataFrame],
     df03: Optional[pd.DataFrame],
     df05: Optional[pd.DataFrame],
-) -> tuple[Optional[pd.DataFrame], Optional[pd.DataFrame], Optional[pd.DataFrame], list[str]]:
+    df04: Optional[pd.DataFrame] = None,
+    df06: Optional[pd.DataFrame] = None,
+) -> tuple[
+    Optional[pd.DataFrame],
+    Optional[pd.DataFrame],
+    Optional[pd.DataFrame],
+    Optional[pd.DataFrame],
+    Optional[pd.DataFrame],
+    list[str],
+]:
     """
     Aplica les 4 operacions de neteja als llistats 02, 03 i 05.
     No modifica els DataFrames originals (treballa amb còpies).
@@ -41,7 +55,9 @@ def netejar_llistats(
     """
     df02 = df02.copy() if df02 is not None else None
     df03 = df03.copy() if df03 is not None else None
+    df04 = df04.copy() if df04 is not None else None
     df05 = df05.copy() if df05 is not None else None
+    df06 = df06.copy() if df06 is not None else None
     accions: list[str] = []
 
     # ── 1. Devolucions de recepcions ──────────────────────────────────────────
@@ -133,4 +149,44 @@ def netejar_llistats(
                 f"({', '.join(refs)})"
             )
 
-    return df02, df03, df05, accions
+    # ── 5. Files de vendes amb client fora de l'empresa simulada ─────────────
+    # Elimina files on el client no és BIGCORP SL ni COMERCIAL CALCO SA.
+    clients_upper = {c.upper() for c in CLIENTS_VENDES}
+
+    if df04 is not None and "Cliente" in df04.columns:
+        col = df04["Cliente"].str.strip().str.upper()
+        mascara = ~col.isin(clients_upper)
+        n = mascara.sum()
+        if n:
+            eliminats = df04.loc[mascara, "Cliente"].unique().tolist()
+            df04 = df04[~mascara].reset_index(drop=True)
+            accions.append(
+                f"Eliminades {n} comanda/es de 04_COMANDES_VENDES "
+                f"(clients no esperats: {', '.join(eliminats)})"
+            )
+
+    if df05 is not None and "Contacto" in df05.columns:
+        col = df05["Contacto"].str.strip().str.upper()
+        mascara = ~col.isin(clients_upper)
+        n = mascara.sum()
+        if n:
+            eliminats = df05.loc[mascara, "Contacto"].unique().tolist()
+            df05 = df05[~mascara].reset_index(drop=True)
+            accions.append(
+                f"Eliminades {n} entrega/es de 05_ENTREGUES "
+                f"(clients no esperats: {', '.join(eliminats)})"
+            )
+
+    if df06 is not None and "Nombre de la empresa a mostrar en la factura" in df06.columns:
+        col = df06["Nombre de la empresa a mostrar en la factura"].str.strip().str.upper()
+        mascara = ~col.isin(clients_upper)
+        n = mascara.sum()
+        if n:
+            eliminats = df06.loc[mascara, "Nombre de la empresa a mostrar en la factura"].unique().tolist()
+            df06 = df06[~mascara].reset_index(drop=True)
+            accions.append(
+                f"Eliminades {n} factura/es de 06_FACTURES_VENDA "
+                f"(clients no esperats: {', '.join(eliminats)})"
+            )
+
+    return df02, df03, df04, df05, df06, accions

@@ -104,8 +104,11 @@ def executar_correccio(
         df07 = _carregar_llistat(num_tasca, grup, exp, "07")
         df08 = _carregar_llistat(num_tasca, grup, exp, "08")
 
-        # Neteja pre-correcció (devolucions, factures no-proveïdors, recepcions buides)
-        df02, df03, df05, accions_neteja = netejar_llistats(df02, df03, df05)
+        # Neteja pre-correcció (devolucions, factures no-proveïdors, recepcions buides,
+        # files de vendes amb client fora de l'empresa simulada)
+        df02, df03, df04, df05, df06, accions_neteja = netejar_llistats(
+            df02, df03, df05, df04, df06
+        )
 
         # Executar correccions per blocs
         errors: list[dict] = []

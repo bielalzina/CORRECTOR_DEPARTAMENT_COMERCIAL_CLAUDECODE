@@ -533,7 +533,7 @@ views/
 - `modules/correccio_magatzem.py` — llistats 07, 08
 - `views/professor/correccio.py` — llançar correcció + gestió de casos ambigus (la correcció s'atura i espera decisió del professor) + pestanya "Errors globals" amb taula unificada i descàrrega xlsx
 - Resultat: `data/tasques/<num>/<grup>/correccions/resultats.json`
-- `modules/neteja.py` — mòdul de suport (present al repo)
+- `modules/neteja.py` — neteja pre-correcció dels DataFrames (devolucions, factures/vendes de tercers, recepcions sense import). Funció `netejar_llistats(df02, df03, df05, df04, df06)` retorna `(df02, df03, df04, df05, df06, accions)`. Cinc operacions: (1) devolucions de recepcions de compra (ENTRA); (2) devolucions d'entregues de venda (SURT); (3) factures de compra de proveïdors que no són ALUBIX SL ni ROCALLA SA; (4) recepcions sense import (nul o zero); (5) files de vendes on el client no és BIGCORP SL ni COMERCIAL CALCO SA (df04→`Cliente`, df05→`Contacto`, df06→`Nombre de la empresa a mostrar en la factura`).
 
 **Decisions de disseny preses a la Fase 3:**
 - La vista de correcció mostra els resultats en quatre pestanyes: Compres (01–03), Vendes (04–06), Magatzem (07–08) i Errors globals.
