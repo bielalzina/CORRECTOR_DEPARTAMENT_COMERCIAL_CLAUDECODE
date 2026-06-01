@@ -8,7 +8,8 @@
         "R_NUMERO_CP": "535275",
         "R_NUMERO_CA": "1",
         "R_NUMERO_CF": "2025/00001",
-        "R_IMPORTE_C": 1130.14
+        "R_IMPORTE_C": 1130.14,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -17,7 +18,8 @@
         "R_NUMERO_CP": "535296",
         "R_NUMERO_CA": "5",
         "R_NUMERO_CF": "2025/00002",
-        "R_IMPORTE_C": 1314.06
+        "R_IMPORTE_C": 1314.06,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -26,7 +28,8 @@
         "R_NUMERO_CP": "537495",
         "R_NUMERO_CA": "10",
         "R_NUMERO_CF": "2025/00005",
-        "R_IMPORTE_C": 3714.7
+        "R_IMPORTE_C": 3714.7,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -35,7 +38,8 @@
         "R_NUMERO_CP": "537501",
         "R_NUMERO_CA": "10",
         "R_NUMERO_CF": "2025/00005",
-        "R_IMPORTE_C": 4319.7
+        "R_IMPORTE_C": 4319.7,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -44,7 +48,8 @@
         "R_NUMERO_CP": "540082",
         "R_NUMERO_CA": "13",
         "R_NUMERO_CF": "2025/00006",
-        "R_IMPORTE_C": 3780.04
+        "R_IMPORTE_C": 3780.04,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -53,7 +58,8 @@
         "R_NUMERO_CP": "540087",
         "R_NUMERO_CA": "15",
         "R_NUMERO_CF": "2025/00010",
-        "R_IMPORTE_C": 4126.1
+        "R_IMPORTE_C": 4126.1,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -62,7 +68,8 @@
         "R_NUMERO_CP": "542282",
         "R_NUMERO_CA": "17",
         "R_NUMERO_CF": "2025/00008",
-        "R_IMPORTE_C": 3523.52
+        "R_IMPORTE_C": 3523.52,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -71,7 +78,8 @@
         "R_NUMERO_CP": "542284",
         "R_NUMERO_CA": "17",
         "R_NUMERO_CF": "2025/00013",
-        "R_IMPORTE_C": 4467.32
+        "R_IMPORTE_C": 4467.32,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -80,7 +88,8 @@
         "R_NUMERO_CP": "544978",
         "R_NUMERO_CA": "20",
         "R_NUMERO_CF": "2025/00013",
-        "R_IMPORTE_C": 4038.98
+        "R_IMPORTE_C": 4038.98,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -89,7 +98,8 @@
         "R_NUMERO_CP": "544979",
         "R_NUMERO_CA": "18",
         "R_NUMERO_CF": "2025/00017",
-        "R_IMPORTE_C": 4481.84
+        "R_IMPORTE_C": 4481.84,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -98,7 +108,8 @@
         "R_NUMERO_CP": "547874",
         "R_NUMERO_CA": "22",
         "R_NUMERO_CF": "2025/00017",
-        "R_IMPORTE_C": 3518.68
+        "R_IMPORTE_C": 3518.68,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -107,7 +118,8 @@
         "R_NUMERO_CP": "547875",
         "R_NUMERO_CA": "22",
         "R_NUMERO_CF": "2025/00018",
-        "R_IMPORTE_C": 3574.34
+        "R_IMPORTE_C": 3574.34,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -116,7 +128,8 @@
         "R_NUMERO_CP": "551183",
         "R_NUMERO_CA": "23",
         "R_NUMERO_CF": "2025/00021",
-        "R_IMPORTE_C": 3695.34
+        "R_IMPORTE_C": 3695.34,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -125,7 +138,8 @@
         "R_NUMERO_CP": "551187",
         "R_NUMERO_CA": "27",
         "R_NUMERO_CF": "2025/00022",
-        "R_IMPORTE_C": 3947.02
+        "R_IMPORTE_C": 3947.02,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -134,7 +148,8 @@
         "R_NUMERO_CP": "554187",
         "R_NUMERO_CA": "27",
         "R_NUMERO_CF": "2025/00024",
-        "R_IMPORTE_C": 3605.8
+        "R_IMPORTE_C": 3605.8,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -143,7 +158,8 @@
         "R_NUMERO_CP": "554188",
         "R_NUMERO_CA": "31",
         "R_NUMERO_CF": "2025/00027",
-        "R_IMPORTE_C": 4157.56
+        "R_IMPORTE_C": 4157.56,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -152,7 +168,8 @@
         "R_NUMERO_CP": "556692",
         "R_NUMERO_CA": "30",
         "R_NUMERO_CF": "2025/00028",
-        "R_IMPORTE_C": 3780.04
+        "R_IMPORTE_C": 3780.04,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -161,7 +178,8 @@
         "R_NUMERO_CP": "556693",
         "R_NUMERO_CA": "32",
         "R_NUMERO_CF": "2025/00032",
-        "R_IMPORTE_C": 4414.08
+        "R_IMPORTE_C": 4414.08,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -170,7 +188,8 @@
         "R_NUMERO_CP": "560877",
         "R_NUMERO_CA": "33",
         "R_NUMERO_CF": "2025/00032",
-        "R_IMPORTE_C": 3927.66
+        "R_IMPORTE_C": 3927.66,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -179,7 +198,8 @@
         "R_NUMERO_CP": "560878",
         "R_NUMERO_CA": "35",
         "R_NUMERO_CF": "2025/00037",
-        "R_IMPORTE_C": 4307.6
+        "R_IMPORTE_C": 4307.6,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -188,7 +208,8 @@
         "R_NUMERO_CP": "561696",
         "R_NUMERO_CA": "34",
         "R_NUMERO_CF": "2025/00034",
-        "R_IMPORTE_C": 162.14
+        "R_IMPORTE_C": 162.14,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -197,7 +218,8 @@
         "R_NUMERO_CP": "561697",
         "R_NUMERO_CA": "39",
         "R_NUMERO_CF": "2025/00041",
-        "R_IMPORTE_C": 157.3
+        "R_IMPORTE_C": 157.3,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -206,7 +228,8 @@
         "R_NUMERO_CP": "562121",
         "R_NUMERO_CA": "38",
         "R_NUMERO_CF": "2026/00038",
-        "R_IMPORTE_C": 3709.86
+        "R_IMPORTE_C": 3709.86,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -215,7 +238,8 @@
         "R_NUMERO_CP": "562122",
         "R_NUMERO_CA": "40",
         "R_NUMERO_CF": "2026/00044",
-        "R_IMPORTE_C": 4445.54
+        "R_IMPORTE_C": 4445.54,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -224,7 +248,8 @@
         "R_NUMERO_CP": "564427",
         "R_NUMERO_CA": "43",
         "R_NUMERO_CF": "2026/00039",
-        "R_IMPORTE_C": 3748.58
+        "R_IMPORTE_C": 3748.58,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -233,7 +258,8 @@
         "R_NUMERO_CP": "564428",
         "R_NUMERO_CA": "41",
         "R_NUMERO_CF": "2026/00046",
-        "R_IMPORTE_C": 3893.78
+        "R_IMPORTE_C": 3893.78,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -242,7 +268,8 @@
         "R_NUMERO_CP": "567992",
         "R_NUMERO_CA": "44",
         "R_NUMERO_CF": "2026/00041",
-        "R_IMPORTE_C": 3407.36
+        "R_IMPORTE_C": 3407.36,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -251,7 +278,8 @@
         "R_NUMERO_CP": "567994",
         "R_NUMERO_CA": "46",
         "R_NUMERO_CF": "2026/00049",
-        "R_IMPORTE_C": 4544.76
+        "R_IMPORTE_C": 4544.76,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -260,7 +288,8 @@
         "R_NUMERO_CP": "568870",
         "R_NUMERO_CA": "49",
         "R_NUMERO_CF": "2026/00045",
-        "R_IMPORTE_C": 162.14
+        "R_IMPORTE_C": 162.14,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -269,7 +298,8 @@
         "R_NUMERO_CP": "568871",
         "R_NUMERO_CA": "48",
         "R_NUMERO_CF": "2026/00053",
-        "R_IMPORTE_C": 157.3
+        "R_IMPORTE_C": 157.3,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -278,7 +308,8 @@
         "R_NUMERO_CP": "571360",
         "R_NUMERO_CA": "51",
         "R_NUMERO_CF": "2026/00046",
-        "R_IMPORTE_C": 4038.98
+        "R_IMPORTE_C": 4038.98,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -287,7 +318,8 @@
         "R_NUMERO_CP": "571362",
         "R_NUMERO_CA": "52",
         "R_NUMERO_CF": "2026/00054",
-        "R_IMPORTE_C": 4464.9
+        "R_IMPORTE_C": 4464.9,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -296,7 +328,8 @@
         "R_NUMERO_CP": "572105",
         "R_NUMERO_CA": "53",
         "R_NUMERO_CF": "2026/00051",
-        "R_IMPORTE_C": 84.7
+        "R_IMPORTE_C": 84.7,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -305,7 +338,8 @@
         "R_NUMERO_CP": "574738",
         "R_NUMERO_CA": "58",
         "R_NUMERO_CF": "2026/00056",
-        "R_IMPORTE_C": 6838.92
+        "R_IMPORTE_C": 6838.92,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -314,7 +348,8 @@
         "R_NUMERO_CP": "574743",
         "R_NUMERO_CA": "53",
         "R_NUMERO_CF": "2026/00055",
-        "R_IMPORTE_C": 7545.56
+        "R_IMPORTE_C": 7545.56,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -323,7 +358,8 @@
         "R_NUMERO_CP": "577462",
         "R_NUMERO_CA": "59",
         "R_NUMERO_CF": "2026/00060",
-        "R_IMPORTE_C": 4377.78
+        "R_IMPORTE_C": 4377.78,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       },
       {
         "R_EMPRESA_C": "ADG32 5796 NSACARES SL",
@@ -332,7 +368,8 @@
         "R_NUMERO_CP": "577463",
         "R_NUMERO_CA": "55",
         "R_NUMERO_CF": "2026/00056",
-        "R_IMPORTE_C": 4818.22
+        "R_IMPORTE_C": 4818.22,
+        "R_DATA_ENTREGA_TASCA": "2026-06-01"
       }
     ],
     "vendes": [
