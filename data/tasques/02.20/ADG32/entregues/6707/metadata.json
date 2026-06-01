@@ -1,0 +1,52 @@
+{
+  "llistats": {
+    "01": {
+      "nom_fitxer": "02.20-6707-01_COMANDES_COMPRES.xlsx",
+      "tipus": "01_COMANDES_COMPRES",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "02": {
+      "nom_fitxer": "02.20-6707-02_RECEPCIONS.xlsx",
+      "tipus": "02_RECEPCIONS",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "03": {
+      "nom_fitxer": "02.20-6707-03_FACTURES_COMPRA.xlsx",
+      "tipus": "03_FACTURES_COMPRA",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "04": {
+      "nom_fitxer": "02.20-6707-04_COMANDES_VENDES.xlsx",
+      "tipus": "04_COMANDES_VENDES",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "05": {
+      "nom_fitxer": "02.20-6707-05_ENTREGUES.xlsx",
+      "tipus": "05_ENTREGUES",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "07": {
+      "nom_fitxer": "02.20-6707-07_STOCK.xlsx",
+      "tipus": "07_STOCK",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "08": {
+      "nom_fitxer": "02.20-6707-08_HISTORIAL_ENTRADES_SORTIDES.xlsx",
+      "tipus": "08_HISTORIAL_ENTRADES_SORTIDES",
+      "data_pujada": "2026-06-01T02:28:20",
+      "fora_termini": false
+    },
+    "06": {
+      "nom_fitxer": "02.20-6707-06_FACTURES_VENDA.xlsx",
+      "tipus": "06_FACTURES_VENDA",
+      "data_pujada": "2026-06-01T02:46:53",
+      "fora_termini": false
+    }
+  }
+}
