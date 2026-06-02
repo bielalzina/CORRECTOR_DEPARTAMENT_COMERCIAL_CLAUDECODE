@@ -659,6 +659,20 @@ Afecta: `modules/correccio_vendes.py` — funcions `_match_06_recap` i `_corregi
 
 ---
 
+### `norm_str`: normalització de números d'albarà — BUG CORREGIT
+
+**Problema:** La comparació del `Numero albarà` (02_RECEPCIONS) reportava fals error "número incorrecte" quan els valors eren numèricament idèntics però amb formats diferents:
+- **Zeros inicials:** l'alumne puja `"0008"` (cel·la de text amb format numèric al xlsx), la referència té `"8"`. `"0008" != "8"` → error fals.
+- **Float via `dtype=str`:** `pd.read_excel(..., dtype=str)` converteix cel·les numèriques d'Excel a `"1.0"` (float string), mentre la referència JSON emmagatzema `"1"`. `"1.0" != "1"` → error fals.
+
+**Regla:** `norm_str` (`modules/utils.py`) aplica dues normalitzacions addicionals abans de comparar:
+1. Si el string acaba en `.0` i la part anterior és un enter (ex: `"1.0"`), treu el `.0` → `"1"`.
+2. Si el string és tot dígits (ex: `"0008"`), converteix a int i torna a string → `"8"`.
+
+La mateixa lògica s'aplica a `_fmt_display` (valors mostrats a l'informe d'errors) per coherència visual.
+
+---
+
 ### Tolerància d'imports: 0.03 € per arrodoniments d'ODOO
 
 ODOO acumula errors de coma flotant en calcular impostos i totals, de manera que l'import final pot diferir en uns pocs cèntims del valor de referència. Per evitar falsos positius d'import incorrecte, la funció `imports_iguals` (`modules/utils.py`) aplica una tolerància de **0.03 €** (3 cèntims).

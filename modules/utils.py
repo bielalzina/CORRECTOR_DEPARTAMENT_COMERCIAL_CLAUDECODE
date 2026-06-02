@@ -69,10 +69,31 @@ def imports_iguals(val_alumne, val_ref, tolerancia: float = 0.03) -> bool:
 
 
 def norm_str(val) -> str:
-    """Normalitza un string per a comparació (strip + lower, sense valors nuls)."""
+    """Normalitza un string per a comparació (strip + lower, sense valors nuls).
+    - "1.0" → "1": enters representats com a float (pandas dtype=str sobre cel·les numèriques).
+    - "0008" → "8": zeros inicials (cel·les de text amb format numèric al xlsx de l'alumne)."""
     if val is None or str(val).strip() in ("nan", "None", ""):
         return ""
-    return str(val).strip().lower()
+    s = str(val).strip().lower()
+    if s.endswith(".0") and s[:-2].lstrip("-").isdigit():
+        s = s[:-2]
+    if s.isdigit():
+        s = str(int(s))
+    return s
+
+
+def _fmt_display(val) -> Optional[str]:
+    """Formata un valor per mostrar-lo a l'informe d'errors.
+    - "1.0" → "1": enters com a float.
+    - "0008" → "8": zeros inicials."""
+    if val is None:
+        return None
+    s = str(val)
+    if s.endswith(".0") and s[:-2].lstrip("-").isdigit():
+        s = s[:-2]
+    if s.isdigit():
+        s = str(int(s))
+    return s
 
 
 def fer_error(
@@ -95,8 +116,8 @@ def fer_error(
         "penalitzacio": -abs(penalitzacio),
         "descripcio": descripcio,
         "camp": camp,
-        "valor_alumne": str(valor_alumne) if valor_alumne is not None else None,
-        "valor_esperat": str(valor_esperat) if valor_esperat is not None else None,
+        "valor_alumne": _fmt_display(valor_alumne),
+        "valor_esperat": _fmt_display(valor_esperat),
         "operacio": operacio,
         "document": document,
     }
