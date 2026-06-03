@@ -143,27 +143,49 @@ def _seccio_bloc(
         exp = str(alumne["expedient"])
         res = alumnes_res.get(exp)
         if not res:
-            files_resum.append({
-                "Alumne": alumne["nom"],
-                "Penalització": "—",
-                "Errors": "—",
-                "Casos ambigus": "—",
-            })
+            fila: dict = {"Alumne": alumne["nom"]}
+            if bloc == "compres":
+                fila["Comandes compra"] = "—"
+                fila["Recepcions"] = "—"
+                fila["Factures compra"] = "—"
+            elif bloc == "vendes":
+                fila["Comandes venda"] = "—"
+                fila["Entregues"] = "—"
+                fila["Factures venda"] = "—"
+            fila["Penalització"] = "—"
+            fila["Errors"] = "—"
+            fila["Casos ambigus"] = "—"
+            files_resum.append(fila)
             continue
 
         errors_bloc  = _errors_bloc(res, llistats_bloc)
         ambigus_bloc = _ambigus_bloc(res, llistats_bloc)
         pen = _penalitzacio_bloc(errors_bloc, ambigus_bloc)
         n_amb_pend = sum(1 for a in ambigus_bloc if a.get("resolucio") is None)
+        counts = res.get("counts", {})
 
-        files_resum.append({
-            "Alumne":         res.get("nom", alumne["nom"]),
-            "Penalització":   pen,
-            "Errors":         len(errors_bloc),
-            "Casos ambigus":  str(n_amb_pend) if n_amb_pend else "—",
-        })
+        fila = {"Alumne": res.get("nom", alumne["nom"])}
+        if bloc == "compres":
+            rc = counts.get("ref_compres")
+            fila["Comandes compra"] = _fmt_count(counts.get("n01"), rc)
+            fila["Recepcions"]      = _fmt_count(counts.get("n02"), rc)
+            fila["Factures compra"] = _fmt_count(counts.get("n03"), rc)
+        elif bloc == "vendes":
+            rv = counts.get("ref_vendes")
+            fila["Comandes venda"] = _fmt_count(counts.get("n04"), rv)
+            fila["Entregues"]      = _fmt_count(counts.get("n05"), rv)
+            fila["Factures venda"] = _fmt_count(counts.get("n06"), None)
+        fila["Penalització"]  = pen
+        fila["Errors"]        = len(errors_bloc)
+        fila["Casos ambigus"] = str(n_amb_pend) if n_amb_pend else "—"
+        files_resum.append(fila)
 
-    st.dataframe(pd.DataFrame(files_resum), hide_index=True, width='stretch')
+    df_resum = pd.DataFrame(files_resum)
+    cols_count = {
+        "compres": ["Comandes compra", "Recepcions", "Factures compra"],
+        "vendes":  ["Comandes venda", "Entregues", "Factures venda"],
+    }.get(bloc, [])
+    st.html(_taula_resum_html(df_resum, cols_count))
 
     st.divider()
 
@@ -216,6 +238,68 @@ def _seccio_bloc(
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers de filtratge
 # ─────────────────────────────────────────────────────────────────────────────
+
+def _taula_resum_html(df: pd.DataFrame, cols_count: list[str]) -> str:
+    """Genera una taula HTML amb centrat de columnes i color per discrepàncies."""
+    COLOR_DISC   = "#ffe0b2"
+    COLOR_DISC_T = "#6d3b00"
+
+    def _es_discrepancia(val: str, col: str) -> bool:
+        if col not in cols_count or not isinstance(val, str) or "/" not in val:
+            return False
+        parts = val.split("/")
+        try:
+            return int(parts[0]) != int(parts[1])
+        except ValueError:
+            return False
+
+    def _fmt_val(val, col: str) -> str:
+        if col == "Penalització" and isinstance(val, (int, float)):
+            return f"{val:.2f}"
+        return str(val) if val is not None else "—"
+
+    css = """
+    <style>
+    .resum-taula { width:100%; border-collapse:collapse; font-size:14px; }
+    .resum-taula th {
+        background:#f0f2f6; color:#31333f;
+        padding:8px 10px; border-bottom:2px solid #d0d0d0;
+        text-align:center; font-weight:600;
+    }
+    .resum-taula th:first-child { text-align:left; }
+    .resum-taula td {
+        padding:6px 10px; border-bottom:1px solid #e8e8e8;
+        text-align:center; vertical-align:middle;
+    }
+    .resum-taula td:first-child { text-align:left; }
+    .resum-taula tr:hover td { background:#f7f7f7; }
+    .disc { background-color:""" + COLOR_DISC + """; color:""" + COLOR_DISC_T + """; font-weight:600; border-radius:4px; }
+    </style>
+    """
+
+    cols = list(df.columns)
+    header = "".join(f"<th>{c}</th>" for c in cols)
+    rows = []
+    for _, row in df.iterrows():
+        cells = []
+        for col in cols:
+            val = row[col]
+            txt = _fmt_val(val, col)
+            disc = _es_discrepancia(txt, col)
+            cls = ' class="disc"' if disc else ""
+            cells.append(f"<td{cls}>{txt}</td>")
+        rows.append("<tr>" + "".join(cells) + "</tr>")
+
+    return css + f'<table class="resum-taula"><thead><tr>{header}</tr></thead><tbody>{"".join(rows)}</tbody></table>'
+
+
+def _fmt_count(registrades, esperades) -> str:
+    if registrades is None:
+        return "—"
+    if esperades is None:
+        return str(registrades)
+    return f"{registrades}/{esperades}"
+
 
 def _errors_bloc(res: dict, llistats_bloc: set) -> list[dict]:
     return [e for e in res.get("errors", []) if e.get("llistat", "") in llistats_bloc]

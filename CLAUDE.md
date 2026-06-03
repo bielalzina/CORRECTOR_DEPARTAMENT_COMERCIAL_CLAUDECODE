@@ -543,6 +543,7 @@ views/
 - El professor pot visualitzar i editar els llistats xlsx de cada alumne des del Seguiment detallat del tauler (botó "📤 Pujar / Editar llistats" → `views/professor/edicio_llistats.py`). Els canvis sobreescriuen el fitxer original de l'alumne. Claus de sessió implicades: `tasca_edit` i `alumne_sel`.
 - `edicio_llistats.py` té dues pestanyes: **📤 Pujar llistats** (el professor puja xlsx en nom de l'alumne, sense restricció de termini) i **📂 Veure / Editar llistats** (visualització i edició de files). El botó apareix sempre, fins i tot amb 0 llistats entregats.
 - El botó "← Tornar al seguiment" a `edicio_llistats.py` retorna al tauler amb la pestanya "Seguiment detallat" activa (via flag `torna_seguiment` a `session_state`; el tauler inverteix l'ordre de les pestanyes quan el detecta, aprofitant que Streamlit activa sempre la primera).
+- La taula resum de compres i vendes inclou 3 columnes de recompte (`registrades/esperades`) per a cada llistat del bloc (01/02/03 i 04/05/06). Els counts es guarden al camp `counts` de `resultats.json` durant l'execució de la correcció (`modules/correccio.py`). La taula es renderitza com a HTML pur via `st.html` (funció `_taula_resum_html` a `views/professor/correccio.py`) per garantir el centrat de columnes i el color de fons taronja (`#ffe0b2`) quan registrades ≠ esperades. `st.dataframe` no permet controlar l'alineació de text.
 
 ---
 

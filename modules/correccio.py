@@ -163,6 +163,16 @@ def executar_correccio(
             "llistats_faltants": llistats_faltants,
             "ref_disponible": bool(ref_alumne),
             "neteja_aplicada": accions_neteja,
+            "counts": {
+                "n01": len(df01) if df01 is not None else None,
+                "n02": len(df02) if df02 is not None else None,
+                "n03": len(df03) if df03 is not None else None,
+                "n04": len(df04) if df04 is not None else None,
+                "n05": len(df05) if df05 is not None else None,
+                "n06": len(df06) if df06 is not None else None,
+                "ref_compres": len(compres_ref),
+                "ref_vendes": len(vendes_ref),
+            },
         }
 
     resultats = {
