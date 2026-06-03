@@ -679,3 +679,24 @@ La mateixa lògica s'aplica a `_fmt_display` (valors mostrats a l'informe d'erro
 ODOO acumula errors de coma flotant en calcular impostos i totals, de manera que l'import final pot diferir en uns pocs cèntims del valor de referència. Per evitar falsos positius d'import incorrecte, la funció `imports_iguals` (`modules/utils.py`) aplica una tolerància de **0.03 €** (3 cèntims).
 
 **Regla:** `abs(valor_alumne) - abs(valor_referencia)` ≤ 0.03 → import considerat correcte. Afecta totes les comparacions d'import de compres (01, 02, 03) i vendes (04, 05, 06), tant en mode individual com recapitulatiu.
+
+---
+
+### Detecció d'operacions sobrants — IMPLEMENTAT
+
+**Problema:** El motor de correcció detectava quan un alumne registrava **menys** operacions que les esperades (operació que falta), però no detectava quan en registrava **més** (operació duplicada o inventada). Exemple: un alumne amb 40 comandes i 38 de referència no generava cap error.
+
+**Regla:** Després de recórrer totes les operacions de referència, es comprova si queden files als llistats de l'alumne que no s'han emparellat amb cap referència. Cada fila no emparellada genera un error de tipus `operacio_sobrant` (molt greu, -1 punt).
+
+La detecció usa les **claus primàries reals** de cada llistat (les mateixes que `detectar_duplicats`):
+
+| Llistat | Clau per rastrejar emparellaments |
+|---|---|
+| 01_COMANDES_COMPRES | `Referencia de proveedor` |
+| 02_RECEPCIONS | `(Contacto, Numero albarà)` |
+| 03_FACTURES_COMPRA | `Número` |
+| 04_COMANDES_VENDES | `Referencia del pedido` |
+| 05_ENTREGUES | `Referencia` |
+| 06_FACTURES_VENDA | `Número` |
+
+Implementació: `modules/correccio_compres.py` i `modules/correccio_vendes.py` (sets `matched_*` omplerts durant el bucle de corrrecció; comprovació post-bucle). `_corregir_recap` retorna els sets emparellats com a valors addicionals. `operacio_sobrant` afegit a `PENALITZACIONS_DEFAULT` a `modules/utils.py`.

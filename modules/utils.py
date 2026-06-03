@@ -172,6 +172,7 @@ def detectar_duplicats(
 
 PENALITZACIONS_DEFAULT: dict = {
     "operacio_falta":           1.0,
+    "operacio_sobrant":         1.0,
     "proveidor_client_incorrecte": 1.0,
     "import_incorrecte":        1.0,
     "quantitat_incorrecta":     1.0,

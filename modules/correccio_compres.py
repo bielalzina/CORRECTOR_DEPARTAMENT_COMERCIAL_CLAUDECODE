@@ -38,11 +38,18 @@ def corregir_compres(
         errors.extend(detectar_duplicats(df03, "03_FACTURES_COMPRA",
                                          ["Número"], p))
 
+    # Rastrejar claus primàries emparellades per detectar sobrants
+    matched_cp: set[str] = set()           # Referencia de proveedor (01)
+    matched_ca: set[tuple] = set()         # (Contacto, Numero albarà) (02)
+    matched_num03: set[str] = set()        # Número (03)
+
     for ref in compres_ref:
         desc_op = f"{ref['R_PROVEEDOR_C']} — {ref.get('R_FECHA_EMISION_C', '')}"
 
         # ── Llistat 01 ────────────────────────────────────────────────────────
         fila01, num_inferable = _match_01(df01, ref)
+        if fila01 is not None:
+            matched_cp.add(norm_str(fila01.get("Referencia de proveedor", "")))
 
         if fila01 is None:
             if df01 is not None:  # llistat pujat però operació no trobada
@@ -151,6 +158,9 @@ def corregir_compres(
         # ── Llistat 02 ────────────────────────────────────────────────────────
         ref_pedido_01 = fila01.get("Referencia del pedido") if fila01 is not None else None
         fila02 = _match_02(df02, ref, ref_pedido_01)
+        if fila02 is not None:
+            matched_ca.add((norm_str(fila02.get("Contacto", "")),
+                            norm_str(fila02.get("Numero albarà", ""))))
 
         if fila02 is None:
             if df02 is not None:
@@ -243,6 +253,8 @@ def corregir_compres(
 
         # ── Llistat 03 ────────────────────────────────────────────────────────
         fila03 = _match_03(df03, ref, ref_pedido_01)
+        if fila03 is not None:
+            matched_num03.add(norm_str(fila03.get("Número", "")))
 
         if fila03 is None:
             if df03 is not None:
@@ -331,6 +343,48 @@ def corregir_compres(
                     "Estado en pago",
                     fila03.get("Estado en pago"), "Publicado / Pagada", desc_op,
                     document=doc03,
+                ))
+
+    # Detectar operacions sobrants (registrades per l'alumne però no esperades)
+    if df01 is not None and compres_ref:
+        for _, row in df01.iterrows():
+            cp = norm_str(row.get("Referencia de proveedor", ""))
+            if cp in ("", "nan", "none"):
+                continue
+            if cp not in matched_cp:
+                errors.append(fer_error(
+                    "01_COMANDES_COMPRES", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: comanda {cp} "
+                    f"({row.get('Proveedor', '')}) no figura a les dades de referència",
+                    document=str(row.get("Referencia del pedido", "")),
+                ))
+    if df02 is not None and compres_ref:
+        for _, row in df02.iterrows():
+            ca = (norm_str(row.get("Contacto", "")), norm_str(row.get("Numero albarà", "")))
+            if any(v in ("", "nan", "none") for v in ca):
+                continue
+            if ca not in matched_ca:
+                errors.append(fer_error(
+                    "02_RECEPCIONS", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: albarà {ca[1]} de {ca[0]} "
+                    "no figura a les dades de referència",
+                    document=str(row.get("Referencia", "")),
+                ))
+    if df03 is not None and compres_ref:
+        for _, row in df03.iterrows():
+            num3 = norm_str(row.get("Número", ""))
+            if num3 in ("", "nan", "none"):
+                continue
+            if num3 not in matched_num03:
+                errors.append(fer_error(
+                    "03_FACTURES_COMPRA", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: factura {row.get('Número', '')} "
+                    f"({row.get('Nombre de la empresa a mostrar en la factura', '')}) "
+                    "no figura a les dades de referència",
+                    document=str(row.get("Número", "")),
                 ))
 
     # Llistats completament absents

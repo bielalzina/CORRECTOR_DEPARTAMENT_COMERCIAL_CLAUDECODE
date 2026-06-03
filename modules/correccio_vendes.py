@@ -50,6 +50,11 @@ def corregir_vendes(
         errors.extend(detectar_duplicats(df06, "06_FACTURES_VENDA",
                                          ["Número"], p))
 
+    # Rastrejar claus primàries emparellades per detectar sobrants
+    matched_ref04: set[str] = set()    # Referencia del pedido (04)
+    matched_ref05: set[str] = set()    # Referencia (05)
+    matched_num06: set[str] = set()    # Número (06)
+
     # ── Llistats absents ──────────────────────────────────────────────────────
     if df04 is None:
         errors.append(fer_error(
@@ -77,6 +82,8 @@ def corregir_vendes(
         desc_op = f"{ref['R_CLIENTE_V']} — {ref.get('R_FECHA_EMISION_VP', '')}"
 
         fila04, num_inferable = _match_04(df04, ref)
+        if fila04 is not None:
+            matched_ref04.add(norm_str(fila04.get("Referencia del pedido", "")))
 
         if fila04 is None:
             errors.append(fer_error(
@@ -154,6 +161,8 @@ def corregir_vendes(
         # Llistat 05
         ref_pedido_04 = fila04.get("Referencia del pedido") if fila04 else None
         fila05 = _match_05(df05, ref, ref_pedido_04)
+        if fila05 is not None:
+            matched_ref05.add(norm_str(fila05.get("Referencia", "")))
 
         if fila05 is None:
             errors.append(fer_error(
@@ -205,6 +214,8 @@ def corregir_vendes(
         # Llistat 06 — facturació individual
         ref_pedido_04_val = fila04.get("Referencia del pedido") if fila04 else None
         fila06 = _match_06_individual(df06, ref, ref_pedido_04_val)
+        if fila06 is not None:
+            matched_num06.add(norm_str(fila06.get("Número", "")))
 
         if fila06 is None:
             errors.append(fer_error(
@@ -244,9 +255,54 @@ def corregir_vendes(
 
     # ── Facturació recapitulativa ─────────────────────────────────────────────
     if vendes_recap:
-        e, a = _corregir_recap(df04, df05, df06, vendes_recap, p)
+        e, a, m04, m05, m06 = _corregir_recap(df04, df05, df06, vendes_recap, p)
         errors.extend(e)
         ambigus.extend(a)
+        matched_ref04.update(m04)
+        matched_ref05.update(m05)
+        matched_num06.update(m06)
+
+    # ── Detectar operacions sobrants (registrades però no esperades) ──────────
+    if df04 is not None and vendes_ref:
+        for _, row in df04.iterrows():
+            rp = norm_str(row.get("Referencia del pedido", ""))
+            if rp in ("", "nan", "none"):
+                continue
+            if rp not in matched_ref04:
+                errors.append(fer_error(
+                    "04_COMANDES_VENDES", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: comanda {rp} "
+                    f"({row.get('Cliente', '')}) no figura a les dades de referència",
+                    document=str(row.get("Referencia del pedido", "")),
+                ))
+    if df05 is not None and vendes_ref:
+        for _, row in df05.iterrows():
+            ref5 = norm_str(row.get("Referencia", ""))
+            if ref5 in ("", "nan", "none"):
+                continue
+            if ref5 not in matched_ref05:
+                errors.append(fer_error(
+                    "05_ENTREGUES", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: entrega {row.get('Referencia', '')} "
+                    f"({row.get('Contacto', '')}) no figura a les dades de referència",
+                    document=str(row.get("Referencia", "")),
+                ))
+    if df06 is not None and vendes_ref:
+        for _, row in df06.iterrows():
+            num6 = norm_str(row.get("Número", ""))
+            if num6 in ("", "nan", "none"):
+                continue
+            if num6 not in matched_num06:
+                errors.append(fer_error(
+                    "06_FACTURES_VENDA", "operacio_sobrant", "molt_greu",
+                    p.get("operacio_sobrant", p["operacio_falta"]),
+                    f"Operació no esperada: factura {row.get('Número', '')} "
+                    f"({row.get('Nombre de la empresa a mostrar en la factura', '')}) "
+                    "no figura a les dades de referència",
+                    document=str(row.get("Número", "")),
+                ))
 
     # ── Seqüència numeració FV (llistat 06 sencer) ───────────────────────────
     if df06 is not None and not df06.empty:
@@ -261,10 +317,15 @@ def _corregir_recap(
     df06: pd.DataFrame,
     vendes_recap: list[dict],
     p: dict,
-) -> tuple[list[dict], list[dict]]:
-    """Corregeix la part recapitulativa: agrupa per client+setmana."""
+) -> tuple[list[dict], list[dict], set, set, set]:
+    """Corregeix la part recapitulativa: agrupa per client+setmana.
+    Retorna (errors, ambigus, matched_ref04, matched_ref05, matched_num06).
+    """
     errors: list[dict] = []
     ambigus: list[dict] = []
+    matched_ref04: set[str] = set()
+    matched_ref05: set[str] = set()
+    matched_num06: set[str] = set()
 
     # Agrupar vendes de referència per client + data màxima facturació (divendres setmana)
     grups: dict[tuple, list[dict]] = {}
@@ -294,6 +355,7 @@ def _corregir_recap(
                 rp = fila04.get("Referencia del pedido")
                 if rp:
                     refs_pedido_04.append(str(rp))
+                    matched_ref04.add(norm_str(str(rp)))
                 if num_inferable:
                     ambigus.append(fer_ambigu(
                         "04_COMANDES_VENDES", "numero_inferable",
@@ -320,6 +382,8 @@ def _corregir_recap(
             # Llistat 05: un albarà per comanda
             ref_pedido_04 = fila04.get("Referencia del pedido") if fila04 else None
             fila05 = _match_05(df05, ref, ref_pedido_04)
+            if fila05 is not None:
+                matched_ref05.add(norm_str(fila05.get("Referencia", "")))
             if fila05 is None:
                 errors.append(fer_error(
                     "05_ENTREGUES", "operacio_falta", "molt_greu", p["operacio_falta"],
@@ -346,6 +410,8 @@ def _corregir_recap(
 
         # Llistat 06: una factura per grup (client + setmana) amb import total
         fila06 = _match_06_recap(df06, client, data_max, refs_pedido_04)
+        if fila06 is not None:
+            matched_num06.add(norm_str(fila06.get("Número", "")))
         if fila06 is None:
             errors.append(fer_error(
                 "06_FACTURES_VENDA", "operacio_falta", "molt_greu", p["operacio_falta"],
@@ -379,7 +445,7 @@ def _corregir_recap(
                                      recap=True, import_total=import_total_esp,
                                      document=doc06)
 
-    return errors, ambigus
+    return errors, ambigus, matched_ref04, matched_ref05, matched_num06
 
 
 def _verificar_factura_venda(
