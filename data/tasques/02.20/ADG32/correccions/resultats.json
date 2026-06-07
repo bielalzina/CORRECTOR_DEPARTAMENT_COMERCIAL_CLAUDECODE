@@ -1,12 +1,12 @@
 {
-  "data_correccio": "2026-06-03T05:39:58",
+  "data_correccio": "2026-06-07T09:42:47",
   "num_tasca": "02.20",
   "grup": "ADG32",
   "alumnes": {
     "6352": {
       "nom": "AANANOU AANANOU, SANAE",
-      "nota": 5.5,
-      "penalitzacio_total": 4.5,
+      "nota": 2.5,
+      "penalitzacio_total": 7.5,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -58,6 +58,42 @@
         },
         {
           "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00025 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00025"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00024 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00024"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
           "tipus": "numero_incorrecte",
           "gravetat": "greu",
           "penalitzacio": -0.5,
@@ -103,8 +139,8 @@
     },
     "6356": {
       "nom": "AANANOU AANANOU, WAFA",
-      "nota": 6.0,
-      "penalitzacio_total": 4.0,
+      "nota": 3.0,
+      "penalitzacio_total": 7.0,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -168,6 +204,42 @@
         },
         {
           "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00002 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00002"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
           "tipus": "numero_incorrecte",
           "gravetat": "greu",
           "penalitzacio": -0.5,
@@ -203,8 +275,8 @@
     },
     "6734": {
       "nom": "ABOLAFIO DIAZ, LORENA",
-      "nota": 3.5,
-      "penalitzacio_total": 6.5,
+      "nota": 2.5,
+      "penalitzacio_total": 7.5,
       "errors": [
         {
           "llistat": "03_FACTURES_COMPRA",
@@ -313,6 +385,18 @@
           "valor_esperat": "C-V/00019, C-V/00020",
           "operacio": "BIGCORP SL — setmana fins 2025-11-28",
           "document": "FV-1/2025/00019"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
         }
       ],
       "casos_ambigus": [],
@@ -341,8 +425,8 @@
     },
     "6427": {
       "nom": "ANANOU EL HANNATI, NAWAL",
-      "nota": 8.5,
-      "penalitzacio_total": 1.5,
+      "nota": 7.5,
+      "penalitzacio_total": 2.5,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -367,6 +451,18 @@
           "valor_esperat": "C-V/00017, C-V/00018",
           "operacio": "BIGCORP SL — setmana fins 2025-11-28",
           "document": "FV-1/2025/00018"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -393,8 +489,8 @@
     },
     "6478": {
       "nom": "BAUZÁ MARCH, CATALINA",
-      "nota": 8.0,
-      "penalitzacio_total": 2.0,
+      "nota": 7.0,
+      "penalitzacio_total": 3.0,
       "errors": [
         {
           "llistat": "03_FACTURES_COMPRA",
@@ -431,6 +527,18 @@
           "valor_esperat": "C-V/00019, C-V/00020",
           "operacio": "COMERCIAL CALCO SA — setmana fins 2025-11-28",
           "document": "FV-1/2025/00018"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -457,8 +565,8 @@
     },
     "6428": {
       "nom": "BOUBAL CHOUAY, ASIA",
-      "nota": 8.5,
-      "penalitzacio_total": 1.5,
+      "nota": 7.5,
+      "penalitzacio_total": 2.5,
       "errors": [
         {
           "llistat": "03_FACTURES_COMPRA",
@@ -483,6 +591,18 @@
           "valor_esperat": null,
           "operacio": "COMERCIAL CALCO SA — setmana fins 2025-11-28",
           "document": null
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -1416,6 +1536,54 @@
         },
         {
           "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00001 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00001"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00023 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00023"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00020 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00020"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
           "tipus": "numero_incorrecte",
           "gravetat": "greu",
           "penalitzacio": -0.5,
@@ -1485,8 +1653,8 @@
     },
     "6713": {
       "nom": "CARBONELL PIERAS, BERNAT",
-      "nota": 1.0,
-      "penalitzacio_total": 9.0,
+      "nota": 0.0,
+      "penalitzacio_total": 10.0,
       "errors": [
         {
           "llistat": "01_COMANDES_COMPRES",
@@ -1631,6 +1799,66 @@
           "valor_esperat": "12218.61",
           "operacio": "BIGCORP SL — setmana fins 2026-01-16",
           "document": "FV-1/2026/00002"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00004 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00004"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00003 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00003"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00001 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00001"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00020 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00020"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
         }
       ],
       "casos_ambigus": [],
@@ -1791,6 +2019,66 @@
           "valor_esperat": "4636.42",
           "operacio": "COMERCIAL CALCO SA — setmana fins 2026-02-13",
           "document": "FV-1/2026/00012"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00006 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00006"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00005 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00005"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00002 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00002"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00001 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00001"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -1817,8 +2105,8 @@
     },
     "6702": {
       "nom": "FORNÉS FUENTES, NEUS",
-      "nota": 8.0,
-      "penalitzacio_total": 2.0,
+      "nota": 7.0,
+      "penalitzacio_total": 3.0,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -1855,6 +2143,18 @@
           "valor_esperat": "2026-01-27",
           "operacio": "BIGCORP SL — 2026-01-27",
           "document": "C-V/00042"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -1879,8 +2179,8 @@
     },
     "6777": {
       "nom": "GARCIA DOMINGO, JAVIER",
-      "nota": 5.0,
-      "penalitzacio_total": 5.0,
+      "nota": 2.0,
+      "penalitzacio_total": 8.0,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -1965,6 +2265,42 @@
           "valor_esperat": "2026-01-27",
           "operacio": "BIGCORP SL — 2026-01-27",
           "document": "C-V/00043"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00001 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00001"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00021 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00021"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -2185,6 +2521,18 @@
           "valor_esperat": "2026-01-27",
           "operacio": "BIGCORP SL — 2026-01-27",
           "document": "C-V/00048"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00019 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00019"
         }
       ],
       "casos_ambigus": [],
@@ -2211,8 +2559,8 @@
     },
     "6369": {
       "nom": "MASTRANGELO, VERONA",
-      "nota": 7.0,
-      "penalitzacio_total": 3.0,
+      "nota": 5.0,
+      "penalitzacio_total": 5.0,
       "errors": [
         {
           "llistat": "03_FACTURES_COMPRA",
@@ -2261,11 +2609,35 @@
           "valor_esperat": "13519.970000000001",
           "operacio": "BIGCORP SL — setmana fins 2026-02-06",
           "document": "FV-1/2026/00009"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [
         {
-          "id": "96845a27-6376-4317-bb50-86e959137011",
+          "id": "4fff08bd-5588-41ec-bd5c-fd4d233b94a5",
           "llistat": "01_COMANDES_COMPRES",
           "tipus": "numero_inferable",
           "descripcio": "Número de comanda a proveïdor diferent del registre (ALUBIX SL, 2025-12-24), però l'operació és identificable per proveïdor i data",
@@ -2405,8 +2777,8 @@
     },
     "6320": {
       "nom": "NAVARRO QUETGLAS, MARGARITA",
-      "nota": 6.0,
-      "penalitzacio_total": 4.0,
+      "nota": 5.0,
+      "penalitzacio_total": 5.0,
       "errors": [
         {
           "llistat": "02_RECEPCIONS",
@@ -2455,6 +2827,18 @@
           "valor_esperat": "11478.060000000001",
           "operacio": "BIGCORP SL — setmana fins 2026-02-13",
           "document": "FV-1/2026/00009"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00008 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00008"
         }
       ],
       "casos_ambigus": [],
@@ -2481,8 +2865,8 @@
     },
     "6707": {
       "nom": "OUAZINE LABBOUA, M'HAMED",
-      "nota": 6.5,
-      "penalitzacio_total": 3.5,
+      "nota": 3.5,
+      "penalitzacio_total": 6.5,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -2531,6 +2915,42 @@
           "valor_esperat": null,
           "operacio": "COMERCIAL CALCO SA — setmana fins 2026-02-06",
           "document": null
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00010 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00010"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00009 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00009"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00019 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00019"
         }
       ],
       "casos_ambigus": [],
@@ -2557,8 +2977,8 @@
     },
     "6368": {
       "nom": "PIZA BIMBELA, LUCIA",
-      "nota": 6.5,
-      "penalitzacio_total": 3.5,
+      "nota": 3.5,
+      "penalitzacio_total": 6.5,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -2607,6 +3027,42 @@
           "valor_esperat": null,
           "operacio": "BIGCORP SL — setmana fins 2026-01-09",
           "document": null
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00002 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00002"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00001 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00001"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
         }
       ],
       "casos_ambigus": [],
@@ -2645,6 +3101,18 @@
           "valor_esperat": "2025-12-29",
           "operacio": "ALUBIX SL — 2025-12-29",
           "document": "C-C/00022"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2025/0042 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2025/0042"
         },
         {
           "llistat": "04_COMANDES_VENDES",
@@ -2969,6 +3437,30 @@
           "valor_esperat": "2026-01-27",
           "operacio": "COMERCIAL CALCO SA — 2026-01-27",
           "document": "C-V/00042"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -3119,6 +3611,78 @@
           "document": "FC/2026/0019"
         },
         {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0024 (ROCALLA SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0024"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0023 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0023"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0016 (ROCALLA SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0016"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0015 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0015"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0014 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0014"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0013 (ROCALLA SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0013"
+        },
+        {
           "llistat": "06_FACTURES_VENDA",
           "tipus": "estat_incorrecte",
           "gravetat": "lleu",
@@ -3225,6 +3789,54 @@
           "valor_esperat": "2026-01-27",
           "operacio": "COMERCIAL CALCO SA — 2026-01-27",
           "document": "C-V/00045"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2026/00004 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2026/00004"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00024 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00024"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00021 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00021"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],
@@ -3253,8 +3865,8 @@
     },
     "6844": {
       "nom": "TRAMULLAS TORRES, TOMEU",
-      "nota": 6.5,
-      "penalitzacio_total": 3.5,
+      "nota": 0.0,
+      "penalitzacio_total": 10.0,
       "errors": [
         {
           "llistat": "03_FACTURES_COMPRA",
@@ -3281,6 +3893,78 @@
           "document": null
         },
         {
+          "llistat": "01_COMANDES_COMPRES",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: comanda c-c/00022 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "C-C/00022"
+        },
+        {
+          "llistat": "01_COMANDES_COMPRES",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: comanda c-c/00021 (ROCALLA SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "C-C/00021"
+        },
+        {
+          "llistat": "02_RECEPCIONS",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: albarà x de rocalla sa no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "MGZ01/ENTRA/00021"
+        },
+        {
+          "llistat": "02_RECEPCIONS",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: albarà x2 de alubix sl no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "MGZ01/ENTRA/00022"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0018 (ALUBIX SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0018"
+        },
+        {
+          "llistat": "03_FACTURES_COMPRA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FC/2026/0017 (ROCALLA SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FC/2026/0017"
+        },
+        {
           "llistat": "06_FACTURES_VENDA",
           "tipus": "import_incorrecte",
           "gravetat": "greu",
@@ -3303,11 +3987,23 @@
           "valor_esperat": "C-V/00019, C-V/00020",
           "operacio": "BIGCORP SL — setmana fins 2025-11-28",
           "document": "FV-1/2025/00019"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00018 (BIGCORP SL) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00018"
         }
       ],
       "casos_ambigus": [
         {
-          "id": "9e2b25cb-9528-4431-aa02-d0cc965eca44",
+          "id": "9b23ff01-4a12-42d5-b9f6-23f6633b2ba2",
           "llistat": "04_COMANDES_VENDES",
           "tipus": "numero_inferable",
           "descripcio": "Número de comanda inferable (BIGCORP SL, 2025-12-15)",
@@ -3338,8 +4034,8 @@
     },
     "6431": {
       "nom": "ZOUGGAGHI SALHI, GHIZLANE",
-      "nota": 8.5,
-      "penalitzacio_total": 1.5,
+      "nota": 7.5,
+      "penalitzacio_total": 2.5,
       "errors": [
         {
           "llistat": "06_FACTURES_VENDA",
@@ -3364,6 +4060,18 @@
           "valor_esperat": "C-V/00019, C-V/00021",
           "operacio": "COMERCIAL CALCO SA — setmana fins 2025-11-28",
           "document": "FV-1/2025/00019"
+        },
+        {
+          "llistat": "06_FACTURES_VENDA",
+          "tipus": "operacio_sobrant",
+          "gravetat": "molt_greu",
+          "penalitzacio": -1.0,
+          "descripcio": "Operació no esperada: factura FV-1/2025/00017 (COMERCIAL CALCO SA) no figura a les dades de referència",
+          "camp": null,
+          "valor_alumne": null,
+          "valor_esperat": null,
+          "operacio": null,
+          "document": "FV-1/2025/00017"
         }
       ],
       "casos_ambigus": [],

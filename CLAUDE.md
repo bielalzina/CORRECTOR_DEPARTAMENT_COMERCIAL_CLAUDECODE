@@ -271,6 +271,8 @@ Casuístiques: duplicats, operacions oblidades, número incorrecte (si es pot in
 
 ### Correcció 02_RECEPCIONS
 
+> ⚠️ **`Numero albarà` NO és una clau única.** ALUBIX SL i ROCALLA SA tenen seqüències d'albarans independents, i fins i tot dins del mateix proveïdor el número pot repetir-se en operacions de setmanes diferents (ex: tres recepcions amb albarà "00042" de proveïdors o setmanes distints). La clau real és `Documento de origen` (referència interna ODOO de la comanda de compra, ex: "C-C/00033"), que és única i unívoca. El matching usa `Documento de origen` com a únic criteri (idèntic al que fa `_match_03` amb `Origen`).
+
 | Camp alumne | Referència | Comprovació |
 |---|---|---|
 | `Numero albarà` | `R_NUMERO_CA` | Han de coincidir |
@@ -629,7 +631,7 @@ A més, ROCALLA SA i ALUBIX SL tenen seqüències d'albarans independents, de ma
 | Llistat | Clau primària |
 |---|---|
 | 01_COMANDES_COMPRES | `Referencia de proveedor` (= R_NUMERO_CP) |
-| 02_RECEPCIONS | `(Contacto, Numero albarà)` — compost perquè cada proveïdor té seqüència pròpia |
+| 02_RECEPCIONS | `Documento de origen` (= referència interna ODOO de la comanda de compra, ex: "C-C/00033") |
 | 03_FACTURES_COMPRA | `Número` (FC/2025/XXXXX, únic global a ODOO) |
 | 04_COMANDES_VENDES | `Referencia del pedido` (S00XXX, únic global a ODOO) |
 | 05_ENTREGUES | `Referencia` (WH/OUT/XXXXX, únic global a ODOO) |
@@ -694,10 +696,22 @@ La detecció usa les **claus primàries reals** de cada llistat (les mateixes qu
 | Llistat | Clau per rastrejar emparellaments |
 |---|---|
 | 01_COMANDES_COMPRES | `Referencia de proveedor` |
-| 02_RECEPCIONS | `(Contacto, Numero albarà)` |
+| 02_RECEPCIONS | `Documento de origen` |
 | 03_FACTURES_COMPRA | `Número` |
 | 04_COMANDES_VENDES | `Referencia del pedido` |
 | 05_ENTREGUES | `Referencia` |
 | 06_FACTURES_VENDA | `Número` |
 
 Implementació: `modules/correccio_compres.py` i `modules/correccio_vendes.py` (sets `matched_*` omplerts durant el bucle de corrrecció; comprovació post-bucle). `_corregir_recap` retorna els sets emparellats com a valors addicionals. `operacio_sobrant` afegit a `PENALITZACIONS_DEFAULT` a `modules/utils.py`.
+
+---
+
+### Clau primària de 02_RECEPCIONS: `Documento de origen` — BUG CORREGIT
+
+**Problema:** La detecció de duplicats i el rastreig de sobrants de `02_RECEPCIONS` usaven `(Contacto, Numero albarà)` com a clau primària. ALUBIX SL i ROCALLA SA tenen seqüències d'albarans independents, i un mateix número (ex: "00042") pot aparèixer en múltiples recepcions del mateix proveïdor en setmanes distints, generant falsos positius de "fila duplicada".
+
+Exemple real (SMORENO, tasca 02.20): ROCALLA SA té tres recepcions amb albarà 00042 (C-C/00026 el 14/01, C-C/00032 el 04/02, C-C/00033 el 11/02). Les dues últimes, tenint el mateix `(Contacto, Numero albarà)`, eren marcades com a duplicades.
+
+**Regla:** La clau primària de `02_RECEPCIONS` és `Documento de origen` (referència interna ODOO de la comanda de compra, ex: "C-C/00033"), que és única a ODOO. Mateixa lògica que `_match_03` (usa `Origen`) i `_match_06_individual` (usa `Origen`).
+
+Afecta: `modules/correccio_compres.py` — `detectar_duplicats`, `matched_ca` i la comprovació post-bucle de sobrants.

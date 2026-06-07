@@ -33,14 +33,14 @@ def corregir_compres(
                                          ["Referencia de proveedor"], p))
     if df02 is not None:
         errors.extend(detectar_duplicats(df02, "02_RECEPCIONS",
-                                         ["Contacto", "Numero albarà"], p))
+                                         ["Documento de origen"], p))
     if df03 is not None:
         errors.extend(detectar_duplicats(df03, "03_FACTURES_COMPRA",
                                          ["Número"], p))
 
     # Rastrejar claus primàries emparellades per detectar sobrants
     matched_cp: set[str] = set()           # Referencia de proveedor (01)
-    matched_ca: set[tuple] = set()         # (Contacto, Numero albarà) (02)
+    matched_ca: set[str] = set()           # Documento de origen (02)
     matched_num03: set[str] = set()        # Número (03)
 
     for ref in compres_ref:
@@ -159,8 +159,7 @@ def corregir_compres(
         ref_pedido_01 = fila01.get("Referencia del pedido") if fila01 is not None else None
         fila02 = _match_02(df02, ref, ref_pedido_01)
         if fila02 is not None:
-            matched_ca.add((norm_str(fila02.get("Contacto", "")),
-                            norm_str(fila02.get("Numero albarà", ""))))
+            matched_ca.add(norm_str(fila02.get("Documento de origen", "")))
 
         if fila02 is None:
             if df02 is not None:
@@ -361,14 +360,14 @@ def corregir_compres(
                 ))
     if df02 is not None and compres_ref:
         for _, row in df02.iterrows():
-            ca = (norm_str(row.get("Contacto", "")), norm_str(row.get("Numero albarà", "")))
-            if any(v in ("", "nan", "none") for v in ca):
+            doc_origen = norm_str(row.get("Documento de origen", ""))
+            if doc_origen in ("", "nan", "none"):
                 continue
-            if ca not in matched_ca:
+            if doc_origen not in matched_ca:
                 errors.append(fer_error(
                     "02_RECEPCIONS", "operacio_sobrant", "molt_greu",
                     p.get("operacio_sobrant", p["operacio_falta"]),
-                    f"Operació no esperada: albarà {ca[1]} de {ca[0]} "
+                    f"Operació no esperada: recepció amb origen {doc_origen} "
                     "no figura a les dades de referència",
                     document=str(row.get("Referencia", "")),
                 ))
