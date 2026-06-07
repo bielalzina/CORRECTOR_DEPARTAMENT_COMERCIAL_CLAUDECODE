@@ -10,7 +10,7 @@ from modules.correccio import (
     executar_correccio, load_resultats, resoldre_ambigu, te_ambigus_pendents,
 )
 from modules.referencia_data import referencia_completa
-from modules.utils import fmt_data
+from modules.utils import fmt_data, alias_camp
 
 
 GRAVETAT_ICONA = {
@@ -330,7 +330,7 @@ def _taula_errors(errors: list[dict]) -> None:
             "Llistat":       NOM_LLISTAT.get(e.get("llistat", ""), e.get("llistat", "")),
             "Document":      e.get("document", "") or "",
             "Descripció":    e.get("descripcio", ""),
-            "Camp":          e.get("camp", "") or "",
+            "Camp":          alias_camp(e.get("camp", "") or "", e.get("llistat", "")),
             "Valor alumne":  fmt_data(str(e.get("valor_alumne", "") or "")),
             "Valor esperat": fmt_data(str(e.get("valor_esperat", "") or "")),
             "Penalització":  e.get("penalitzacio", 0),
@@ -420,7 +420,7 @@ def _seccio_errors_globals(resultats: dict, alumnes: list[dict]) -> None:
                 "Llistat":       NOM_LLISTAT.get(llistat_codi, llistat_codi),
                 "Document":      e.get("document", "") or "",
                 "Descripció":    e.get("descripcio", ""),
-                "Camp":          e.get("camp", "") or "",
+                "Camp":          alias_camp(e.get("camp", "") or "", llistat_codi),
                 "Valor alumne":  fmt_data(str(e.get("valor_alumne", "") or "")),
                 "Valor esperat": fmt_data(str(e.get("valor_esperat", "") or "")),
                 "Penalització":  e.get("penalitzacio", 0),

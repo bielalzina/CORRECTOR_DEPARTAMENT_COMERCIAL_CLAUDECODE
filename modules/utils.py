@@ -170,6 +170,155 @@ def detectar_duplicats(
     return errors
 
 
+# ── Àlies de visualització dels camps ───────────────────────────────────────
+# Estructura: { nom_intern: (alias, llistat) }
+# Quan un mateix camp apareix a diversos llistats s'usa el llistat com a
+# desambiguador. La funció `alias_camp` retorna l'àlies adequat.
+
+ALIASES_CAMPS: dict[str, dict[str, str]] = {
+    # ── 01_COMANDES_COMPRES ──────────────────────────────────────────────────
+    "01_COMANDES_COMPRES": {
+        "Referencia del pedido":   "CODI ODOO COMANDA COMPRA",
+        "Fecha límite del pedido": "DATA REGISTRE COMANDA COMPRA",
+        "Referencia de proveedor": "NÚMERO EMISSIO COMANDA COMPRA",
+        "Data comanda":            "DATA EMISSIO COMANDA COMPRA",
+        "Proveedor":               "PROVEÏDOR",
+        "Base imponible":          "BASE IMPONIBLE COMPRA",
+        "Total":                   "IMPORT TOTAL COMPRA",
+        "Estado":                  "ESTAT COMANDA COMPRA",
+        "Estado de facturación":   "ESTAT FACTURACIÓ COMANDA COMPRA",
+    },
+    # ── 02_RECEPCIONS ────────────────────────────────────────────────────────
+    "02_RECEPCIONS": {
+        "Referencia":              "CODI ODOO ALBARA COMPRA",
+        "Fecha de traslado":       "DATA REGISTRE ALBARA COMPRA",
+        "Numero albarà":           "NUMERO EMISSIO ALBARA COMPRA",
+        "Data albarà":             "DATA EMISSIO ALBARA COMPRA",
+        "Contacto":                "PROVEÏDOR",
+        "Documento de origen":     "CODI ODOO COMANDA COMPRA",
+        "Pedidos de compra/Total": "IMPORT TOTAL COMPRA",
+        "Estado":                  "ESTAT RECEPCIÓ",
+    },
+    # ── 03_FACTURES_COMPRA ───────────────────────────────────────────────────
+    "03_FACTURES_COMPRA": {
+        "Número":                                       "CODI ODOO FACTURA COMPRA",
+        "Nombre de la empresa a mostrar en la factura": "PROVEÏDOR",
+        "Referencia":                                   "NUMERO EMISSIO FACTURA COMPRA",
+        "Fecha de factura":                             "DATA EMISSIO FACTURA COMPRA",
+        "Fecha de vencimiento":                         "DATA VENCIMENT FACTURA COMPRA",
+        "Origen":                                       "CODI ODOO COMANDA COMPRA",
+        "Base imponible en la moneda firmada":          "BASE IMPONIBLE COMPRA",
+        "Impuesto firmado":                             "IMPORT IVA COMPRA",
+        "Total con signo en moneda":                    "IMPORT TOTAL COMPRA",
+        "Estado en pago":                               "ESTAT PAGAMENT FACTURA COMPRA",
+    },
+    # ── 04_COMANDES_VENDES ───────────────────────────────────────────────────
+    "04_COMANDES_VENDES": {
+        "Referencia del pedido":   "CODI ODOO COMANDA VENDA",
+        "Fecha de creación":       "DATA REGISTRE COMANDA VENDA",
+        "Data comanda":            "DATA EMISSIO COMANDA VENDA",
+        "Numero comanda":          "NÚMERO EMISSIO COMANDA VENDA",
+        "Cliente":                 "CLIENT",
+        "Base imponible":          "BASE IMPONIBLE VENDA",
+        "Impuestos":               "IMPORT IVA VENDA",
+        "Total":                   "IMPORT TOTAL VENDA",
+        "Estado":                  "ESTAT COMANDA VENDA",
+        "Estado de la factura":    "ESTAT FACTURACIÓ COMANDA VENDA",
+    },
+    # ── 05_ENTREGUES ─────────────────────────────────────────────────────────
+    "05_ENTREGUES": {
+        "Referencia":              "CODI ODOO ALBARA VENDA",
+        "Fecha de traslado":       "DATA EMISSIO ALBARA VENDA",
+        "Contacto":                "CLIENT",
+        "Documento de origen":     "CODI ODOO COMANDA VENDA",
+        "Pedido de venta/Total":   "IMPORT TOTAL VENDA",
+        "Estado":                  "ESTAT ENTREGA",
+    },
+    # ── 06_FACTURES_VENDA ────────────────────────────────────────────────────
+    "06_FACTURES_VENDA": {
+        "Número":                                       "NUMERO EMISSIO FACTURA VENDA",
+        "Fecha de factura":                             "DATA EMISSIO FACTURA VENDA",
+        "Fecha de vencimiento":                         "DATA VENCIMENT FACTURA VENDA",
+        "Nombre de la empresa a mostrar en la factura": "CLIENT",
+        "Origen":                                       "CODI ODOO COMANDA VENDA",
+        "Base imponible en la moneda firmada":          "BASE IMPONIBLE VENDA",
+        "Impuesto firmado":                             "IMPORT IVA VENDA",
+        "Total con signo en moneda":                    "IMPORT TOTAL VENDA",
+        "Estado en pago":                               "ESTAT PAGAMENT FACTURA VENDA",
+        "Enviado":                                      "ESTAT ENVIAMENT FACTURA VENDA",
+    },
+    # ── 07_STOCK ─────────────────────────────────────────────────────────────
+    "07_STOCK": {
+        "Nombre para mostrar":     "CODI DESCRIPCIO ARTICLE",
+        "Coste promedio":          "PREU COST UNITARI ARTICLE",
+        "Valor total":             "VALOR TOTAL ARTICLE EN MAGATZEM",
+        "Cantidad real":           "NUMERO REAL UNITATS ARTICLE",
+        "Cantidad disponible":     "NUMERO DISPONIBLE UNITATS ARTICLE",
+        "Entrante":                "NUMERO UNITATS ARTICLES PENDENTS ENTRADA",
+        "Saliente":                "NUMERO UNITATS ARTICLES PENDENTS SORTIDA",
+    },
+    # ── 08_HISTORIAL_ENTRADES_SORTIDES ───────────────────────────────────────
+    "08_HISTORIAL_ENTRADES_SORTIDES": {
+        "Producto":                "CODI DESCRIPCIO ARTICLE",
+        "Fecha":                   "DATA OPERACIO ENTRADA-SORTIDA",
+        "Referencia":              "CODI ODOO RECEPCIO - ENTREGA",
+        "Desde":                   "ORIGEN ARTICLES",
+        "A":                       "DESTI ARTICLES",
+        "Cantidad":                "NUMERO UNITATS OPERACIO",
+        "Estado":                  "ESTAT OPERACIO",
+    },
+    # ── DADES_REFERENCIA_COMPRA ──────────────────────────────────────────────
+    "DADES_REFERENCIA_COMPRA": {
+        "Expedient":               "REF. EXPEDIENT COMPRA",
+        "R_EMPRESA_C":             "REF. EMPRESA ALUMNE COMPRA",
+        "R_PROVEEDOR_C":           "REF. PROVEÏDOR",
+        "R_FECHA_EMISION_C":       "REF. DATA EMISSIÓ COMANDA COMPRA",
+        "R_NUMERO_CP":             "REF. NUMERO EMISSIO COMANDA COMPRA",
+        "R_NUMERO_CA":             "REF. NUMERO EMISSIO ALBARA COMPRA",
+        "R_NUMERO_CF":             "REF. NUMERO EMISSIO FACTURA COMPRA",
+        "R_IMPORTE_C":             "REF. IMPORT TOTAL COMPRA",
+    },
+    # ── DADES_REFERENCIA_VENDA ───────────────────────────────────────────────
+    "DADES_REFERENCIA_VENDA": {
+        "Expedient":               "REF. EXPEDIENT VENDA",
+        "R_EMPRESA_V":             "REF. EMPRESA ALUMNE VENDA",
+        "R_FECHA_EMISION_VP":      "REF. DATA EMISSIÓ COMANDA VENDA",
+        "R_NUMERO_VP":             "REF. NUMERO EMISSIO COMANDA VENDA",
+        "R_CLIENTE_V":             "REF. CLIENT",
+        "R_IMPORTE_V":             "REF. IMPORT TOTAL VENDA",
+        "R_FECHA_MAX_FACTURACION_V": "REF. DATA LIMIT FACTURACIO",
+    },
+}
+
+
+def alias_camp(camp: str, llistat: str = "") -> str:
+    """Retorna l'àlies de visualització d'un camp donat el seu nom intern.
+
+    Si s'especifica `llistat`, cerca primer dins el llistat concret (desambigua
+    camps homònims com 'Estado' o 'Referencia' que apareixen a múltiples llistats).
+    Si no troba coincidència, retorna el nom original sense modificar.
+
+    Exemples:
+        alias_camp("Referencia del pedido", "01_COMANDES_COMPRES")
+        → "CODI ODOO COMANDA COMPRA"
+
+        alias_camp("Estado", "02_RECEPCIONS")
+        → "ESTAT RECEPCIÓ"
+
+        alias_camp("camp_desconegut")
+        → "camp_desconegut"
+    """
+    if llistat and llistat in ALIASES_CAMPS:
+        resultat = ALIASES_CAMPS[llistat].get(camp)
+        if resultat:
+            return resultat
+    # Cerca global (sense llistat especificat o no trobat al llistat concret)
+    for mapa in ALIASES_CAMPS.values():
+        if camp in mapa:
+            return mapa[camp]
+    return camp
+
+
 PENALITZACIONS_DEFAULT: dict = {
     "operacio_falta":           1.0,
     "operacio_sobrant":         1.0,
